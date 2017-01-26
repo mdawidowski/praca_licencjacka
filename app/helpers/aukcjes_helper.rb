@@ -1,0 +1,2 @@
+module AukcjesHelper
+end

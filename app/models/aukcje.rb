@@ -1,0 +1,2 @@
+class Aukcje < ApplicationRecord
+end

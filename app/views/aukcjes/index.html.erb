@@ -1,0 +1,30 @@
+<h1>Aukcje</h1>
+
+<%= link_to("Nowa aukcja", "#") %>
+
+<p>Ilość aukcji: <%= @aukcje.size %></p>
+
+<table>
+  <tr>
+    <th>Pozycja</th>
+    <th>Nazwa</th>
+    <th>Cena początkowa</th>
+    <th>Cena aktualna</th>
+    <th>Czas do końca</th>
+    <th>Akcje</th>
+  </tr>
+  <% @aukcje.each do |aukcja| %>
+  <tr>
+    <th><%= aukcja.id %></th>
+    <th><%= aukcja.nazwa %></th>
+    <th><%= aukcja.cena_startowa %></th>
+    <th><%= aukcja.cena_aktualna %></th>
+    <th><%= aukcja.data_zakonczenia %></th>
+    <th>
+      <%= link_to("Pokaż", "#") %>
+      <%= link_to("Edytuj", "#") %>
+      <%= link_to("Usuń", "#") %>
+    </th>
+  </tr>
+  <% end %>
+</table>
