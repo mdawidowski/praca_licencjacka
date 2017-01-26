@@ -1,0 +1,67 @@
+<%= form_for(@aukcje) do |f| %>
+  <% if @aukcje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(aukcje.errors.count, "error") %> prohibited this aukcje from being saved:</h2>
+
+      <ul>
+      <% aukcje.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %><br />
+<div class="jumbotron">
+
+
+          <div class="control-group">
+          <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+            <div class="controls">
+              <%= f.text_area :nazwa, class: "form-control"%>
+            </div><br>
+          </div>
+
+
+          <div class="control-group">
+              <label class="control-label"  for="username"><h5>Opis</h5></label>
+                <div class="controls">
+                  <%= f.text_area :opis, class: "form-control"%>
+              </div><br>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="password"><h5>Data zakończenia</h5></label>
+            <div class="controls">
+            <%= f.date_select :data_zakonczenia, {}, class: "form-control"%>
+            </div>
+          </div><br>
+
+          <div class="control-group">
+            <label class="control-label" for="password"><h5>Cena startowa</h5></label>
+            <div class="controls">
+            <%= f.text_area :cena_startowa, class: "form-control"%>
+            </div>
+          </div><br>
+
+          <div class="control-group">
+            <label class="control-label" for="password"><h5>Cena minimalna</h5></label>
+            <div class="controls">
+            <%= f.text_area :cena_minimalna, class: "form-control"%>
+            </div>
+          </div><br>
+
+          <div class="control-group">
+            <label class="control-label" for="password"><h5>Koszt przesyłki</h5></label>
+            <div class="controls">
+            <%= f.text_area :koszt_przesylki, class: "form-control"%>
+            </div>
+          </div><br>
+
+</div>
+
+  <div class="jumbotron">
+            <div class="controls">
+            <%= f.submit "Dodaj", class:'btn btn-primary' %>
+            </div>
+          </div>
+
+<% end %>

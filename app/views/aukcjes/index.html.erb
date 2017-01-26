@@ -1,10 +1,10 @@
 <h1>Aukcje</h1>
 
-<%= link_to("Nowa aukcja", "#") %>
-
+<%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
+<br><br>
 <p>Ilość aukcji: <%= @aukcje.size %></p>
 
-<table>
+<table class="table table-hover">
   <tr>
     <th>Pozycja</th>
     <th>Nazwa</th>
@@ -15,16 +15,16 @@
   </tr>
   <% @aukcje.each do |aukcja| %>
   <tr>
-    <th><%= aukcja.id %></th>
-    <th><%= aukcja.nazwa %></th>
-    <th><%= aukcja.cena_startowa %></th>
-    <th><%= aukcja.cena_aktualna %></th>
-    <th><%= aukcja.data_zakonczenia %></th>
-    <th>
+    <td><%= aukcja.id %></td>
+    <td><%= aukcja.nazwa %></td>
+    <td><%= aukcja.cena_startowa %></td>
+    <td><%= aukcja.cena_aktualna %></td>
+    <td><%= aukcja.data_zakonczenia %></td>
+    <td>
       <%= link_to("Pokaż", "#") %>
       <%= link_to("Edytuj", "#") %>
       <%= link_to("Usuń", "#") %>
-    </th>
+    </td>
   </tr>
   <% end %>
 </table>
