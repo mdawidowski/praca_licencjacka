@@ -1,0 +1,24 @@
+<h1>Kategorie</h1>
+
+<%= link_to "Nowa kategoria", new_kategory_path, class:'btn btn-primary' %>
+<br><br>
+<p>Ilość kategorii: <%= @kategorie.size %></p>
+
+<table class="table table-hover">
+  <tr>
+    <th>Pozycja</th>
+    <th>Nazwa</th>
+
+  </tr>
+  <% @kategorie.each do |kategoria| %>
+  <tr>
+    <td><%= kategoria.id %></td>
+    <td><%= kategoria.nazwa_kategorii %></td>
+    <td>
+      <%= link_to "Pokaż", "#" %>
+      <!-- <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+      <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %> -->
+    </td>
+  </tr>
+  <% end %>
+</table>

@@ -1,10 +1,8 @@
 class AukcjesController < ApplicationController
+   before_action :set_aukcja, only: [:show, :edit, :update, :destroy, :print]
+
   def index
     @aukcje = Aukcje.all
-  end
-
-  def pokaz
-    @aukcje = Aukcje.find(params[:id])
   end
 
   def new
@@ -13,6 +11,14 @@ class AukcjesController < ApplicationController
 
   def show
   end
+
+  def destroy
+   @aukcje.destroy
+   respond_to do |format|
+     format.html { redirect_to aukcjes_url, notice: 'Aukcja została usunięta.' }
+     format.json { head :no_content }
+   end
+ end
 
   def create
       @aukcje = Aukcje.new(aukcje_params)
@@ -31,4 +37,9 @@ class AukcjesController < ApplicationController
     def aukcje_params
         params.require(:aukcje).permit(:nazwa, :opis, :data_zakonczenia, :cena_startowa, :cena_minimalna, :koszt_przesylki)
       end
+
+      def set_aukcja
+      @aukcje = Aukcje.find(params[:id])
+    end
+
 end
