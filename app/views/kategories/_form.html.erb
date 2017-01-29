@@ -1,0 +1,31 @@
+<%= form_for(@kategorie) do |f| %>
+  <% if @kategorie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kategorie.errors.count, "error") %> prohibited this kategorie from being saved:</h2>
+
+      <ul>
+      <% kategorie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %><br />
+<div class="jumbotron">
+
+
+          <div class="control-group">
+          <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+            <div class="controls">
+              <%= f.text_area :nazwa_kategorii, class: "form-control"%>
+            </div><br>
+          </div>
+</div>
+
+  <div class="jumbotron">
+            <div class="controls">
+            <%= f.submit "Dodaj", class:'btn btn-primary' %>
+            
+            </div>
+          </div>
+
+<% end %>

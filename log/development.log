@@ -5261,3 +5261,537 @@ Processing by KategoriesController#index as HTML
 Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-01-29 22:56:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 304ms (Views: 303.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 22:56:14 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 32.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 22:56:15 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 22:56:18 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 22:56:20 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 22:56:20 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 22:58:46 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 22:58:48 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-01-29 22:58:49 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (9.5ms)
+  Rendered kategories/new.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 10.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nazwa' for #<Kategorie:0x007f373414bbb8>):
+    16:           <div class="control-group">
+    17:           <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+    18:             <div class="controls">
+    19:               <%= f.text_area :nazwa, class: "form-control"%>
+    20:             </div><br>
+    21:           </div>
+    22: <%= form_for(@aukcje) do |f| %>
+  
+app/views/kategories/_form.html.erb:19:in `block in _app_views_kategories__form_html_erb___559816420669121358_69937537151720'
+app/views/kategories/_form.html.erb:1:in `_app_views_kategories__form_html_erb___559816420669121358_69937537151720'
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__4481754833340571682_69937537056040'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-01-29 22:59:16 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (4.4ms)
+  Rendered kategories/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nazwa' for #<Kategorie:0x007f3724314068>):
+    16:           <div class="control-group">
+    17:           <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+    18:             <div class="controls">
+    19:               <%= f.text_area :nazwa, class: "form-control"%>
+    20:             </div><br>
+    21:           </div>
+    22: <%= form_for(@aukcje) do |f| %>
+  
+app/views/kategories/_form.html.erb:19:in `block in _app_views_kategories__form_html_erb___559816420669121358_69937404054400'
+app/views/kategories/_form.html.erb:1:in `_app_views_kategories__form_html_erb___559816420669121358_69937404054400'
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__4481754833340571682_69937403786660'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-01-29 22:59:27 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (5.1ms)
+  Rendered kategories/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nazwa' for #<Kategorie:0x007f372cf1e388>):
+    16:           <div class="control-group">
+    17:           <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+    18:             <div class="controls">
+    19:               <%= f.text_area :nazwa, class: "form-control"%>
+    20:             </div><br>
+    21:           </div>
+    22: <%= form_for(@aukcje) do |f| %>
+  
+app/views/kategories/_form.html.erb:19:in `block in _app_views_kategories__form_html_erb___559816420669121358_69937476771720'
+app/views/kategories/_form.html.erb:1:in `_app_views_kategories__form_html_erb___559816420669121358_69937476771720'
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__4481754833340571682_69937476966040'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-01-29 23:00:53 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.5ms)
+  Rendered kategories/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-01-29 23:01:36 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.1ms)
+  Rendered kategories/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kategories" for 127.0.0.1 at 2017-01-29 23:01:41 +0100
+Processing by KategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1XY/9uYSXMlLX0s6dG7s0aM6Cwb/N1pYEwJGZyQp4veMlDXUqWyjxThn6hvjaCJNPEoTCoiIjN+/oqTByPpljw==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj"}
+Unpermitted parameter: nazwa_kategorii
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "kategories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2017-01-29 22:01:41 UTC], ["updated_at", 2017-01-29 22:01:41 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/1
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/kategories/1" for 127.0.0.1 at 2017-01-29 23:01:41 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:01:45 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (80.1ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aukcja' for #<#<Class:0x007f37240d3a60>:0x007f372ddbd3f8>
+Did you mean?  aukcje_path):
+    16:     <td><%= kategoria.nazwa_kategorii %></td>
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <!-- <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %> -->
+    21:     </td>
+    22:   </tr>
+  
+app/views/kategories/index.html.erb:19:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937484656400'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937484656400'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.3ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:02:29 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (122.8ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aukcja' for #<#<Class:0x007f37240d3a60>:0x007f3730562840>
+Did you mean?  aukcje_path):
+    16:     <td><%= kategoria.nazwa_kategorii %></td>
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %>
+    21:     </td>
+    22:   </tr>
+  
+app/views/kategories/index.html.erb:19:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937505442660'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937505442660'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:02:40 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (82.6ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aukcja' for #<#<Class:0x007f37240d3a60>:0x007f372db1ce28>
+Did you mean?  aukcje_path):
+    16:     <td><%= kategoria.nazwa_kategorii %></td>
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <%= link_to "Edytuj", edit_aukcjes_path(aukcja), class:'btn btn-primary' %>
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %>
+    21:     </td>
+    22:   </tr>
+  
+app/views/kategories/index.html.erb:19:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937483279360'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937483279360'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:02:51 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (100.5ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aukcja' for #<#<Class:0x007f37240d3a60>:0x007f373427dec8>
+Did you mean?  aukcje_path):
+    16:     <td><%= kategoria.nazwa_kategorii %></td>
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <!-- <%= link_to "Edytuj", edit_aukcjes_path(aukcja), class:'btn btn-primary' %> -->
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %>
+    21:     </td>
+    22:   </tr>
+  
+app/views/kategories/index.html.erb:19:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937537479820'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937537479820'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:03:19 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (49.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_kategori_path' for #<#<Class:0x007f37240d3a60>:0x007f372d5c88c8>
+Did you mean?  edit_kategory_path
+               edit_kategory_url
+               edit_password_path):
+    16:     <td><%= kategoria.nazwa_kategorii %></td>
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <%= link_to "Edytuj", edit_kategori_path(kategoria), class:'btn btn-primary' %>
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %>
+    21:     </td>
+    22:   </tr>
+  
+app/views/kategories/index.html.erb:19:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937480486960'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937480486960'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:03:28 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (76.6ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aukcja' for #<#<Class:0x007f37240d3a60>:0x007f373406c148>
+Did you mean?  aukcje_path):
+    17:     <td>
+    18:       <%= link_to "Pokaż", "#" %>
+    19:       <%= link_to "Edytuj", edit_kategory_path(kategoria), class:'btn btn-primary' %>
+    20:       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger btn-xs' %>
+    21:     </td>
+    22:   </tr>
+    23:   <% end %>
+  
+app/views/kategories/index.html.erb:20:in `block in _app_views_kategories_index_html_erb___470268459720657726_69937536394940'
+app/views/kategories/index.html.erb:13:in `_app_views_kategories_index_html_erb___470268459720657726_69937536394940'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:03:40 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories/1/edit" for 127.0.0.1 at 2017-01-29 23:03:45 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/edit.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories/1/edit" for 127.0.0.1 at 2017-01-29 23:04:09 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.0ms)
+  Rendered kategories/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:04:55 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories/1/edit" for 127.0.0.1 at 2017-01-29 23:05:03 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.9ms)
+  Rendered kategories/edit.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-29 23:05:06 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 23:05:07 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-29 23:05:08 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 23:05:10 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-29 23:05:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 23:05:12 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-01-29 23:05:14 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  Rendered aukcjes/_form.html.erb (11.2ms)
+  Rendered aukcjes/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 42.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/aukcjes" for 127.0.0.1 at 2017-01-29 23:05:17 +0100
+Processing by AukcjesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZWn9HWe8n9H+OrOgLd9a6ZnIDjQlzKLEvzd3+9x8JsM8i/c/KMJg3Y0CEoG62ZR1BrgWOFJzdEMTl5VdMK+huw==", "aukcje"=>{"nazwa"=>"", "opis"=>"", "data_zakonczenia(1i)"=>"2017", "data_zakonczenia(2i)"=>"1", "data_zakonczenia(3i)"=>"29", "cena_startowa"=>"", "cena_minimalna"=>"", "koszt_przesylki"=>""}, "commit"=>"Dodaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "aukcjes" ("nazwa", "opis", "data_zakonczenia", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nazwa", ""], ["opis", ""], ["data_zakonczenia", Sun, 29 Jan 2017], ["created_at", 2017-01-29 22:05:17 UTC], ["updated_at", 2017-01-29 22:05:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/aukcjes/6
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/aukcjes/6" for 127.0.0.1 at 2017-01-29 23:05:17 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-29 23:05:22 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.7ms)
+
+
