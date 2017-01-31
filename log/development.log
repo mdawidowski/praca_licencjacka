@@ -7980,3 +7980,720 @@ Processing by HomeController#panel_administratora as HTML
 Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-01-31 19:21:57 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 295ms (Views: 294.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:22:00 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:22:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 299ms (Views: 293.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/kategories/1" for 127.0.0.1 at 2017-01-31 19:22:58 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Kategorie with 'id'=1):
+  
+app/controllers/kategories_controller.rb:42:in `set_kategoria'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:23:46 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/1" for 127.0.0.1 at 2017-01-31 19:23:54 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Kategorie with 'id'=1):
+  
+app/controllers/kategories_controller.rb:42:in `set_kategoria'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.5ms)
+Started GET "/kategories/1" for 127.0.0.1 at 2017-01-31 19:24:26 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Kategorie with 'id'=1):
+  
+app/controllers/kategories_controller.rb:42:in `set_kategoria'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+Started GET "/kategories/1" for 127.0.0.1 at 2017-01-31 19:24:28 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Kategorie with 'id'=1):
+  
+app/controllers/kategories_controller.rb:42:in `set_kategoria'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:24:59 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:25:02 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.1ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:25:03 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:25:06 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-31 19:25:58 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:25:59 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:27:01 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `nazwa' for #<Kategorie:0x007f6b7826c1c8>):
+    3: <div class="jumbotron">
+    4: <table> <tr>
+    5:    <td>
+    6:    <p> <strong>Nazwa </strong><%= @kategorie.nazwa %>
+    7:    <strong>Cena aktualna:</strong> <%= @kategorie.cena_aktualna %> </p>
+    8: 
+    9:    <p> <strong>Opis:</strong> <%= @kategorie.opis %>
+  
+app/views/kategories/show.html.erb:6:in `_app_views_kategories_show_html_erb__414808302363913909_70049776997600'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.4ms)
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:27:19 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (54.4ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_kategorie_path' for #<#<Class:0x007f6b8832b9a0>:0x007f6b78287c20>
+Did you mean?  edit_kategory_path):
+     8: </div>
+     9: 
+    10: <div class="jumbotron" align="center">
+    11:   <%= link_to 'Edytuj', edit_kategorie_path(@kategorie), class:'btn btn btn-danger' %>
+    12:   <%= link_to 'Stwórz nową aukcję', new_kategorie_path, class:'btn btn-warning' %>
+    13:   <%= link_to 'Lista aukcji', kategories_path, class:'btn btn btn-primary' %>
+    14: 
+  
+app/views/kategories/show.html.erb:11:in `_app_views_kategories_show_html_erb__414808302363913909_70049777124240'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:27:29 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (92.9ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_kategorie_path' for #<#<Class:0x007f6b8832b9a0>:0x0055fec009e0b0>
+Did you mean?  new_kategory_path):
+     9: 
+    10: <div class="jumbotron" align="center">
+    11:   <%= link_to 'Edytuj', edit_kategory_path(@kategorie), class:'btn btn btn-danger' %>
+    12:   <%= link_to 'Stwórz nową aukcję', new_kategorie_path, class:'btn btn-warning' %>
+    13:   <%= link_to 'Lista aukcji', kategories_path, class:'btn btn btn-primary' %>
+    14: 
+    15: </div>
+  
+app/views/kategories/show.html.erb:12:in `_app_views_kategories_show_html_erb__414808302363913909_47276316002280'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.2ms)
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:27:41 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:27:49 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:28:20 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-31 19:28:20 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:28:21 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:28:21 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-01-31 19:28:23 +0100
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  Rendered aukcjes/_form.html.erb (8.8ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:28:25 +0100
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for AukcjesController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-01-31 19:29:30 +0100
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  Rendered aukcjes/_form.html.erb (2.4ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 34.7ms | ActiveRecord: 2.7ms)
+
+
+Started PATCH "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:29:32 +0100
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for AukcjesController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+Started GET "/kategories" for 127.0.0.1 at 2017-01-31 19:29:37 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/kategories/4/edit" for 127.0.0.1 at 2017-01-31 19:29:38 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.1ms)
+  Rendered kategories/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:29:39 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FDBf4TKOPzcfkUG4k8o5GFQxnZXEfYgnWU7fO0sdjB01n35FVsd1OTIUkJtmUG7Fz+cuoava4RCY6vAVWyhV4A==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `kategory_params' for #<KategoriesController:0x007f6b703e6858>
+Did you mean?  kategorie_params
+               kategory_path):
+  
+app/controllers/kategories_controller.rb:43:in `block in update'
+app/controllers/kategories_controller.rb:42:in `update'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.6ms)
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:30:30 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FDBf4TKOPzcfkUG4k8o5GFQxnZXEfYgnWU7fO0sdjB01n35FVsd1OTIUkJtmUG7Fz+cuoava4RCY6vAVWyhV4A==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.4ms)
+
+
+  
+NoMethodError (undefined method `started?' for #<Kategorie:0x007f6b7dc0b828>):
+  
+app/controllers/kategories_controller.rb:44:in `block in update'
+app/controllers/kategories_controller.rb:42:in `update'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:31:43 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FDBf4TKOPzcfkUG4k8o5GFQxnZXEfYgnWU7fO0sdjB01n35FVsd1OTIUkJtmUG7Fz+cuoava4RCY6vAVWyhV4A==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.6ms)
+
+
+  
+NameError (uninitialized constant KategoriesController::CustomerNotificationMailer):
+  
+app/controllers/kategories_controller.rb:44:in `block in update'
+app/controllers/kategories_controller.rb:42:in `update'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:04 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FDBf4TKOPzcfkUG4k8o5GFQxnZXEfYgnWU7fO0sdjB01n35FVsd1OTIUkJtmUG7Fz+cuoava4RCY6vAVWyhV4A==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/4
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:04 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/kategories/4/edit" for 127.0.0.1 at 2017-01-31 19:32:06 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.1ms)
+  Rendered kategories/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:08 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IcKZP5xZ9L8oemodSV/wmuYd0JgOCmLlzwMskaUm88IAbbib+BC+sQX/uz68xadHfctjrGGtC9IOpwO/tRMqPw==", "kategorie"=>{"nazwa_kategorii"=>"Moda1"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "kategories" SET "nazwa_kategorii" = $1, "updated_at" = $2 WHERE "kategories"."id" = $3[0m  [["nazwa_kategorii", "Moda1"], ["updated_at", 2017-01-31 18:32:08 UTC], ["id", 4]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/4
+Completed 302 Found in 10ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:08 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-31 19:32:10 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/kategories/4/edit" for 127.0.0.1 at 2017-01-31 19:32:11 +0100
+Processing by KategoriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/edit.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (1.4ms)
+  Rendered kategories/edit.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:14 +0100
+Processing by KategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2/dIBF9DpAverGPzDO43YA0LGRYcqxxHWjoANCyxPBP6WGmgOwruBfMpstD5dGC9lt2qInMMdXCbni8aPITl7g==", "kategorie"=>{"nazwa_kategorii"=>"Moda"}, "commit"=>"Dodaj", "id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "kategories" SET "nazwa_kategorii" = $1, "updated_at" = $2 WHERE "kategories"."id" = $3[0m  [["nazwa_kategorii", "Moda"], ["updated_at", 2017-01-31 18:32:14 UTC], ["id", 4]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/4
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/kategories/4" for 127.0.0.1 at 2017-01-31 19:32:14 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-01-31 19:32:15 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:32:47 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.1ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-01-31 19:32:49 +0100
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  Rendered aukcjes/_form.html.erb (1.8ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:33:06 +0100
+Processing by AukcjesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hMPj/ksVpDJJlNkNceyJs0AC8GG5oWxsNH1C9Qcz9x+lbMJaL1zuPGQRCC6Edt5u29RDVdYGBVv12W3bFwYu4g==", "aukcje"=>{"nazwa"=>"Telefon", "opis"=>"Bardzo dobrze, bardzo tanio", "data_zakonczenia(1i)"=>"2017", "data_zakonczenia(2i)"=>"1", "data_zakonczenia(3i)"=>"31", "cena_startowa"=>"123.0", "cena_minimalna"=>"212.0", "koszt_przesylki"=>"12.0"}, "commit"=>"Dodaj", "id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "aukcjes" SET "opis" = $1, "updated_at" = $2 WHERE "aukcjes"."id" = $3[0m  [["opis", "Bardzo dobrze, bardzo tanio"], ["updated_at", 2017-01-31 18:33:06 UTC], ["id", 1]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/aukcjes/1
+Completed 302 Found in 10ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-01-31 19:33:06 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.1ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-01-31 19:33:08 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+

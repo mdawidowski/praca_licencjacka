@@ -1,2 +1,15 @@
-<h1>Kategories#show</h1>
-<p>Find me in app/views/kategories/show.html.erb</p>
+<% content_for :title, " - Podgląd kategorii." %>
+
+<div class="jumbotron">
+<table> <tr>
+   <td>
+   <p> <strong>Nazwa: </strong><%= @kategorie.nazwa_kategorii %>
+</td> </tr> </table>
+</div>
+
+<div class="jumbotron" align="center">
+  <%= link_to 'Edytuj', edit_kategory_path(@kategorie), class:'btn btn btn-danger' %>
+  <%= link_to 'Stwórz nową aukcję', new_kategory_path, class:'btn btn-warning' %>
+  <%= link_to 'Lista aukcji', kategories_path, class:'btn btn btn-primary' %>
+
+</div>

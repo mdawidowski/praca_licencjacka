@@ -16,7 +16,7 @@
     <td><%= kategoria.id %></td>
     <td><%= kategoria.nazwa_kategorii %></td>
     <td>
-      <%= link_to "Pokaż", "#", class:'btn btn-success' %>
+      <%= link_to "Pokaż", kategory_path(kategoria), class:'btn btn-success' %>
       <%= link_to "Edytuj", edit_kategory_path(kategoria), class:'btn btn-primary' %>
       <%= link_to "Usuń", kategoria, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>

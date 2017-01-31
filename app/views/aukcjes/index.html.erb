@@ -21,7 +21,7 @@
     <td><%= aukcja.cena_aktualna %></td>
     <td><%= aukcja.data_zakonczenia %></td>
     <td>
-      <%= link_to "Pokaż", "#", class:'btn btn-success' %>
+      <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
       <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>

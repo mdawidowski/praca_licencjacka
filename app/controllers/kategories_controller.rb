@@ -10,6 +10,10 @@ class KategoriesController < ApplicationController
  end
 
  def show
+   @kategorie = Kategorie.find(params[:id])
+   respond_to do |format|
+     format.html
+   end
  end
 
  def destroy
@@ -33,6 +37,18 @@ end
        end
      end
    end
+
+   def update
+   respond_to do |format|
+     if @kategorie.update(kategorie_params.except(:user_id))
+       format.html { redirect_to @kategorie, notice: 'Edycja zakończyła się sukcesem.' }
+       format.json { render :show, status: :ok, location: @kategorie }
+     else
+       format.html { render :edit }
+       format.json { render json: @kategorie.errors, status: :unprocessable_entity }
+     end
+   end
+ end
 
    def kategorie_params
        params.require(:kategorie).permit(:nazwa_kategorii)
