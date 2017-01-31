@@ -1,2 +1,18 @@
-<h1>Aukcjes#pokaz</h1>
-<p>Find me in app/views/aukcjes/pokaz.html.erb</p>
+<% content_for :title, " - Podgląd aukcji." %>
+
+<div class="jumbotron">
+<table> <tr>
+   <td>
+   <p> <strong>Nazwa </strong><%= @aukcje.nazwa %>
+   <strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %> </p>
+
+   <p> <strong>Opis:</strong> <%= @aukcje.opis %>
+</td> </tr> </table>
+</div>
+
+<div class="jumbotron" align="center">
+  <%= link_to 'Edytuj', edit_aukcje_path(@aukcje), class:'btn btn btn-danger' %>
+  <%= link_to 'Stwórz nową aukcję', new_aukcje_path, class:'btn btn-warning' %>
+  <%= link_to 'Lista aukcji', aukcjes_path, class:'btn btn btn-primary' %>
+
+</div>

@@ -35,7 +35,7 @@ end
    end
 
    def kategorie_params
-       params.require(:kategorie).permit(:nazwa, :opis, :data_zakonczenia, :cena_startowa, :cena_minimalna, :koszt_przesylki)
+       params.require(:kategorie).permit(:nazwa_kategorii)
      end
 
      def set_kategoria

@@ -30,8 +30,10 @@ ActiveRecord::Schema.define(version: 20170127191031) do
 
   create_table "kategories", force: :cascade do |t|
     t.string   "nazwa_kategorii"
+    t.integer  "parent_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.index ["parent_id"], name: "index_kategories_on_parent_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
