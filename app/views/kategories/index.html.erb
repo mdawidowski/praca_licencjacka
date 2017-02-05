@@ -8,6 +8,7 @@
   <tr>
     <th>Pozycja</th>
     <th>Nazwa</th>
+    <th>Nadkategoria</th>
     <th>Akcje</th>
 
   </tr>
@@ -15,6 +16,7 @@
   <tr>
     <td><%= kategoria.id %></td>
     <td><%= kategoria.nazwa_kategorii %></td>
+    <td><%= kategoria.parent_id %></td>
     <td>
       <%= link_to "Pokaż", kategory_path(kategoria), class:'btn btn-success' %>
       <%= link_to "Edytuj", edit_kategory_path(kategoria), class:'btn btn-primary' %>

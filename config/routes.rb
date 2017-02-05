@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :admins do
+  get '/admins/sign_out' => 'devise/sessions#destroy'
+  end
+  devise_for :users do
+  get '/users/sign_out' => 'devise/sessions#destroy'
+  end
   root 'home#index'
   get 'home/panel_administratora'
   resources :aukcjes

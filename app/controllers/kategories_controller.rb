@@ -51,7 +51,7 @@ end
  end
 
    def kategorie_params
-       params.require(:kategorie).permit(:nazwa_kategorii)
+       params.require(:kategorie).permit(:nazwa_kategorii, :parent_id)
      end
 
      def set_kategoria

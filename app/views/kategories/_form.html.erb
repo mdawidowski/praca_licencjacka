@@ -19,12 +19,19 @@
               <%= f.text_area :nazwa_kategorii, class: "form-control"%>
             </div><br>
           </div>
+
+          <div class="control-group">
+          <label class="control-label"  for="parent_id"><h5>Kategoria nadrzędna:</h5></label>
+            <div class="controls">
+               <%= f.select :parent_id, options_for_select(Kategorie.where.not(id: @kategorie.id).pluck(:id, :nazwa_kategorii).map{|db_fields| db_fields.join(' ')}), {}, class: "form-control" %>
+            </div><br>
+          </div>
 </div>
 
   <div class="jumbotron">
             <div class="controls">
             <%= f.submit "Dodaj", class:'btn btn-primary' %>
-            
+
             </div>
           </div>
 
