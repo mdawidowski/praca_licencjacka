@@ -2,8 +2,6 @@
   <div class="container">
     <div class="navbar-header navbar-inverse">
       <%= link_to "Strona Główna", root_path, class: 'navbar-brand' %>
-      <%= link_to "Aukcje", aukcjes_path, class: 'navbar-brand' %>
-      <%= link_to "Kategorie", kategories_path, class: 'navbar-brand' %>
       <% if current_admin %>
         <%= link_to "Panel Administracyjny", home_panel_administratora_path, class: 'navbar-brand' %>
         <%= link_to "Wylogowanie", destroy_admin_session_path, method: :delete, class: 'navbar-brand' %>
