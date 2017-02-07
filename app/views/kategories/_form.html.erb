@@ -23,7 +23,7 @@
           <div class="control-group">
           <label class="control-label"  for="parent_id"><h5>Kategoria nadrzędna:</h5></label>
             <div class="controls">
-               <%= f.select :parent_id, options_for_select(Kategorie.where.not(id: @kategorie.id).pluck(:id, :nazwa_kategorii).map{|db_fields| db_fields.join(' ')}), {}, class: "form-control" %>
+               <%= f.select :parent_id, options_for_select(Kategorie.where.not(id: @kategorie.id).pluck(:id, :nazwa_kategorii).map{|db_fields| db_fields.join(' ')}),  { :include_blank => true },  class: "form-control" %>
             </div><br>
           </div>
 </div>

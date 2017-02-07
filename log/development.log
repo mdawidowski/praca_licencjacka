@@ -13372,3 +13372,964 @@ Processing by KategoriesController#new as HTML
 Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:17:35 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.9ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (3.2ms)
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 314ms (Views: 307.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 07:17:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 57.4ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-07 07:17:40 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bBOYJrZugGEEU/Mhj5S3ZBpoGr0Vh3CP4ic6U2ge1EOh3T3UbJNaO5rylnsFhbc1NcRKXe+V6OQYcCyZv9IiKw==", "user"=>{"email"=>"admin@admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2017-02-07 06:17:40 UTC], ["sign_in_count", 2], ["updated_at", 2017-02-07 06:17:40 UTC], ["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 143ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:17:40 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 07:17:43 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PpQie6iRd8aDcXo9abA06U/er9HRRQQKeTOXnaCHIpPPEpAaJWHBYwiwn1QOZtN5rJIex3J1ad850Q/IoKWwbQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:17:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.7ms)
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-02-07 07:17:51 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 55ms (Views: 43.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2017-02-07 07:17:53 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sOB4IpoH3nQDCwCLh0ICc9KIhU0BIWl5M7bqXn90MXNCTXPN8sYoSl2CHsH+5T0gioLw9vEBP0fTwNa0L5bXnQ==", "admin"=>{"email"=>"admin@admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (1.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["email", "admin@admin"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "admins" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "admins"."id" = $4[0m  [["current_sign_in_at", 2017-02-07 06:17:53 UTC], ["sign_in_count", 2], ["updated_at", 2017-02-07 06:17:53 UTC], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:17:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:17:59 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:18:00 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:18:02 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (4.1ms)
+  Rendered kategories/new.html.erb within layouts/application (5.0ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/kategories" for 127.0.0.1 at 2017-02-07 07:18:10 +0100
+Processing by KategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ABE1pneJFBVlRyBvoRNgP550DZKfTwQGYG8aXyPDTpNQKp4gHF1XUTVFzS0mBG7jDhbBTWVjZpQbo/cbixqQeA==", "kategorie"=>{"nazwa_kategorii"=>"Elektronika"}, "commit"=>"Dodaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "kategories" ("nazwa_kategorii", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["nazwa_kategorii", "Elektronika"], ["created_at", 2017-02-07 06:18:10 UTC], ["updated_at", 2017-02-07 06:18:10 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/1
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/kategories/1" for 127.0.0.1 at 2017-02-07 07:18:10 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:18:12 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:19:30 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:19:32 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.8ms)
+  Rendered kategories/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+..._fields| db_fields.join(' ')}), {}, class: "form-control" );...
+...                               ^):
+  
+app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__1623354618644250770_70304455185040'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.7ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:19:51 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.2ms)
+  Rendered kategories/new.html.erb within layouts/application (2.9ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:20:25 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.6ms)
+  Rendered kategories/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+..._fields| db_fields.join(' ')}), {}, class: "form-control" );...
+...                               ^):
+  
+app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__1623354618644250770_70304522308380'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:20:36 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.8ms)
+  Rendered kategories/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...fault => nil options_for_select(Kategorie.where.not(id: @kat...
+...                               ^
+/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+..._fields| db_fields.join(' ')}), {}, class: "form-control" );...
+...                               ^):
+  
+app/views/kategories/_form.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__1623354618644250770_70304455554120'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:21:05 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.1ms)
+  Rendered kategories/new.html.erb within layouts/application (2.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:21:17 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.0ms)
+  Rendered kategories/new.html.erb within layouts/application (2.8ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:21:35 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.0ms)
+  Rendered kategories/new.html.erb within layouts/application (2.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:21:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:21:37 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:21:38 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:21:39 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (3.1ms)
+  Rendered kategories/new.html.erb within layouts/application (3.9ms)
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:23:01 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.7ms)
+  Rendered kategories/new.html.erb within layouts/application (3.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:23:03 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:23:03 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.4ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:23:04 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.0ms)
+  Rendered kategories/new.html.erb within layouts/application (3.2ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:24:16 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (1.9ms)
+  Rendered kategories/new.html.erb within layouts/application (2.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:24:17 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:24:18 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.4ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:24:19 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.1ms)
+  Rendered kategories/new.html.erb within layouts/application (2.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:24:52 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.7ms)
+  Rendered kategories/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+...}), :include_blank => true, {}, class: "form-control" );@out...
+...                               ^):
+  
+app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__1623354618644250770_70304454111740'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:25:03 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (1.9ms)
+  Rendered kategories/new.html.erb within layouts/application (2.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:25:13 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  Rendered kategories/_form.html.erb (0.7ms)
+  Rendered kategories/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/marcin/ror-aukcja/app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+..._fields| db_fields.join(' ')}),  {}, class: "form-control" )...
+...                               ^):
+  
+app/views/kategories/_form.html.erb:26: syntax error, unexpected ',', expecting =>
+app/views/kategories/new.html.erb:3:in `_app_views_kategories_new_html_erb__1623354618644250770_70304600631500'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:25:30 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (1.7ms)
+  Rendered kategories/new.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:26:04 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (1.9ms)
+  Rendered kategories/new.html.erb within layouts/application (2.4ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:26:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:26:11 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.4ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:26:12 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (1.7ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:26:14 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (3.1ms)
+  Rendered kategories/new.html.erb within layouts/application (4.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/kategories" for 127.0.0.1 at 2017-02-07 07:26:21 +0100
+Processing by KategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qKQqyrFy4fkRaBm9DJ7Fz1aR0vLEzDbS3892AQe3OyKmTstQRGIw7RHTSRzJXXLrTiLlDE/Ukkws9CcrMcCBw==", "kategorie"=>{"nazwa_kategorii"=>"Moda", "parent_id"=>""}, "commit"=>"Dodaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "kategories" ("nazwa_kategorii", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["nazwa_kategorii", "Moda"], ["created_at", 2017-02-07 06:26:21 UTC], ["updated_at", 2017-02-07 06:26:21 UTC]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/2
+Completed 302 Found in 8ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/kategories/2" for 127.0.0.1 at 2017-02-07 07:26:21 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:26:23 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:26:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.4ms)
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:26:35 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:26:37 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/kategories/new" for 127.0.0.1 at 2017-02-07 07:26:38 +0100
+Processing by KategoriesController#new as HTML
+  Rendering kategories/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "kategories"."id", "kategories"."nazwa_kategorii" FROM "kategories" WHERE ("kategories"."id" IS NOT NULL)[0m
+  Rendered kategories/_form.html.erb (2.0ms)
+  Rendered kategories/new.html.erb within layouts/application (2.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/kategories" for 127.0.0.1 at 2017-02-07 07:26:43 +0100
+Processing by KategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g9vSgMMTkCDXhRK/qfJfxAjzhXjB0Vu8wHOQk5rSsmHT4HkGqMfTZIeH//0u5VEYmJFJpzv9OS67v33XMgtsig==", "kategorie"=>{"nazwa_kategorii"=>"Motoryzacja", "parent_id"=>""}, "commit"=>"Dodaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "kategories" ("nazwa_kategorii", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["nazwa_kategorii", "Motoryzacja"], ["created_at", 2017-02-07 06:26:43 UTC], ["updated_at", 2017-02-07 06:26:43 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/kategories/3
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/kategories/3" for 127.0.0.1 at 2017-02-07 07:26:43 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:26:57 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:27:00 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:27:26 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:27:27 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/kategories/2" for 127.0.0.1 at 2017-02-07 07:27:28 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mKategorie Load (0.6ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-07 07:27:31 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (2.3ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:27:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:32:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:32:54 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-07 07:32:56 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.1ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (4.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-07 07:32:57 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  Rendered aukcjes/_form.html.erb (4.1ms)
+  Rendered aukcjes/new.html.erb within layouts/application (5.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 50ms (Views: 42.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:33:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:33:28 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:33:29 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:33:30 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:33:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:33:31 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:33:37 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:33:38 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:33:40 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:45:50 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:46:14 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:46:41 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:47:11 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-07 07:47:13 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.4ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:48:12 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:48:48 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (6.8ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/edit" for 127.0.0.1 at 2017-02-07 07:49:02 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admins/sign_out" for 127.0.0.1 at 2017-02-07 07:49:03 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R0TDn7KISTTgsKuL3tr5miXGAjU/6I/Agq2qAyi6l2IXf2gZ2VwKcLCyRslZzfdGtaTO6sXE7VL5YUdHgGNJiQ=="}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-07 07:49:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 07:49:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 07:49:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 18:44:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 18:46:33 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
