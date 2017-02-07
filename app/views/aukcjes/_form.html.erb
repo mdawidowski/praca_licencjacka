@@ -11,7 +11,12 @@
     </div>
   <% end %><br />
 <div class="jumbotron">
-
+          <div class="control-group">
+          <label class="control-label"  for="username"><h5>Nazwa</h5></label>
+            <div class="controls">
+              <%= f.collection_select :kategorie_id, Kategorie.all, :id, :nazwa_kategorii, {prompt: "Wybierz", id:"kategorie_select"}, {class:"form-control"} %>
+            </div><br>
+          </div>
 
           <div class="control-group">
           <label class="control-label"  for="username"><h5>Nazwa</h5></label>

@@ -6,6 +6,7 @@
 
 <table class="table table-hover">
   <tr>
+    <th>Kategoria</th>
     <th>Pozycja</th>
     <th>Nazwa</th>
     <th>Cena początkowa</th>
@@ -15,6 +16,7 @@
   </tr>
   <% @aukcje.each do |aukcja| %>
   <tr>
+    <td><%= aukcja.kategorie_id %></td>
     <td><%= aukcja.id %></td>
     <td><%= aukcja.nazwa %></td>
     <td><%= aukcja.cena_startowa %></td>
