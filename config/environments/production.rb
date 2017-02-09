@@ -84,4 +84,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { host: 'ror-aukcja.herokuapp.com' }
+  config.assets.precompile += ['ckeditor/skins/kama/editor.css', 'ckeditor/lang/pl.js', 'ckeditor/skins/kama/editor.css']
 end
