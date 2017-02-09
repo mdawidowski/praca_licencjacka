@@ -15915,3 +15915,1125 @@ Processing by AukcjesController#show as HTML
 Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:05:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (3.7ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (24.3ms)
+Completed 200 OK in 307ms (Views: 287.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 17:06:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (6.6ms)
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 43ms (Views: 35.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-09 17:06:46 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-09 17:06:47 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (4.7ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:06:50 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.5ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:11:21 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:11:23 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:12:00 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:12:25 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:12:26 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.9ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 17:12:33 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 17:19:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.3ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/admins/sign_out" for 127.0.0.1 at 2017-02-09 17:19:58 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dYkxf9lkgPOxBV13XLqIZsCugjeU7HkRu0UiGu3eW2pku7G4Tqvdn7FMZUXmJ9zJ851kVIDpL//HwWdLiHE84g=="}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "admins" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "admins"."id" = $3[0m  [["remember_created_at", nil], ["updated_at", 2017-02-09 16:19:58 UTC], ["id", 1]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 17:19:58 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.5ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 18:42:27 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 18:47:26 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.3ms)
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 18:47:47 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-09 18:47:49 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 39.9ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-09 18:47:50 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U0T0BZYFKCFtTtEOb13t3wx6Y9LqrxtI+by6bmzbYWbOr/K2v7KqPfn+16hEnswFqv5Ks/ikaPcjxKcEbyVuzA==", "user"=>{"email"=>"admin@admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Zaloguj się"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-02-09 17:47:50 UTC], ["last_sign_in_at", 2017-02-07 17:51:36 UTC], ["sign_in_count", 4], ["updated_at", 2017-02-09 17:47:50 UTC], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 135ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 18:47:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home/panel_uzytkownika" for 127.0.0.1 at 2017-02-09 18:47:53 +0100
+Processing by HomeController#panel_uzytkownika as HTML
+  Rendering home/panel_uzytkownika.html.erb within layouts/application
+  Rendered home/panel_uzytkownika.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-09 18:47:56 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.1ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 18:47:57 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 18:49:09 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 18:49:12 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6835066527317108745);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCkeditorAssets (20170209185348)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateCkeditorAssets < ActiveRecord::Migration[4.2] (called from load at /home/marcin/.rbenv/versions/2.3.0/bin/rake:23)
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "ckeditor_assets" ("id" serial primary key, "data_file_name" character varying NOT NULL, "data_content_type" character varying, "data_file_size" integer, "data_fingerprint" character varying, "type" character varying(30), "width" integer, "height" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_ckeditor_assets_on_type" ON "ckeditor_assets"  ("type")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170209185348"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6835066527317108745)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 18:57:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (15.5ms)
+Completed 200 OK in 2068ms (Views: 2051.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/home/panel_uzytkownika" for 127.0.0.1 at 2017-02-09 18:57:24 +0100
+Processing by HomeController#panel_uzytkownika as HTML
+  Rendering home/panel_uzytkownika.html.erb within layouts/application
+  Rendered home/panel_uzytkownika.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-09 18:57:25 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:57:27 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (27.8ms)
+  Rendered aukcjes/new.html.erb within layouts/application (28.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 83ms (Views: 73.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:57:27 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.6ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:57:27 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:57:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (11.3ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (14.0ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.3ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.9ms)
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:58:17 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (4.3ms)
+  Rendered aukcjes/new.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:18 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.6ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:18 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:18 +0100
+  
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.6ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.0ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.9ms)
+Started GET "/" for 127.0.0.1 at 2017-02-09 18:58:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/panel_uzytkownika" for 127.0.0.1 at 2017-02-09 18:58:21 +0100
+Processing by HomeController#panel_uzytkownika as HTML
+  Rendering home/panel_uzytkownika.html.erb within layouts/application
+  Rendered home/panel_uzytkownika.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/panel_uzytkownika" for 127.0.0.1 at 2017-02-09 18:58:23 +0100
+Processing by HomeController#panel_uzytkownika as HTML
+  Rendering home/panel_uzytkownika.html.erb within layouts/application
+  Rendered home/panel_uzytkownika.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-09 18:58:24 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:58:26 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (3.4ms)
+  Rendered aukcjes/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:26 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.7ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:26 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:26 +0100
+  
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (9.6ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.1ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.1ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.5ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.7ms)
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:58:43 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (2.8ms)
+  Rendered aukcjes/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:43 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.1ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:43 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:43 +0100
+  
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.6ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.7ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.3ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.0ms)
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:58:44 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (3.4ms)
+  Rendered aukcjes/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:44 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:44 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:58:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (10.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (10.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.0ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.2ms)
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:59:12 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (3.8ms)
+  Rendered aukcjes/new.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:12 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.4ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:12 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (8.3ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.1ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (9.8ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.9ms)
+Started GET "/aukcjes/new" for 127.0.0.1 at 2017-02-09 18:59:12 +0100
+Processing by AukcjesController#new as HTML
+  Rendering aukcjes/new.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (3.4ms)
+  Rendered aukcjes/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/config.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:13 +0100
+Processing by AukcjesController#show as JS
+  Parameters: {"t"=>"GB8C", "id"=>"config"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Aukcje with 'id'=config):
+  
+app/controllers/aukcjes_controller.rb:58:in `set_aukcja'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+Started GET "/aukcjes/skins/moono-lisa/editor.css?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:13 +0100
+Started GET "/aukcjes/lang/pl.js?t=GB8C" for 127.0.0.1 at 2017-02-09 18:59:13 +0100
+  
+  
+ActionController::RoutingError (No route matches [GET] "/aukcjes/skins/moono-lisa/editor.css"):
+ActionController::RoutingError (No route matches [GET] "/aukcjes/lang/pl.js"):
+  
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (9.5ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.2ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (10.2ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.1ms)
+  Rendered collection of /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.1ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/marcin/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.1ms)
