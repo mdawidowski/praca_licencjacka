@@ -3,7 +3,7 @@
   <head>
     <title>Praca Licencjacka</title>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+    <script src="//cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
     <script type="text/javascript">
     var CKEDITOR_BASEPATH = '/assets/ckeditor/';
     </script>
@@ -21,13 +21,13 @@
         <%= yield %>
       </div>
     </div>
-    <script type="text/javascript">$(document).ready(function() {
+    <!-- <script type="text/javascript">$(document).ready(function() {
     if ($('textarea').length > 0) {
         var data = $('textarea');
         $.each(data, function(i) {
             CKEDITOR.replace(data[i].id);
         });
     }
-});</script>
+});</script> -->
   </body>
 </html>
