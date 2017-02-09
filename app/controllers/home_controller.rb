@@ -7,4 +7,6 @@ class HomeController < ApplicationController
   def panel_administratora
   end
 
+  def panel_uzytkownika
+  end
 end

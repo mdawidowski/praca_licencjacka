@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
   root 'home#index'
   get 'home/panel_administratora'
+  get 'home/panel_uzytkownika'
   resources :aukcjes
   resources :kategories
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
