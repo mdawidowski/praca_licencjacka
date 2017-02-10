@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-4 sidebar">
+    <div class="col-xs-12 col-sm-3 sidebar">
       <%= link_to 'Dodaj nową aukcję', new_aukcje_path, class:'btn btn-warning' %><br><br>
       <%= link_to 'Edytuj', edit_aukcje_path(@aukcje), class:'btn btn btn-danger' %><br><br>
       <%= link_to 'Lista aukcji', aukcjes_path, class:'btn btn btn-primary' %>
@@ -11,10 +11,10 @@
     <div class="col-xs-12 col-sm-8 main">
       <h2><strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></h2>
       <p> <strong>Nazwa </strong><%= @aukcje.nazwa %>
-        <div class="jumbotron">
-          <p> <strong>Opis:</strong> <%= @aukcje.opis %>
-        </div>
 
-    </div>
   </div>
 </div>
+</div>
+<div class="jumbotron">
+  <%= raw(@aukcje.opis) %>
+  </div>

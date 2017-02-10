@@ -17866,3 +17866,333 @@ Processing by AukcjesController#show as HTML
 Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-02-09 21:28:17 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (34.7ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (35.9ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (24.4ms)
+Completed 200 OK in 446ms (Views: 422.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-09 21:34:22 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kategories" for 127.0.0.1 at 2017-02-09 21:34:24 +0100
+Processing by KategoriesController#index as HTML
+  Rendering kategories/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "kategories"[0m
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered kategories/index.html.erb within layouts/application (3.0ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/kategories/1" for 127.0.0.1 at 2017-02-09 21:34:28 +0100
+Processing by KategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "kategories".* FROM "kategories" WHERE "kategories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering kategories/show.html.erb within layouts/application
+  Rendered kategories/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-09 21:34:35 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.9ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-09 21:34:36 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (2.4ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-09 21:34:38 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-09 21:38:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-10 21:05:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (1.9ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (10.5ms)
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+Started GET "/" for 127.0.0.1 at 2017-02-10 21:05:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.5ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  [1m[36mAdmin Load (1.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmin Load (11.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[33mUPDATE "admins" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "admins"."id" = $5[0m  [["current_sign_in_at", 2017-02-10 20:05:23 UTC], ["last_sign_in_at", 2017-02-09 20:19:22 UTC], ["sign_in_count", 9], ["updated_at", 2017-02-10 20:05:23 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "admins" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "admins"."id" = $5[0m  [["current_sign_in_at", 2017-02-10 20:05:23 UTC], ["last_sign_in_at", 2017-02-09 20:19:22 UTC], ["sign_in_count", 9], ["updated_at", 2017-02-10 20:05:23 UTC], ["id", 1]]
+  Rendered layouts/_header.html.erb (27.9ms)
+Completed 200 OK in 535ms (Views: 515.4ms | ActiveRecord: 15.1ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendered layouts/_header.html.erb (39.0ms)
+Completed 200 OK in 163ms (Views: 138.0ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/home/panel_administratora" for 127.0.0.1 at 2017-02-10 21:05:33 +0100
+Processing by HomeController#panel_administratora as HTML
+  Rendering home/panel_administratora.html.erb within layouts/application
+  Rendered home/panel_administratora.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/aukcjes" for 127.0.0.1 at 2017-02-10 21:05:35 +0100
+Processing by AukcjesController#index as HTML
+  Rendering aukcjes/index.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes"[0m
+  Rendered aukcjes/index.html.erb within layouts/application (11.7ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:05:36 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:07:11 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:07:51 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.9ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:07:57 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:08:11 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:08:13 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:08:25 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:08:57 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:09:09 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:09:20 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-02-10 21:09:26 +0100
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (21.9ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (22.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:10:04 +0100
+Processing by AukcjesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SHIiI5LGN8eQAbUdpGsM0ibaENzkyVeGkiD1Rx3UrzbXLZJBScQDTOUugiGP6A45PcYo5lfEN2SFewD5RkWb3Q==", "aukcje"=>{"kategorie_id"=>"3", "nazwa"=>"Motór", "opis"=>"<p><strong><img alt=\"\" src=\"http://m.ocdn.eu/_m/5f2716ee042f8e9e44013f818511d57a,62,37.jpg\" style=\"height:448px; width:550px\" />Lorem Ipsum</strong><em>&nbsp;jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem </em>pr&oacute;bnej książki. Pięć wiek&oacute;w p&oacute;źniej zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym r&oacute;żne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druk&oacute;w na komputerach osobistych, jak Aldus PageMaker</p>\r\n", "data_zakonczenia(1i)"=>"2017", "data_zakonczenia(2i)"=>"2", "data_zakonczenia(3i)"=>"7", "cena_startowa"=>"12.0", "cena_minimalna"=>"1.0", "koszt_przesylki"=>"12.0"}, "commit"=>"Dodaj", "id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "aukcjes" SET "opis" = $1, "updated_at" = $2 WHERE "aukcjes"."id" = $3[0m  [["opis", "<p><strong><img alt=\"\" src=\"http://m.ocdn.eu/_m/5f2716ee042f8e9e44013f818511d57a,62,37.jpg\" style=\"height:448px; width:550px\" />Lorem Ipsum</strong><em>&nbsp;jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem </em>pr&oacute;bnej książki. Pięć wiek&oacute;w p&oacute;źniej zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym r&oacute;żne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druk&oacute;w na komputerach osobistych, jak Aldus PageMaker</p>\r\n"], ["updated_at", 2017-02-10 20:10:04 UTC], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/aukcjes/1
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:10:04 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/aukcjes/1/edit" for 127.0.0.1 at 2017-02-10 21:10:15 +0100
+Processing by AukcjesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/edit.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered aukcjes/_form.html.erb (4.0ms)
+  Rendered aukcjes/edit.html.erb within layouts/application (4.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:10:45 +0100
+Processing by AukcjesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DKGrx4zZDvRT2aisjouDx2L51iLAM5RxBT5QCCDQx7WT/hulV9s6fyb2n5ClCIEseeXuGHM+9JMSZaW2e0HzXg==", "aukcje"=>{"kategorie_id"=>"3", "nazwa"=>"Motór", "opis"=>"<p><strong>Lorem Ipsum</strong><em>&nbsp;jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem </em>pr&oacute;bnej książki. Pięć wiek&oacute;w p&oacute;źniej zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym r&oacute;żne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druk&oacute;w na komputerach osobistych, jak Aldus PageMaker</p>\r\n", "data_zakonczenia(1i)"=>"2017", "data_zakonczenia(2i)"=>"2", "data_zakonczenia(3i)"=>"7", "cena_startowa"=>"12.0", "cena_minimalna"=>"1.0", "koszt_przesylki"=>"12.0"}, "commit"=>"Dodaj", "id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "aukcjes" SET "opis" = $1, "updated_at" = $2 WHERE "aukcjes"."id" = $3[0m  [["opis", "<p><strong>Lorem Ipsum</strong><em>&nbsp;jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem </em>pr&oacute;bnej książki. Pięć wiek&oacute;w p&oacute;źniej zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym r&oacute;żne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druk&oacute;w na komputerach osobistych, jak Aldus PageMaker</p>\r\n"], ["updated_at", 2017-02-10 20:10:45 UTC], ["id", 1]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/aukcjes/1
+Completed 302 Found in 10ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/aukcjes/1" for 127.0.0.1 at 2017-02-10 21:10:45 +0100
+Processing by AukcjesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" WHERE "aukcjes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering aukcjes/show.html.erb within layouts/application
+  Rendered aukcjes/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.5ms)
+
+
