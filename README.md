@@ -1,24 +1,3 @@
-# README
+RoR-Aukcja
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Aplikacja ma za zadanie symulować portal aukcyjny, za pomocą którego użytkownicy będą w stanie współbieżnie i bezkolizyjnie licytować, a także tworzyć własne aukcje. 

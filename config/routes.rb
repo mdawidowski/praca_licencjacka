@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/panel_administratora'
   get 'home/panel_uzytkownika'
+  get 'home/uzytkownicy'
+  get 'home/administratorzy'
   resources :aukcjes
   resources :kategories
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

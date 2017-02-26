@@ -1,0 +1,18 @@
+<div class="wrapper">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+        <th>L.p</th>
+        <th>Email</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            <% @user.order("created_at").each do |user| %>
+                <tr>
+                    <td data-label="L.p"><%= user.id%></td>
+                    <td data-label="Email"><%= user.email %></td>
+                    <% end %>
+            </tbody>
+        </table>
+    </div>

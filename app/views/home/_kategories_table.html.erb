@@ -1,9 +1,7 @@
-<table class="table table-hover">
-
-<% @kategorie.each do |kategoria| %>
-<tr>
-  <td><%= kategoria.nazwa_kategorii %></td>
-</tr>
+<nav class="navbar navbar-light" style="background-color: #c0cacd;">
+      <% @kategorie.each do |kategoria| %>
+      <ul class="nav navbar-nav">
+    <li><%= link_to kategoria.nazwa_kategorii, kategory_path(kategoria) %></li></a>
+    </ul>
 <% end %>
-
-</table>
+</nav>

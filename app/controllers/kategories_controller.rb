@@ -10,6 +10,7 @@ class KategoriesController < ApplicationController
  end
 
  def show
+   @aukcje = Aukcje.all
    @kategorie = Kategorie.find(params[:id])
    respond_to do |format|
      format.html

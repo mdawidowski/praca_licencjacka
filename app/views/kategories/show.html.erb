@@ -1,15 +1,11 @@
 <% content_for :title, " - Podgląd kategorii." %>
-
 <div class="jumbotron">
-<table> <tr>
-   <td>
-   <p> <strong>Nazwa: </strong><%= @kategorie.nazwa_kategorii %>
-</td> </tr> </table>
+   <p> <h1><strong><%= @kategorie.nazwa_kategorii %></strong></h1>
 </div>
 
-<div class="jumbotron" align="center">
-  <%= link_to 'Edytuj', edit_kategory_path(@kategorie), class:'btn btn btn-danger' %>
-  <%= link_to 'Stwórz nową kategorię', new_kategory_path, class:'btn btn-warning' %>
-  <%= link_to 'Lista kategorii', kategories_path, class:'btn btn btn-primary' %>
-
-</div>
+Aukcje należące do kategorii:<br>
+<% @aukcje.each do |aukcja| %>
+  <% if aukcja.kategorie_id == @kategorie.id %>
+    <h4><%= link_to aukcja.nazwa, aukcje_path(aukcja) %></h4>
+  <% end %>
+<% end %>
