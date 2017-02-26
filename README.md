@@ -12,5 +12,5 @@ Marcin Dawidowski, nr indeksu 231010, rok 2017
 1. Testy
 
 1. Bibliografia
-- Ruby. Przewodnik programisty wyd. II., David A. Black
-- Ruby on Rails - Tworzenie aplikacji WWW, John Elder
+-Ruby. Przewodnik programisty wyd. II., David A. Black
+-Ruby on Rails - Tworzenie aplikacji WWW, John Elder
