@@ -14,5 +14,7 @@ Słowa kluczowe - Ruby on Rails, aukcja, Internet shopping
 1. Testy
 
 1. Bibliografia
-a) Ruby. Przewodnik programisty wyd. II., David A. Black
-b) Ruby on Rails - Tworzenie aplikacji WWW, John Elder
+
+- Ruby. Przewodnik programisty wyd. II., David A. Black
+
+- Ruby on Rails - Tworzenie aplikacji WWW, John Elder
