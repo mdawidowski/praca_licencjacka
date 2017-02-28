@@ -1,11 +1,13 @@
 <% content_for :title, " - Podgląd kategorii." %>
-<div class="jumbotron">
    <p> <h1><strong><%= @kategorie.nazwa_kategorii %></strong></h1>
-</div>
 
+<div class="jumbotron">
 Aukcje należące do kategorii:<br>
 <% @aukcje.each do |aukcja| %>
   <% if aukcja.kategorie_id == @kategorie.id %>
-    <h4><%= link_to aukcja.nazwa, aukcje_path(aukcja) %></h4>
+   <p style="background-color: #ffffff;">
+     <%= link_to aukcja.nazwa, aukcje_path(aukcja) %></h4>
+   </p>
   <% end %>
 <% end %>
+</div>
