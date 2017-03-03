@@ -2,7 +2,7 @@
 
 <%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
 <br><br>
-<p>Ilość aukcji: <%= @aukcje.size %></p>
+<p>Łączna ilość aukcji: <%= @aukcje.size %></p>
 
 <table class="table table-hover">
   <tr>
@@ -14,6 +14,8 @@
     <th>Akcje</th>
   </tr>
   <% @aukcje.each do |aukcja| %>
+  <% if !current_admin %>
+    <% if current_user.id == aukcja.user_id %>
   <tr>
     <td><%= aukcja.kategorie_id %></td>
     <td><%= aukcja.id %></td>
@@ -26,5 +28,7 @@
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>
   </tr>
+  <% end %>
+  <% end %>
   <% end %>
 </table>

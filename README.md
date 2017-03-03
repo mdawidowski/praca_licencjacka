@@ -1,20 +1,17 @@
 # RoR-Aukcja - portal aukcyjny
-Marcin Dawidowski, nr indeksu 231010, rok 2017
+Autor: Marcin Dawidowski, nr indeksu 231010, rok 2017
 
-Słowa kluczowe - Ruby on Rails, aukcja, Internet shopping
+## 1. Słowa kluczowe
+Ruby on Rails, auction, Online shopping, bid
 
-1. Opis problemu
+## 1. Wstęp
+Głównymi założeniami serwisów aukcyjnych jest uproszczenie użytkownikom sieci Internet wykonywanie zakupów bez wychodzenia z domu. Motywacją do stworzenia takiego serwisu była dla mnie jego wszechstronność, a także to, że sam często korzystam z tego typu serwisów, dlatego uznałem, że stworzenie takiej aplikacji sprawiłoby mi ogromną satysfakcję. Aplikacja ta jest również, bardzo uniwersalna, ponieważ może zostać użyta przykładowo do prowadzenia sklepu internetowego (np. z częściami samochodowymi, komputerami), lub po prostu to prowadzenia dużego portalu aukcyjnego, gdzie można zakupić praktycznie wszystko.
 
- Aplikacja ma za zadanie symulować portal aukcyjny, za pomocą którego użytkownicy będą w stanie współbieżnie i bezkolizyjnie licytować, a także tworzyć własne aukcje. Użytkownicy będą mieć do wyboru wiele predefiniowanych kategorii i podkategorii, dzięki czemu łatwiejsze będzie wyszukiwanie przez użytkownika potrzebnych mu rzeczy.
+## 1. Streszczenie
+Główną funkcjonalnością aplikacji jest tworzenie własnych aukcji i publikowanie ich na stronie. Każda aukcja należeć będzie do ściśle określonej kategorii. Kategorie posiadają również podkategorie, dzięki czemu łatwiejsze będzie wyszukiwanie konkretnej aukcji używając jedynie drzewa kategorii. Każda z aukcji pojawiać się będzie w kolejności według daty zakończenia, czyli aukcje, które się kończą będą widniały na samej górze. Po zalogowaniu się na konto administratora, mamy dostęp do panelu administracyjnego.
 
-1. Projekt i analiza
-
-1. Implementacja
-
-1. Testy
-
-1. Bibliografia
-
+## 1. Bibliografia
 - Ruby. Przewodnik programisty wyd. II., David A. Black
-
 - Ruby on Rails - Tworzenie aplikacji WWW, John Elder
+- rubygems.org
+- w3schools.com/bootstrap/
