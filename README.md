@@ -13,5 +13,4 @@ Główną funkcjonalnością aplikacji jest tworzenie aukcji i publikowanie ich.
 ## Bibliografia
 - Ruby. Przewodnik programisty wyd. II., David A. Black
 - Ruby on Rails - Tworzenie aplikacji WWW, John Elder
-- rubygems.org
-- w3schools.com/bootstrap/
+- [w3schools.com/bootstrap/](w3schools.com/bootstrap/)
