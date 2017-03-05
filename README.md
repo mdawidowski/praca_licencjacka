@@ -1,9 +1,8 @@
-# RoR-Aukcja - portal aukcyjny
+# Let's Bid It - portal aukcyjny
 Autor: Marcin Dawidowski, nr indeksu 231010, rok 2017
 
 ## Słowa kluczowe
 Ruby on Rails, gem, heroku, auction, online shopping, bid
-
 
 ## Streszczenie
 Główną funkcjonalnością aplikacji jest tworzenie aukcji i publikowanie ich. Aby aplikacja była spójna, wdrożono konta dla użytkowników oraz administratorów portalu. Poza tym zaimplementowano kategoryzację aukcji i tworzenie kategorii w hierarchii. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. Dodano również panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta.
