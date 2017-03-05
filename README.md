@@ -2,13 +2,14 @@
 Autor: Marcin Dawidowski, nr indeksu 231010, rok 2017
 
 ## Słowa kluczowe
-Ruby on Rails, auction, Online shopping, bid
+Ruby on Rails, gem, heroku, auction, online shopping, bid
 
-## Wstęp
-Głównymi założeniami serwisów aukcyjnych jest uproszczenie użytkownikom sieci Internet wykonywanie zakupów bez wychodzenia z domu. Motywacją do stworzenia takiego serwisu była dla mnie jego wszechstronność, a także to, że sam często korzystam z tego typu serwisów, dlatego uznałem, że stworzenie takiej aplikacji sprawiłoby mi ogromną satysfakcję. Aplikacja ta jest również, bardzo uniwersalna, ponieważ może zostać użyta przykładowo do prowadzenia sklepu internetowego (np. z częściami samochodowymi, komputerami), lub po prostu to prowadzenia dużego portalu aukcyjnego, gdzie można zakupić praktycznie wszystko.
 
 ## Streszczenie
-Główną funkcjonalnością aplikacji jest tworzenie własnych aukcji i publikowanie ich na stronie. Każda aukcja należeć będzie do ściśle określonej kategorii. Kategorie posiadają również podkategorie, dzięki czemu łatwiejsze będzie wyszukiwanie konkretnej aukcji używając jedynie drzewa kategorii. Każda z aukcji pojawiać się będzie w kolejności według daty zakończenia, czyli aukcje, które się kończą będą widniały na samej górze. Po zalogowaniu się na konto administratora, mamy dostęp do panelu administracyjnego.
+Główną funkcjonalnością aplikacji jest tworzenie aukcji i publikowanie ich. Aby aplikacja była spójna, wdrożono konta dla użytkowników oraz administratorów portalu. Poza tym zaimplementowano kategoryzację aukcji i tworzenie kategorii w hierarchii. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. Dodano również panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta.
+
+## Wstęp
+ Motywacją do stworzenia takiego portalu było dla mnie to, że sam często korzystam z tego typu serwisów. Uznałem więc, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby mi rozwinąć moje umiejętności. Ponadto aplikacje tego typu są również bardzo uniwersalne, ponieważ stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
 
 ## Bibliografia
 - Ruby. Przewodnik programisty wyd. II., David A. Black
