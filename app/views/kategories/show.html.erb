@@ -6,7 +6,7 @@ Aukcje należące do kategorii:<br>
 <% @aukcje.each do |aukcja| %>
   <% if aukcja.kategorie_id == @kategorie.id %>
    <p style="background-color: #ffffff;">
-     <%= link_to aukcja.nazwa, aukcje_path(aukcja) %></h4>
+     <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %></h4>
    </p>
   <% end %>
 <% end %>

@@ -8,6 +8,7 @@
       <%= link_to 'Lista aukcji', aukcjes_path, class:'btn btn btn-primary' %>
     </div>
     <div class="col-xs-12 col-sm-8 main">
+      <p><%= image_tag @aukcje.image.url(:medium) %></p>
       <h2><strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></h2>
       <p> <strong>Nazwa </strong><%= @aukcje.nazwa %>
 

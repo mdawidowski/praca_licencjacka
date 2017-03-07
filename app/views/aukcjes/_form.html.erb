@@ -1,4 +1,4 @@
-<%= form_for(@aukcje) do |f| %>
+<%= form_for @aukcje, :html => {:multipart => true} do |f| %>
   <% if @aukcje.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(aukcje.errors.count, "error") %> prohibited this aukcje from being saved:</h2>
@@ -67,6 +67,11 @@
             <%= f.text_area :koszt_przesylki, class: "form-control"%>
             </div>
           </div><br>
+
+          <div class="form-group">
+            <%= f.label :image, "Obraz" %>
+            <%= f.file_field :image, class: "form-control" %>
+          </div>
 
 </div>
 
