@@ -1,7 +1,12 @@
 <% content_for :title, " - Podgląd kategorii." %>
-   <p> <h1><strong><%= @kategorie.nazwa_kategorii %></strong></h1>
-
-<div class="jumbotron">
+   <!-- <p> <h1><strong><%= @kategorie.nazwa_kategorii %></strong></h1> -->
+   <div class="jumbotron">
+<div class="col-xs-12 col-sm-4 sidebar">
+  <% for kategorie in @kategorie.children %>
+    <li><%= link_to h(kategorie.nazwa_kategorii), kategorie %></li>
+  <% end %>
+</div>
+<div class="col-xs-12 col-sm-8 main">
 Aukcje należące do kategorii:<br>
 <% @aukcje.each do |aukcja| %>
   <% if aukcja.kategorie_id == @kategorie.id %>
@@ -10,4 +15,5 @@ Aukcje należące do kategorii:<br>
    </p>
   <% end %>
 <% end %>
+</div>
 </div>

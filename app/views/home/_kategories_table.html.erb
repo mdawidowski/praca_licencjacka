@@ -1,7 +1,9 @@
 <nav class="navbar navbar-light" style="background-color: #c0cacd;">
       <% @kategorie.each do |kategoria| %>
       <ul class="nav navbar-nav">
+        <% if kategoria.parent_id == nil %>
     <li><%= link_to kategoria.nazwa_kategorii, kategory_path(kategoria) %></li></a>
+    <% end %>
     </ul>
 <% end %>
 </nav>
