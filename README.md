@@ -20,19 +20,19 @@ Spora popularność portali aukcyjnych, a także własne doświadczenie w korzys
 
 ## Spis treści
 
- 1.Opis problemu
- 
+1.Opis problemu
+
  Aplikacja Let's Bid It portalem aukcyjnym za pomocą, którego można tworzyć aukcje, a także brać w nich udział. Głównymi wzorcami do stworzenia takiej aplikacji były serwisy takie jak Allegro, eBay czy OLX.
 
- 1.Projekt i analiza
+2.Projekt i analiza
 
- 1.Implementacja
+3.Implementacja
 
  Aplikacja stworzona została w języku Ruby przy pomocy wzorca MVC, a także frameworków takich jak Rails, czy Bootstrap. Ponadto użyto gemów takich jak CKEditor, Acts_as_tree i Devise. Ponadto skorzystano z bazy danych PostgreSQL i systemu kontroli wersji Git, przy pomocy serwisu Github. Całość umieszczona została na platformie Heroku.
 
- 1.Testy
+4.Testy
 
-## Bibliografia
+5.Bibliografia
 
 - Ruby. Przewodnik programisty wyd. II., David A. Black
 - Ruby on Rails - Tworzenie aplikacji WWW, John Elder
