@@ -2,19 +2,19 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-3 sidebar">
-      <%= link_to 'Dodaj nową aukcję', new_aukcje_path, class:'btn btn-warning' %><br><br>
-      <%= link_to 'Edytuj', edit_aukcje_path(@aukcje), class:'btn btn btn-danger' %><br><br>
-      <%= link_to 'Lista aukcji', aukcjes_path, class:'btn btn btn-primary' %>
-    </div>
     <div class="col-xs-12 col-sm-8 main">
-      <p><%= image_tag @aukcje.image.url(:medium) %></p>
-      <h2><strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></h2>
-      <p> <strong>Nazwa </strong><%= @aukcje.nazwa %>
+      <p><%= @aukcje.nazwa %></p>
+      <ul>
+        <p><%= image_tag @aukcje.image.url(:medium) %> <strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></p>
+      </ul>
 
   </div>
 </div>
 </div>
+<hr>
 <div class="jumbotron">
   <%= raw(@aukcje.opis) %>
   </div>
+
+Do końca pozostało:
+<%= distance_of_time_in_words(Time.now, @aukcje.created_at + 14.days) %>

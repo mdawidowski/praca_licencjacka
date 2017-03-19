@@ -1,5 +1,13 @@
 <h1>Aukcje</h1>
 
+<%= div_for @aukcjes do %>
+<%= link_to aukcje.name, aukcje %>
+<%= aukcje.synopsis %>
+<% aukcjej.genres.each do |genre| %>
+<%= link_to genre.nazwa %>
+<% end %>
+<% end %>
+
 <%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
 <br><br>
 <p>Łączna ilość aukcji: <%= @aukcje.size %></p>
@@ -10,18 +18,15 @@
     <th>Pozycja</th>
     <th>Nazwa</th>
     <th>Cena aktualna</th>
-    <th>Czas do końca</th>
     <th>Akcje</th>
   </tr>
   <% @aukcje.each do |aukcja| %>
-  <% if !current_admin %>
-    <% if current_user.id == aukcja.user_id %>
+
   <tr>
     <td><%= aukcja.kategorie_id %></td>
     <td><%= aukcja.id %></td>
     <td><%= aukcja.nazwa %></td>
     <td><%= aukcja.cena_aktualna %></td>
-    <td><%= aukcja.data_zakonczenia %></td>
     <td>
       <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
       <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
@@ -29,6 +34,5 @@
     </td>
   </tr>
   <% end %>
-  <% end %>
-  <% end %>
+
 </table>

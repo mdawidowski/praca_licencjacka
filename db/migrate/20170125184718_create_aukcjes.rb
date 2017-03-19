@@ -7,7 +7,6 @@ class CreateAukcjes < ActiveRecord::Migration[5.0]
       t.float "cena_minimalna"
       t.float "cena_aktualna"
       t.float "koszt_przesylki"
-      t.datetime "data_zakonczenia"
       t.boolean "zakonczone", :default => false
       t.timestamps
     end

@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20170307184740) do
     t.float    "cena_minimalna"
     t.float    "cena_aktualna"
     t.float    "koszt_przesylki"
-    t.date     "data_zakonczenia"
     t.boolean  "zakonczone",         default: false
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
