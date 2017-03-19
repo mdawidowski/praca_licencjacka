@@ -37,3 +37,5 @@ Spora popularność portali aukcyjnych, a także własne doświadczenie w korzys
 - Ruby. Przewodnik programisty wyd. II., David A. Black
 - Ruby on Rails - Tworzenie aplikacji WWW, John Elder
 - [w3schools.com/bootstrap/](https://www.w3schools.com/bootstrap/)
+- [github.com/galetahub/ckeditor](https://github.com/galetahub/ckeditor)
+- [github.com/amerine/acts_as_tree](https://github.com/amerine/acts_as_tree)
