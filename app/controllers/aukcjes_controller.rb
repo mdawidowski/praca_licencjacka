@@ -2,9 +2,8 @@ class AukcjesController < ApplicationController
    before_action :set_aukcja, only: [:show, :edit, :update, :destroy, :print]
 
   def index
-    @aukcje = Aukcje.all
-    @aukcjes = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
     @kategorie = Kategorie.all
+    @aukcje = Aukcje.search(params[:search])
   end
 
   def new

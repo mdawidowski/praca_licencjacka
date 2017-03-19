@@ -1,17 +1,16 @@
 <h1>Aukcje</h1>
 
-<%= div_for @aukcjes do %>
-<%= link_to aukcje.name, aukcje %>
-<%= aukcje.synopsis %>
-<% aukcjej.genres.each do |genre| %>
-<%= link_to genre.nazwa %>
-<% end %>
-<% end %>
-
 <%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
 <br><br>
 <p>Łączna ilość aukcji: <%= @aukcje.size %></p>
 
+
+<%= form_tag aukcjes_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
 <table class="table table-hover">
   <tr>
     <th>Kategoria</th>
