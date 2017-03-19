@@ -13,13 +13,16 @@
 <% end %>
 <table class="table table-hover">
   <tr>
-    <th>Kategoria</th>
     <th>Pozycja</th>
+    <th>Kategoria</th>
     <th>Nazwa</th>
     <th>Cena aktualna</th>
     <th>Akcje</th>
+    <th>User ID</th>
   </tr>
   <% @aukcje.each do |aukcja| %>
+  <% if !current_admin %>
+  <% if current_user.id == aukcja.user_id %>
 
   <tr>
     <td><%= aukcja.kategorie_id %></td>
@@ -31,7 +34,25 @@
       <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>
+    <td><%= aukcja.user_id %></td>
   </tr>
   <% end %>
-
+  <% end %>
+  <% end %>
+  <% if current_admin %>
+  <% @aukcje.each do |aukcja| %>
+  <tr>
+    <td><%= aukcja.kategorie_id %></td>
+    <td><%= aukcja.id %></td>
+    <td><%= aukcja.nazwa %></td>
+    <td><%= aukcja.cena_aktualna %></td>
+    <td>
+      <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
+      <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+      <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
+    </td>
+    <td><%= aukcja.user_id %></td>
+  </tr>
+  <% end %>
+  <% end %>
 </table>

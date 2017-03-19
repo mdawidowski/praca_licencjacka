@@ -1,6 +1,6 @@
 <% content_for :title, " - Podgląd kategorii." %>
-   <!-- <p> <h1><strong><%= @kategorie.nazwa_kategorii %></strong></h1> -->
-   <div class="jumbotron">
+   <p> <h2><strong><%= @kategorie.nazwa_kategorii %></strong></h2>
+<div class="jumbotron">
 <div class="col-xs-12 col-sm-4 sidebar">
   <% for kategorie in @kategorie.children %>
     <ul class="list-group-item badge">

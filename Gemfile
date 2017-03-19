@@ -30,9 +30,6 @@ gem 'devise', '~> 4.2'
 gem 'paperclip'
 gem 'ckeditor' #rich text editor
 gem 'acts_as_tree', '~> 2.6', '>= 2.6.1'
-gem 'elasticsearch-api', '~> 5.0', '>= 5.0.3'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
 gem 'record_tag_helper', '~> 1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
