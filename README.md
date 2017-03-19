@@ -8,7 +8,7 @@ Ruby on Rails, gem, heroku, auction, online shopping, bid
 
 ## Wdrożenie aplikacji
 
-Aplikację zobaczyć można na stronie [ror-aukcja.herokuapp.com](ror-aukcja.herokuapp.com)
+Aplikację zobaczyć można na stronie [ror-aukcja.herokuapp.com](http:\\ror-aukcja.herokuapp.com)
 
 ## Streszczenie
 
