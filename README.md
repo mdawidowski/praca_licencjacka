@@ -18,12 +18,12 @@ Let's Bid It jest aplikacją do tworzenia aukcji i publikowania ich. W aplikacji
 
 1. Wstępi i opis problemu
   * Porównanie dostępnych rozwiązań
-  + Allegro
-  + eBay
-  + OLX
+    + Allegro
+    + eBay
+    + OLX
   * Możliwości zastosowania praktycznego
-  + portal aukcyjny
-  + sklep internetowy
+    + portal aukcyjny
+    + sklep internetowy
 2. Projekt i analiza
   * aktorzy i przypadki użycia
   * diagram klas
