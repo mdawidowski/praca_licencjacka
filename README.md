@@ -22,7 +22,7 @@ Spora popularność portali aukcyjnych, a także własne doświadczenie w korzys
 
 1.Opis problemu
 
- Aplikacja Let's Bid It portalem aukcyjnym za pomocą, którego można tworzyć aukcje, a także brać w nich udział. Głównymi wzorcami do stworzenia takiej aplikacji były serwisy takie jak Allegro, eBay czy OLX.
+ Aplikacja Let's Bid It jest portalem aukcyjnym za pomocą, którego można tworzyć aukcje, a także brać w nich udział. Głównymi wzorcami do stworzenia takiej aplikacji były serwisy takie jak Allegro, eBay czy OLX.
 
 2.Projekt i analiza
 
