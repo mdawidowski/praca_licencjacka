@@ -17,26 +17,26 @@ Let's Bid It jest aplikacją do tworzenia aukcji i publikowania ich. W aplikacji
 ## Spis treści
 
 1. Wstępi i opis problemu
-  * Porównanie dostępnych rozwiązań
-    + Allegro
-    + eBay
-    + OLX
+   * Porównanie dostępnych rozwiązań
+     + Allegro
+     + eBay
+     + OLX
   * Możliwości zastosowania praktycznego
-    + portal aukcyjny
-    + sklep internetowy
+     + portal aukcyjny
+     + sklep internetowy
 2. Projekt i analiza
-  * aktorzy i przypadki użycia
-  * diagram klas
-  * diagram modelu danych
+   * aktorzy i przypadki użycia
+   * diagram klas
+   * diagram modelu danych
 3. Implementacja
-  * Ruby on Rails
-  * Twitter Bootstrap
-  * CKEditor
-  * acts_as_tree
+   * Ruby on Rails
+   * Twitter Bootstrap
+   * CKEditor
+   * acts_as_tree
 4. Bibliografia
-  * repozytoria GitHub
-  * książki
-  * informacje zamieszczone w Internecie
+   * repozytoria GitHub
+   * książki
+   * informacje zamieszczone w Internecie
 
 ## Wstęp
 
