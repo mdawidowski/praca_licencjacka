@@ -27,6 +27,10 @@ class AukcjesController < ApplicationController
    end
  end
 
+ def licytacje
+    @aukcje = Aukcje.all
+ end
+
   def create
       @aukcje = Aukcje.new(aukcje_params)
 

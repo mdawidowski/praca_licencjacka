@@ -5,11 +5,18 @@
     <div class="col-xs-12 col-sm-8 main">
       <p><%= @aukcje.nazwa %></p>
       <ul>
-        <p><%= image_tag @aukcje.image.url(:medium) %> <strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></p>
+        <p><%= image_tag @aukcje.image.url(:medium) %>
       </ul>
 
   </div>
 </div>
+</div>
+<div class="jumbotron">
+  <strong>Cena aktualna:</strong> <%= @aukcje.cena_aktualna %></p>
+  <%= form_for @aukcje, :html => {:multipart => true} do |f| %>
+  <%= f.text_field :cena_aktualna, class: "form-control"%><br>
+    <%= f.submit "Licytuj", class:'btn btn-primary' %>
+  <% end %>
 </div>
 <hr>
 <div class="jumbotron">

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  klucz: MyString
+  kategoria: MyString
+  min_cena: 9.99
+  max_cena: 9.99
+
+two:
+  klucz: MyString
+  kategoria: MyString
+  min_cena: 9.99
+  max_cena: 9.99

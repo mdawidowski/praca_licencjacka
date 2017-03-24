@@ -1,0 +1,30 @@
+<%= form_for @search, :html => {:multipart => true} do |f| %>
+<div class="jumbotron">
+
+  <div class="control-group">
+    <label class="control-label"><h5>Słowa kluczowe</h5></label>
+    <div class="controls">
+    <%= f.text_area :klucz %>
+    </div>
+  </div><br>
+
+  <div class="control-group">
+    <label class="control-label"><h5>Cena minimalna</h5></label>
+    <div class="controls">
+    <%= f.text_area :min_cena %>
+    </div>
+  </div><br>
+
+  <div class="control-group">
+    <label class="control-label"><h5>Cena maksymalna</h5></label>
+    <div class="controls">
+    <%= f.text_area :max_cena %>
+    </div>
+  </div><br>
+  <div class="jumbotron">
+            <div class="controls">
+            <%= f.submit "Szukaj", class:'btn btn-primary' %>
+            </div>
+          </div>
+
+<% end %>

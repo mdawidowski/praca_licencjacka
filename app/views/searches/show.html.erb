@@ -1,0 +1,21 @@
+Wyniki wyszukiwania
+
+<%= link_to 'Back', new_search_path %>
+
+<% if @search.search_aukcjes.empty? %>
+
+  <p>
+    Nic nie znaleziono
+  </p>
+
+  <% else %>
+
+  <% @search.search_aukcjes.each do |f| %>
+
+  <div class="div">
+    <%= f.nazwa %>
+    Cena: <%= f.cena_aktualna %>
+  </div>
+
+  <% end %>
+  <% end %>
