@@ -47,9 +47,11 @@ Użyte technologie.
 
 ## Wstęp
 
-Spora popularność portali aukcyjnych, a także własne doświadczenie w korzystaniu z takich portali sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby mi rozwinąć moje umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
+... własne doświadczenie w korzystaniu z portali aukcyjnych^1 sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby mi rozwinąć moje umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
 
-5.Bibliografia
+Co udało się zrealizować?
+
+## Bibliografia
 
 - Ruby. Przewodnik programisty wyd. II., David A. Black
 - Ruby on Rails - Tworzenie aplikacji WWW, John Elder
