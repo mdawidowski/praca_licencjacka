@@ -12,7 +12,13 @@ Aplikację zobaczyć można na stronie [ror-aukcja.herokuapp.com](http://ror-auk
 
 ## Streszczenie
 
-Let's Bid It jest aplikacją do tworzenia aukcji i publikowania ich. W aplikacji wdrożono konta dla użytkowników oraz administratorów portalu. Poza tym zaimplementowano kategoryzację aukcji i tworzenie kategorii w hierarchii. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. Dodano również panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta.
+W pracy przedstawiono/opisano aplikację webowoą „Let's Bid It” do tworzenia aukcji i publikowania ich. 
+
+... zaimplementowano kategoryzację aukcji i tworzenie kategorii w hierarchii, panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta.
+
+UX? Zaprojektwano ... Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. 
+
+Użyte technologie.
 
 ## Spis treści
 
