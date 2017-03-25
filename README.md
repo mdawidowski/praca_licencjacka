@@ -1,4 +1,4 @@
-# Let's Bid It – portal aukcyjny
+# Let’s Bid It – portal aukcyjny
 
 Autor: Marcin Dawidowski, nr indeksu 231010, rok 2017
 
