@@ -22,19 +22,20 @@ Użyte technologie.
 
 ## Spis treści
 
-1. Wstępi i opis problemu
+1. Wstęp
+   * (Motywacja)
    * Porównanie dostępnych rozwiązań
      + Allegro
      + eBay
      + OLX
-  * Możliwości zastosowania praktycznego
+   * Możliwości zastosowania praktycznego
      + portal aukcyjny
      + sklep internetowy
 2. Projekt i analiza
-   * aktorzy i przypadki użycia
-   * diagram klas
-   * diagram modelu danych
+   * Aktorzy i przypadki użycia
+   * Diagram klas (gem erd, diagram modelu danych)
 3. Implementacja
+   * (Wprowadzenie)
    * Ruby on Rails
    * Twitter Bootstrap
    * CKEditor
