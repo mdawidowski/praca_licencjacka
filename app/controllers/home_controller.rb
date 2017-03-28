@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @kategorie = Kategorie.all
     @user = User.all
     @admin = Admin.all
+    @aukcje = Aukcje.offset(rand(Aukcje.count)).first
   end
 
   def panel_administratora
@@ -20,7 +21,7 @@ class HomeController < ApplicationController
   end
 
   def administratorzy
-    @kategorie = Kategorie.all    
+    @kategorie = Kategorie.all
     @admin = Admin.all
   end
 
