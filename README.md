@@ -12,14 +12,13 @@ Aplikację zobaczyć można na stronie [ror-aukcja.herokuapp.com](http://ror-auk
 
 ## Streszczenie
 
-W pracy przedstawiono/opisano aplikację webowoą „Let's Bid It” do tworzenia aukcji i publikowania ich. 
+W pracy przedstawiono wersję beta aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji. 
 
-... zaimplementowano kategoryzację aukcji i tworzenie kategorii w hierarchii, panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta.
+W aplikacji zaimplementowano kategoryzację aukcji i zaawansowane wyszukiwanie ich za pomocą formularza oraz tworzenie kategorii w hierarchii.
 
-UX? Zaprojektwano ... Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. 
+Zaprojektwano widok strony głównej wyświetlający losowe aukcje znajdujące się w portalu oraz panele administracyjny i użytkownika, widoczne po zalogowaniu się na konkretny typ konta. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia. 
 
-Użyte technologie.
-
+Do tworzenia aplikacji wykorzystano Ruby on Rails oraz Twitter Bootstrap do stworzenia widoków. Użyto również gemu CKEditor pozwalający umieścić na stronie zaawansowany edytor tekstowy, a także Elasticsearch do zaawansowanego wyszukiwania aukcji na stronie. Do stworzenia drzewa kategorii użyto gemu Acts_as_tree.
 ## Spis treści
 
 1. Wstęp
@@ -36,10 +35,11 @@ Użyte technologie.
    * Diagram klas (gem erd, diagram modelu danych)
 3. Implementacja
    * (Wprowadzenie)
-   * Ruby on Rails
-   * Twitter Bootstrap
-   * CKEditor
-   * acts_as_tree
+   * Użyte technologie
+     + Ruby on Rails
+     + Twitter Bootstrap
+     + CKEditor
+     + acts_as_tree
 4. Bibliografia
    * repozytoria GitHub
    * książki
@@ -47,7 +47,7 @@ Użyte technologie.
 
 ## Wstęp
 
-... własne doświadczenie w korzystaniu z portali aukcyjnych^1 sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby mi rozwinąć moje umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
+Chęć stworzenia czegoś od podstaw oraz własne doświadczenie w korzystaniu z portali aukcyjnych sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby mi rozwinąć moje umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
 
 Co udało się zrealizować?
 
