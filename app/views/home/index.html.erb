@@ -4,8 +4,9 @@
   <div class="row">
       <div class="col-xs-12 col-sm-8 main">
         <p>Może Cię zainteresować:</p>
-        <%= @aukcje.nazwa %><br>
-        <%= image_tag @aukcje.image.url(:medium) %>
+        <a href="<%= aukcje_path(@aukcje) %>">
+          <%= @aukcje.nazwa %><br><%= image_tag @aukcje.image.url(:medium) %>
+        </a>
         <br><br>
         <%= link_to "Wyszukiwanie zaawansowane", new_search_path, class:'btn btn-primary' %>
     </div>
