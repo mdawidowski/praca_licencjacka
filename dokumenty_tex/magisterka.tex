@@ -1,0 +1,163 @@
+\documentclass[brudnopis]{xmgr}
+% Jeśli nowe rozdziały mają się zaczynać na stronach
+% nieparzystych:
+%\documentclass[openright]{xmgr}
+
+%\defaultfontfeatures{Scale=MatchLowercase}
+%\setmainfont[Numbers=OldStyle,Ligatures=TeX]{Minion Pro}
+%\setsansfont[Numbers=OldStyle,Ligatures=TeX]{Myriad Pro}
+% for fontspec version < 2.0
+\setmainfont[Numbers=OldStyle,Mapping=tex-text]{Minion Pro}
+\setsansfont[Numbers=OldStyle,Mapping=tex-text]{Myriad Pro}
+%\setmonofont[Scale=0.75]{Monaco}
+
+% Opcjonalnie identyfikator dokumentu
+% drukowany tylko z włączoną opcją 'brudnopis':
+\wersja   {wersja wstępna [\ymdtoday]}
+
+\author   {Marcin Dawidowski}
+\nralbumu {231010}
+\email    {marcin.dawidowskipl@gmail.com}
+
+\title    {Let’s Bid It – portal aukcyjny}
+\date     {2017}
+\miejsce  {Gdańsk}
+
+\opiekun  {dr Włodzimierz Bzyl}
+
+% dodatkowe polecenia
+%\renewcommand{\filename}[1]{\texttt{#1}}
+%\definecolor{stress}{cmyk}{0,1,0.13,0} % RubineRed
+%\definecolor{topic}{cmyk}{0.98,0.13,0,0.43} % MidnightBlue
+
+\begin{document}
+
+% streszczenie
+\begin{abstract}
+  W pracy przedstawiono wersję beta aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji.
+  
+  W aplikacji zaimplementowano kategoryzację aukcji i zaawansowane wyszukiwanie ich za pomocą formularza oraz tworzenie kategorii w hierarchii.
+
+  Zaprojektwano widok strony głównej wyświetlający losowe aukcje znajdujące się w portalu oraz panele administracyjny i użytkownika, widoczne po zalogowaniu się na konkretny typ konta. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia.
+
+  Do tworzenia aplikacji wykorzystano Ruby on Rails, a także Twitter Bootstrap do implementacji widoków. Użyto również gemu CKEditor pozwalający umieścić na stronie zaawansowany edytor tekstowy, a także Elasticsearch do zaawansowanego wyszukiwania aukcji na stronie. Do stworzenia drzewa kategorii użyto gemu Acts as tree.
+
+\end{abstract}
+
+% słowa kluczowe
+\keywords{Ruby on Rails, gem, heroku, auction, online shopping, bid}
+
+% tytuł i spis treści
+\maketitle
+
+% wstęp
+\introduction
+
+Chęć stworzenia czegoś od podstaw oraz własne doświadczenie w korzystaniu z portali aukcyjnych sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby rozwinąć umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
+
+Co udało się zrealizować?
+
+
+\chapter{Wprowadzenie}
+
+W dzisiejszych czasach bardzo wiele osób korzysta z portali aukcyjnych. 
+Dzieję się tak przede wszystkim dlatego, że pomagają one zdecydowanie
+zaoszczędzić czas, a także w dużej mierze pozwalają oszczędzić 
+pieniądze, dzięki konkurencyjnym cenom oraz szerokiemu wahlarzowi dostępnego
+towaru. Powstało już wiele stron, które pozwalają nam dokonywać zakupów w 
+domowym zaciszu, jednak każda z nich posiada pewne cechy, które odróżniają
+je od konkurencji. Tworząc tą aplikację miałem na celu wyłapać jak najwięcej 
+tych cech i umieścić je w moim projekcie, który będzie je łączył.
+
+
+\section{Porównanie dostępnych rozwiązań}
+
+\begin{itemize}
+\item Allegro - najpopularniejszy w Polsce portal aukcyjny, oferujący setki produktów w niezwykle
+konkurencyjnych cenach. Portal udostępnia możliwość zakupu natychmiastowego, jak i licytacji
+towaru. To jaki jest typ danej aukcji, zależy tylko i wyłącznie od jej właściciela.
+
+\item OLX - jest to nie tyle portal aukcyjny, co portal ogłoszeniowy. Użytkownicy tego serwisu
+mogą udostępniać ogłoszenia, jednak sama sprzedaż towaru przebiega już poza nim.
+
+\item eBay - serwis bardzo popularny przede wszystkim poza granicami Polski. Portal ten niejako łączy
+funkcje dwóch prędzej wymienionych stron. Użytkownicy mogą udostępnić towar do licytacji, zakupu 
+w konkretnej cenie, lub też na zasadzie zwykłego ogłoszenia.
+\end{itemize}
+
+
+\section{Możliwości zastosowania praktycznego}
+Aplikacja przeze mnie stworzona, poza tym, że może zostać użyta jako portal aukcyjny, może 
+również znaleźć inne zastosowania w praktyce. 
+
+Z niewielką pomocą, stworzona przeze mnie aplikacja, przekształcona może zostać również
+w sklep internetowy, przedstawiający konkretną ofertę. Poza tym serwis ten mógłby znaleźć
+również zastosowanie jako portal ogłoszeniowy. 
+
+\chapter{Projekt i analiza}
+
+\section{Diagram ERD}
+
+\section{Aktorzy i przypadki użycia}
+
+\section{Diagram klas}
+
+\chapter{Implementacja}
+W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione przed nią
+założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzięki którym uda się 
+spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków 
+jest kluczowy do skutecznej implementacji aplikacji. Poniżej omówię wybrane przeze mnie narzędzia.
+
+\section{Ruby on Rails}
+Do stworzenia projektu wykorzystana została technologia Ruby on Rails bazująca na języku Ruby.
+W aplikacji wykorzystano Ruby w wersji 2.3, a także framework Rails w wersji 5.0.1. Całość stworzona
+została przy pomocy architektury MVC (ang. Model-View-Controller).
+
+\section{Twitter Bootstrap}
+Widoki utworzone zostały przy pomocy frameworka Twitter Bootstrap, który pozwala na proste tworzenie
+graficznego interfejsu stron internetowych z wykorzystaniem gotowych rozwiązań bazujących na językach
+HTML i CSS. Główną zaletą tego frameworka jest responsywność, czyli zapewnienie dobrego wyświetlania
+stron WWW na różnego typu urządzeniach. 
+
+\section{Elasticsearch}
+W celu skutecznego wyszukiwania danych na stronie wykorzystałem silnik Elasticsearch, który w dużym stopniu
+potrafi ułatwić wyszukiwanie danych w bazie, zwłaszcza, gdy jest ich bardzo dużo. Sam silnik działa jako osobna 
+aplikacja działająca w tle i pozwala wykorzystywać dużo bardziej zaawansowane metody wyszkiwania niż standardowe
+metody języka Ruby.
+
+\section{CKEditor}
+Jest to wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej 
+czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
+a także możliwe jest wstawienie listy, tabeli, odnośników, a także obrazów.
+
+\section{Act as tree}
+Gem ten wykorzystany został w celu stworzenia drzewa kategorii, które ułatwia w sposób zdecydowany nawigację
+po stronie, a także sprawia, że dane na stronie są uporządkowane. Sama implementacja przebiega w środowisku
+technologii Ruby on Rails, więc nie wymaga bezpośredniej instalacji.
+
+% zakończenie
+\summary
+
+% załączniki (opcjonalnie):
+\appendix
+\chapter{Tytuł załącznika jeden}
+
+Treść załącznika jeden.
+
+\chapter{Tytuł załącznika dwa}
+
+Treść załącznika dwa.
+
+% literatura (obowiązkowo):
+\bibliographystyle{unsrt}
+\bibliography{xml}
+
+% spis tabel (jeżeli jest potrzebny):
+\listoftables
+
+% spis rysunków (jeżeli jest potrzebny):
+\listoffigures
+
+\oswiadczenie
+
+\end{document}

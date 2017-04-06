@@ -40647,3 +40647,341 @@ Processing by KategoriesController#show as HTML
 Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:05:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (1.0ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.9ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (9.3ms)
+  Rendered home/index.html.erb within layouts/application (16.9ms)
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:05:22 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.9ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.5ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-04 19:05:23 UTC], ["last_sign_in_at", 2017-03-29 19:16:13 UTC], ["sign_in_count", 15], ["updated_at", 2017-04-04 19:05:23 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendered layouts/_header.html.erb (15.0ms)
+Completed 200 OK in 629ms (Views: 618.6ms | ActiveRecord: 7.5ms)
+
+
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-04 19:05:23 UTC], ["last_sign_in_at", 2017-03-29 19:16:13 UTC], ["sign_in_count", 15], ["updated_at", 2017-04-04 19:05:23 UTC], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendered layouts/_header.html.erb (23.7ms)
+Completed 200 OK in 921ms (Views: 869.6ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:33 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.5ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.7ms)
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:34 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.5ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:36 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.4ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:36 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:37 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.1ms)
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:37 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:39 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.3ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.1ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:39 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.4ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-04 21:11:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.3ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-06 17:21:11 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (0.5ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.8ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (9.1ms)
+  Rendered home/index.html.erb within layouts/application (11.6ms)
+Started GET "/" for 127.0.0.1 at 2017-04-06 17:21:11 +0200
+Processing by HomeController#index as HTML
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes"[0m
+  [1m[36mAukcje Load (1.1ms)[0m  [1m[34mSELECT  "aukcjes".* FROM "aukcjes" ORDER BY "aukcjes"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mKategorie Load (0.2ms)[0m  [1m[34mSELECT "kategories".* FROM "kategories"[0m
+  Rendered home/_kategories_table.html.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-06 15:21:11 UTC], ["last_sign_in_at", 2017-04-04 19:05:23 UTC], ["sign_in_count", 16], ["updated_at", 2017-04-06 15:21:11 UTC], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-04-06 15:21:11 UTC], ["last_sign_in_at", 2017-04-04 19:05:23 UTC], ["sign_in_count", 16], ["updated_at", 2017-04-06 15:21:11 UTC], ["id", 1]]
+  Rendered layouts/_header.html.erb (17.3ms)
+Completed 200 OK in 657ms (Views: 612.1ms | ActiveRecord: 17.5ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendered layouts/_header.html.erb (23.4ms)
+Completed 200 OK in 378ms (Views: 365.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2017-04-06 17:21:13 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (11.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 58ms (Views: 49.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/searches" for 127.0.0.1 at 2017-04-06 17:21:16 +0200
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cNCYRnNjRGj75XbaCbTZ1tk5GxaXSe5tFH2Jwj2sOY40oZ4QRIj80SHZvkd5a96PzkumGHZqNKHKcl8ZhImJ4g==", "search"=>{"klucz"=>"as", "min_cena"=>"", "max_cena"=>""}, "commit"=>"Szukaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "searches" ("klucz", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["klucz", "as"], ["created_at", 2017-04-06 15:21:16 UTC], ["updated_at", 2017-04-06 15:21:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/searches/12
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/searches/12" for 127.0.0.1 at 2017-04-06 17:21:16 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering searches/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes" WHERE (nazwa LIKE '%as%')[0m
+  Rendered searches/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2017-04-06 17:21:18 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/searches" for 127.0.0.1 at 2017-04-06 17:21:22 +0200
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gQDk0GcWhEBxKp7DiZSyLmNGtcFr5pAd9d3eVOHhjubFceKGUP08+asWVl75S7V3dDQIz4rFStEr0giPWMQ+ig==", "search"=>{"klucz"=>"aston", "min_cena"=>"", "max_cena"=>""}, "commit"=>"Szukaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "searches" ("klucz", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["klucz", "aston"], ["created_at", 2017-04-06 15:21:22 UTC], ["updated_at", 2017-04-06 15:21:22 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/searches/13
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/searches/13" for 127.0.0.1 at 2017-04-06 17:21:22 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering searches/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes" WHERE (nazwa LIKE '%aston%')[0m
+  Rendered searches/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2017-04-06 17:21:24 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/searches" for 127.0.0.1 at 2017-04-06 17:21:27 +0200
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iLMxWIFlQQn/SgDDbqrkZ0crfDqOY5eJ4MXSzTuS9lnMwjcOto75sCV2yF4edeM+UFnBNG9ATUU+ygQWgrdGNQ==", "search"=>{"klucz"=>"sto", "min_cena"=>"", "max_cena"=>""}, "commit"=>"Szukaj"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "searches" ("klucz", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["klucz", "sto"], ["created_at", 2017-04-06 15:21:28 UTC], ["updated_at", 2017-04-06 15:21:28 UTC]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/searches/14
+Completed 302 Found in 8ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/searches/14" for 127.0.0.1 at 2017-04-06 17:21:28 +0200
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering searches/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "aukcjes" WHERE (nazwa LIKE '%sto%')[0m
+  [1m[36mAukcje Load (0.2ms)[0m  [1m[34mSELECT "aukcjes".* FROM "aukcjes" WHERE (nazwa LIKE '%sto%')[0m
+  Rendered searches/show.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2017-04-06 17:21:30 +0200
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+

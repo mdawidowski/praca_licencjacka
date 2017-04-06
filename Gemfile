@@ -32,6 +32,8 @@ gem 'acts_as_tree', '~> 2.6', '>= 2.6.1'
 gem 'record_tag_helper', '~> 1.0'
 gem 'rails-erd', '~> 1.5'
 gem 'ruby-graphviz', '~> 1.2', '>= 1.2.3' # do obsługi rails-erd
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{Goldfarb:2002:CFG}
+Charles~F. Goldfarb and Paul Prescod.
+\newblock {\em {Charles F. Goldfarb}'s {XML} handbook}.
+\newblock Charles F. Goldfarb definitive XML series. Pren{\-}tice-Hall,
+  Englewood Cliffs, NJ 07632, USA, fourth edition, 2002.
+
+\bibitem{Eisenberg:2002:SXM}
+Andrew Eisenberg and Jim Melton.
+\newblock {SQL\slash XML} is making good progress.
+\newblock {\em SIGMOD}, 31(2):101--108, June 2002.
+
+\bibitem{Elmasri:2002:CMC}
+Ramez Elmasri, Yu-Chi Wu, Babak Hojabri, Charley Li, and Jack Fu.
+\newblock Conceptual modeling for customized {XML} schemas.
+\newblock {\em Lecture Notes in Computer Science}, 2503:429--??, 2002.
+
+\end{thebibliography}
