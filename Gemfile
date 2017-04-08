@@ -34,6 +34,8 @@ gem 'rails-erd', '~> 1.5'
 gem 'ruby-graphviz', '~> 1.2', '>= 1.2.3' # do obsługi rails-erd
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
+gem 'cloudinary' #zarządzanie grafiką
+gem 'paperclip-cloudinary', '~> 1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
