@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dta94lqkr
+  api_key: '659397777193967'
+  api_secret: fI3y7sX15tXzaDAapZcg4mtvWAQ
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dta94lqkr
+  api_key: '659397777193967'
+  api_secret: fI3y7sX15tXzaDAapZcg4mtvWAQ
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dta94lqkr
+  api_key: '659397777193967'
+  api_secret: fI3y7sX15tXzaDAapZcg4mtvWAQ
+  enhance_image_tag: true
+  static_image_support: false
