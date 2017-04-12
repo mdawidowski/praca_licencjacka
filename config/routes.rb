@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'home/uzytkownicy'
   get 'home/administratorzy'
   get "aukcjes/licytacje" => "aukcjes#licytacje"
+  get 'search', to: 'search#search'
   resources :searches
   resources :aukcjes
   resources :kategories

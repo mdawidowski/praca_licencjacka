@@ -1,4 +1,6 @@
 class Search < ApplicationRecord
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
 
   def search_aukcjes
 
