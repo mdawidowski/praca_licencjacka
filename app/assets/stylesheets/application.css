@@ -13,5 +13,5 @@
  *= require_tree .
  *= require_self
  */
- body {background-image:url('bg.jpg');
+ body {background-image:url(http://res.cloudinary.com/dta94lqkr/image/upload/v1492266851/bg_vel4tw.jpg);
        background-size:cover;}
