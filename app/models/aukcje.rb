@@ -27,6 +27,11 @@ settings index: { number_of_shards: 1 } do
  end
 end
 
+settings index: { number_of_shards: 1 } do
+  mappings dynamic: 'false' do
+    indexes :title, analyzer: 'english'
+    indexes :text, analyzer: 'english'
+  end
 end
 
 # Delete the previous articles index in Elasticsearch
@@ -34,8 +39,9 @@ Aukcje.__elasticsearch__.client.indices.delete index: Aukcje.index_name rescue n
 
 # Create the new index with the new mapping
 Aukcje.__elasticsearch__.client.indices.create \
-  index: Aukcje.index_name,
-  body: { settings: Aukcje.settings.to_hash, mappings: Aukcje.mappings.to_hash }
+index: Aukcje.index_name,
+body: { settings: Aukcje.settings.to_hash, mappings: Aukcje.mappings.to_hash }
 
 # Index all article records from the DB to Elasticsearch
 Aukcje.import
+end

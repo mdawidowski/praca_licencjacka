@@ -12,7 +12,7 @@
   <% @aukcje.each do |aukcje| %>
     <li>
       <h3>
-        <%= link_to aukcje.title, controller: "aukcjes", action: "show", id: aukcje._id%>
+        <%= link_to aukcje.title, controller: "aukcje", action: "show", id: aukcje._id%>
       </h3>
     </li>
   <% end %>
