@@ -1,0 +1,11 @@
+I"¬(function() {
+  jQuery(function() {
+    var input;
+    input = $('#bid').val();
+    if (input === $('#bid').val()) {
+      return alert(input);
+    }
+  });
+
+}).call(this);
+:ET

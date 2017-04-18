@@ -1,0 +1,8 @@
+I"r(function() {
+  jQuery(function() {
+    var input;
+    return input = $('#bid').val();
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,12 @@
+I"÷(function() {
+  $(document).ready(function() {
+    var input;
+    return input = $('#bid').val()(function() {
+      return $(document).on('click', '#bidbutton', function() {
+        return alert("WcisÅ‚y");
+      });
+    });
+  });
+
+}).call(this);
+:ET

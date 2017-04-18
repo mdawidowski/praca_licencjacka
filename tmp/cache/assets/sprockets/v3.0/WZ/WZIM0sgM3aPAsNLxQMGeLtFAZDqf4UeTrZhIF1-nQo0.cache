@@ -1,0 +1,9 @@
+I"ª(function() {
+  $(document).ready(function() {
+    return $(document).on('click', '.bidbutton', function() {
+      return alert("WcisÅ‚y");
+    });
+  });
+
+}).call(this);
+:ET

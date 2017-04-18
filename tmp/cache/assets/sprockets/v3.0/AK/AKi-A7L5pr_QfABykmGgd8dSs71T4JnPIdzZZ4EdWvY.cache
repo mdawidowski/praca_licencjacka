@@ -1,0 +1,12 @@
+I"�(function() {
+  $(document).ready(function() {
+    var input;
+    return input = $('#bid').val();
+  });
+
+  if ($('#bid').val() <= input) {
+    alert("Podano zbyt małą wartość!");
+  }
+
+}).call(this);
+:ET

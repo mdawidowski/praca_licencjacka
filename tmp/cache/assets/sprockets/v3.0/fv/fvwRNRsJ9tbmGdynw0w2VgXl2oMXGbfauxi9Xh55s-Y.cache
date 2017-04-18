@@ -1,0 +1,16 @@
+I"x(function() {
+  $(document).ready(function() {
+    var helpie, value;
+    value = $('#bid').val();
+    helpie = value;
+    return $(document).on('click', '#bidbutton', function() {
+      if (value >= $('#bid').val()) {
+        return $('#bid').val() === helpie(function() {
+          return alert("Za mało!")(function() {});
+        });
+      }
+    });
+  });
+
+}).call(this);
+:ET

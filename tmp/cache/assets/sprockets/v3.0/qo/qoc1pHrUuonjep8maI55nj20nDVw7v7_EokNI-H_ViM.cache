@@ -1,0 +1,14 @@
+I"0(function() {
+  $(document).ready(function() {
+    var value;
+    value = $('#bid').val();
+    return $(document).on('click', '#bidbutton', function() {
+      if (value >= $('#bid').val()) {
+        return console.log("submitted!");
+        return $(document).stop;
+      }
+    });
+  });
+
+}).call(this);
+:ET

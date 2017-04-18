@@ -1,0 +1,19 @@
+I"ÿ(function() {
+  $(document).ready(function() {
+    var value;
+    return value = $('#bid').val()(function() {
+      var helpie;
+      return helpie = value(function() {
+        return $(document).on('click', '#bidbutton', function() {
+          if (value >= $('#bid').val()) {
+            return $('#bid').val() === helpie(function() {
+              return alert("Za ma≈Ço!")(function() {});
+            });
+          }
+        });
+      });
+    });
+  });
+
+}).call(this);
+:ET

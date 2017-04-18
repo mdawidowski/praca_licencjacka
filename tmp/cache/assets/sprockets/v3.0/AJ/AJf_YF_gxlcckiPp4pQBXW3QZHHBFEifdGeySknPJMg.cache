@@ -1,0 +1,13 @@
+I"(function() {
+  $(document).ready(function() {
+    return $(document).on('click', '#bidbutton', function() {
+      var input;
+      input = $('#bid').val();
+      if (input < $('#bid').val()) {
+        return alert("Za mało!");
+      }
+    });
+  });
+
+}).call(this);
+:ET

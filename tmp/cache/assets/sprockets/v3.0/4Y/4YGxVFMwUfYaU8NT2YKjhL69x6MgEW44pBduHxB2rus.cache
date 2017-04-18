@@ -1,0 +1,18 @@
+I"n(function() {
+  $(document).ready(function() {
+    return jQuery(function() {
+      var input;
+      return input = $('#bid').val()(function() {
+        return alert("Chujnia z grzybnią");
+      });
+    });
+  });
+
+  $(document).change(function() {
+    if ($('#bid').val() >= input) {
+      return alert("Podano zbyt małą wartość!");
+    }
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,12 @@
+I"—(function() {
+  $(document).ready(function() {
+    var input;
+    return input = $('#bid').val();
+  });
+
+  $(document).on('click', '.bidbutton', function() {
+    return alert("Wcis≈Çy");
+  });
+
+}).call(this);
+:ET
