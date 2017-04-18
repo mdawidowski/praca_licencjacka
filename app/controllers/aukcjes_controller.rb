@@ -3,7 +3,7 @@ class AukcjesController < ApplicationController
 
   def index
     @kategorie = Kategorie.all
-    @aukcje = Aukcje.all
+    @aukcje = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
   end
 
   def new
@@ -55,6 +55,11 @@ class AukcjesController < ApplicationController
         format.json { render json: @aukcje.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def zakonczone
+    @aukcje = Aukcje.where("created_at >= ?", 'zakonczone', Time.now)
+    @aukcje.each {|aukcje| aukcje.zakonczone }
   end
 
     def aukcje_params
