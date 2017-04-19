@@ -2,7 +2,7 @@
 
 <%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
 <br><br>
-<p>Łączna ilość aukcji: <%= @aukcje.size %></p>
+<p>Łączna ilość aukcji: <%= @aukcjes.size %></p>
 
 
 <%= form_tag aukcjes_path, :method => 'get' do %>
@@ -19,8 +19,9 @@
     <th>Cena aktualna</th>
     <th>Akcje</th>
     <th>User ID</th>
+    <th>Zakończone?</th>
   </tr>
-  <% @aukcje.each do |aukcja| %>
+  <% @aukcjes.each do |aukcja| %>
   <% if !current_admin %>
   <% if current_user.id == aukcja.user_id %>
 
@@ -35,12 +36,13 @@
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>
     <td><%= aukcja.user_id %></td>
+    <td><%= aukcja.zakonczone %></td>
   </tr>
   <% end %>
   <% end %>
   <% end %>
   <% if current_admin %>
-  <% @aukcje.each do |aukcja| %>
+  <% @aukcjes.each do |aukcja| %>
   <tr>
     <td><%= aukcja.kategorie_id %></td>
     <td><%= aukcja.id %></td>

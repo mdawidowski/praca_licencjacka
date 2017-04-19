@@ -4,6 +4,7 @@ class AukcjesController < ApplicationController
   def index
     @kategorie = Kategorie.all
     @aukcje = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
+    @aukcjes = Aukcje.all
   end
 
   def new
