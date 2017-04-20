@@ -24,6 +24,8 @@
               <%= f.text_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
               <%= f.submit "Licytuj", class:'btn btn-primary', id: "bidbutton" %>
             <% end %>
+            <% else %>
+            <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
           <% end %>
         <% end %>
     </ol>
