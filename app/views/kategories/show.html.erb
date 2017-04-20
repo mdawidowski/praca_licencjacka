@@ -1,21 +1,27 @@
 <% content_for :title, " - Podgląd kategorii." %>
    <p> <h2><strong><%= @kategorie.nazwa_kategorii %></strong></h2>
 <div class="jumbotron">
-<div class="col-xs-12 col-sm-4 sidebar">
-  <% for kategorie in @kategorie.children %>
-    <ul class="list-group-item badge">
-      <%= link_to h(kategorie.nazwa_kategorii), kategorie %>
-    </ul>
-  <% end %>
-</div>
-<div class="col-xs-12 col-sm-8 main">
-Aukcje należące do kategorii:<br>
-<% @aukcje.each do |aukcja| %>
-  <% if aukcja.kategorie_id == @kategorie.id %>
-   <p style="background-color: #ffffff;">
-     <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %> <%= distance_of_time_in_words(Time.now, aukcja.created_at + 14.days) %> do końca</h4>
-   </p>
-  <% end %>
-<% end %>
-</div>
+  <table>
+    <tr>
+      <th class="col-xs-2">
+        <% for kategorie in @kategorie.children %>
+        <ul class="list-group-item badge">
+          <%= link_to h(kategorie.nazwa_kategorii), kategorie %>
+        </ul>
+        <br>
+        <% end %>
+      </th>
+      <th>
+        Aukcje należące do kategorii:<br>
+        <% @aukcje.each do |aukcja| %>
+        <% if aukcja.kategorie_id == @kategorie.id %>
+        <p style="background-color: #ffffff;">
+          <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %> <%= distance_of_time_in_words(Time.now, aukcja.created_at + 14.days) %> do końca</h4>
+        </p>
+        <% end %>
+        <% end %>
+      </th>
+    </tr>
+  </table>
+
 </div>
