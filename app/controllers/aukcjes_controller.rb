@@ -5,6 +5,7 @@ class AukcjesController < ApplicationController
     @kategorie = Kategorie.all
     @aukcje = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
     @aukcjes = Aukcje.all
+    @user = User.all
   end
 
   def new

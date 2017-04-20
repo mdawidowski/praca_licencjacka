@@ -3,25 +3,38 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-8 main">
-      <p><%= @aukcje.nazwa %></p>
-      <ul>
-        <p><%= image_tag @aukcje.image.url(:medium) %></p>
-      </ul>
-
+      <h2><%= @aukcje.nazwa %></h2>
+      <ol class="breadcrumb col-xs-12">
+        <p class=" col-xs-7"><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b></p>
+        <strong>Cena aktualna:</strong><p> <%= @aukcje.cena_aktualna %></p>
+        <strong>Najwyższa oferta:</strong><p>
+        <% if @aukcje.winner_id != nil %>
+          <%= form_for @user, :html => {:multipart => true} do |user| %>
+            <% if @aukcje.winner_id == user.id %></p>
+              <%= user.login %>
+            <% end %>
+          <% end %>
+        <% else %>
+          Brak ofert</p>
+        <% end %>
+        <%= form_for @aukcje, :html => {:multipart => true} do |f| %>
+          <% if current_user %>
+            <% if current_user.id != @aukcje.user_id %>
+              <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
+              <%= f.submit "Licytuj", class:'btn btn-primary', id: "bidbutton" %>
+            <% end %>
+          <% end %>
+        <% end %>
+    </ol>
   </div>
 </div>
 </div>
-<div class="jumbotron">
-  <strong>Cena aktualna:</strong><p> <%= @aukcje.cena_aktualna %></p>
-  <%= form_for @aukcje, :html => {:multipart => true} do |f| %>
-  <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
-    <%= f.submit "Licytuj", class:'btn btn-primary', id: "bidbutton" %>
-  <% end %>
-</div>
+<br>
+<h5>Opis aukcji</h5>
 <hr>
-<div class="jumbotron">
+<div class="container">
   <%= raw(@aukcje.opis) %>
   </div>
-
+<hr>
 Do końca pozostało:
 <%= distance_of_time_in_words(Time.now, @aukcje.created_at + 14.days) %>

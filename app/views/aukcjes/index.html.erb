@@ -19,6 +19,7 @@
     <th>Cena aktualna</th>
     <th>Akcje</th>
     <th>User ID</th>
+    <th>ID lidera</th>
     <th>Zakończone?</th>
   </tr>
   <% @aukcjes.each do |aukcja| %>
@@ -36,6 +37,7 @@
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>
     <td><%= aukcja.user_id %></td>
+    <td><%= aukcja.winner_id %></td>
     <td><%= aukcja.zakonczone %></td>
   </tr>
   <% end %>
@@ -54,6 +56,7 @@
       <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
     </td>
     <td><%= aukcja.user_id %></td>
+    <td><%= aukcja.zakonczone %></td>
   </tr>
   <% end %>
   <% end %>

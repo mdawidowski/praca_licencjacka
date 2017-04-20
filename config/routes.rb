@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   devise_for :admins do
   get '/admins/sign_out' => 'devise/sessions#destroy'
   end
-  devise_for :users do
-  get '/users/sign_out' => 'devise/sessions#destroy'
-  end
+  devise_for :users, :controllers => { registrations: 'registrations' }
   root 'home#index'
   get 'home/panel_administratora'
   get 'home/panel_uzytkownika'
@@ -14,6 +12,7 @@ Rails.application.routes.draw do
   get 'home/administratorzy'
   get "aukcjes/licytacje" => "aukcjes#licytacje"
   get 'search', to: 'search#search'
+
   resources :searches
   resources :aukcjes
   resources :kategories
