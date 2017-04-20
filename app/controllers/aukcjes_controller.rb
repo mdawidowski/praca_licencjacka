@@ -5,7 +5,7 @@ class AukcjesController < ApplicationController
     @kategorie = Kategorie.all
     @aukcje = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
     @aukcjes = Aukcje.all
-    @user = User.all
+    @users = User.all
   end
 
   def new
@@ -15,6 +15,7 @@ class AukcjesController < ApplicationController
 
   def show
     @kategorie = Kategorie.all
+    @users = User.all
     @aukcje = Aukcje.find(params[:id])
     respond_to do |format|
       format.html
@@ -65,7 +66,7 @@ class AukcjesController < ApplicationController
   end
 
     def aukcje_params
-        params.require(:aukcje).permit(:nazwa, :opis, :cena_startowa, :cena_minimalna, :cena_aktualna, :koszt_przesylki, :kategorie_id, :user_id, :image)
+        params.require(:aukcje).permit(:nazwa, :opis, :cena_startowa, :cena_minimalna, :cena_aktualna, :koszt_przesylki, :kategorie_id, :user_id, :image, :winner_id)
       end
 
       def set_aukcja
