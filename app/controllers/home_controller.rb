@@ -5,6 +5,9 @@ class HomeController < ApplicationController
     @user = User.all
     @admin = Admin.all
     @aukcje = Aukcje.offset(rand(Aukcje.count)).first
+    @aukcjes = Aukcje.offset(rand(Aukcje.count)).first
+    @aukcj = Aukcje.offset(rand(Aukcje.count)).first
+
   end
 
   def panel_administratora

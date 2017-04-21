@@ -4,9 +4,25 @@
   <div class="row">
       <div class="col-xs-12 col-sm-8 main">
         <p>Może Cię zainteresować:</p>
-        <a href="<%= aukcje_path(@aukcje) %>">
-          <%= @aukcje.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
-        </a>
+        <table>
+          <tr>
+            <th>
+              <a href="<%= aukcje_path(@aukcje) %>">
+                <%= @aukcje.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
+              </a>
+            </th>
+            <th>
+              <a href="<%= aukcje_path(@aukcjes) %>">
+                <%= @aukcjes.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcjes.image.url(:medium) %></b>
+              </a>
+            </th>
+            <th>
+              <a href="<%= aukcje_path(@aukcj) %>">
+                <%= @aukcj.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcj.image.url(:medium) %></b>
+              </a>
+            </th>
+          </tr>
+        </table>
         <br><br>
         <%= link_to "Wyszukiwanie zaawansowane", new_search_path, class:'btn btn-primary' %>
     </div>
