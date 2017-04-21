@@ -7,19 +7,26 @@
         <table>
           <tr>
             <th>
-              <a href="<%= aukcje_path(@aukcje) %>">
-                <%= @aukcje.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
-              </a>
-            </th>
-            <th>
+              <ol class="breadcrumb">
               <a href="<%= aukcje_path(@aukcjes) %>">
                 <%= @aukcjes.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcjes.image.url(:medium) %></b>
               </a>
+            </ol>
             </th>
             <th>
+              <ol class="breadcrumb">
+              <a href="<%= aukcje_path(@aukcje) %>">
+                <%= @aukcje.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
+              </a>
+            </ol>
+            </th>
+            <th>
+              <ol class="breadcrumb">
+
               <a href="<%= aukcje_path(@aukcj) %>">
                 <%= @aukcj.nazwa %><br><b class="img-thumbnail"><%= image_tag @aukcj.image.url(:medium) %></b>
               </a>
+            </ol>
             </th>
           </tr>
         </table>
