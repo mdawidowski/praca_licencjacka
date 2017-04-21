@@ -50,6 +50,7 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
+    chartkick (2.2.1)
     choice (0.2.0)
     chronic (0.10.2)
     ckeditor (4.2.2)
@@ -99,6 +100,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.5.5)
+    highcharts-rails (5.0.7)
+      railties (>= 3.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.8.0)
@@ -232,12 +235,14 @@ DEPENDENCIES
   bcrypt
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
+  chartkick
   ckeditor
   cloudinary
   coffee-rails (~> 4.2)
   devise (~> 4.2)
   elasticsearch-model
   elasticsearch-rails
+  highcharts-rails
   jbuilder (~> 2.5)
   jquery-rails (~> 4.2, >= 4.2.2)
   listen (~> 3.0.5)

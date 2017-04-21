@@ -120,6 +120,7 @@ Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzi
 
 Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem cloudinary.
 
+Udało się również zaimplementować zabezpieczenie reCaptcha, pozwalające na dopuszczenie do przesyłu danych wypełnionych tylko i wyłącznie przez prawdziwego użytkownika.
 
 \subsection{Założenia niezrealizowane}
 
@@ -138,13 +139,15 @@ stron WWW na różnego typu urządzeniach.
 
 \section{Pozostałe rozwiązania użyte przy realizacji projektu}
 
-CKEditor - Jest to wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej 
+CKEditor - jest to wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej 
 czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
 a także możliwe jest wstawienie listy, tabeli, odnośników, a także obrazów.
 
-Act as tree - Gem ten wykorzystany został w celu stworzenia drzewa kategorii, które ułatwia w sposób zdecydowany nawigację
+Act as tree - gem ten wykorzystany został w celu stworzenia drzewa kategorii, które ułatwia w sposób zdecydowany nawigację
 po stronie, a także sprawia, że dane na stronie są uporządkowane. Sama implementacja przebiega w środowisku
 technologii Ruby on Rails, więc nie wymaga bezpośredniej instalacji.
+
+reCaptcha - zabezpieczenie dzięki któremu możliwość wysyłania danych będą mieli jedynie sprawdzeni użytkonicy.
 
 % zakończenie
 \summary

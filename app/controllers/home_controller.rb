@@ -11,6 +11,12 @@ class HomeController < ApplicationController
     @kategorie = Kategorie.all
   end
 
+  def statystyki
+    @kategories = Kategorie.all
+    @aukcjes = Aukcje.all
+    @users = User.all
+  end
+
   def panel_uzytkownika
     @kategorie = Kategorie.all
   end

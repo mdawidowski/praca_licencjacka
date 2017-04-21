@@ -39,6 +39,8 @@ gem 'paperclip-cloudinary', '~> 1.0'
 gem 'whenever', require: false
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'bcrypt'
+gem 'chartkick'
+gem 'highcharts-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

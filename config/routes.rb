@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations', passwords: 'passwords' }
   root 'home#index'
   get 'home/panel_administratora'
+  get 'home/statystyki'
   get 'home/panel_uzytkownika'
   get 'home/uzytkownicy'
   get 'home/administratorzy'
