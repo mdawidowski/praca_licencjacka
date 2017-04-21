@@ -105,26 +105,25 @@ Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjn
 W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione przed nią
 założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzięki którym uda się 
 spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków 
-jest kluczowy do skutecznej implementacji aplikacji. Poniżej omówię wybrane przeze mnie narzędzia.
+jest kluczowy do skutecznej implementacji aplikacji. Poniżej omówię wybrane przeze mnie narzędzia oraz to co udało się, a także nie udało się zrealizować.
 
 \section{Realizacja projektu}
 
-Aplikacja Let's Bid It jest wersją beta portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu.
+Aplikacja Let's Bid It jest wersją beta portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu. Poniżej przedstawię funkcjonalności, które udało się wdrożyć, a także te, których nie udało się zaimplementować.
 
 \subsection{Założenia zrealizowane}
 
 Na dzień dzisiejszy udało się zrealizować przede wszystkim obsługę aukcji, to znaczy, każdy zalogowany użytkownik może stworzyć
-własną aukcję, licytować aukcje innych użytkowników, wyszukiwać aukcje, edytować je, lub usuwać. W celu lepszego wyszukiwania aukcji wdrożona została także kategoryzacja aukcji.
+własną aukcję, licytować aukcje innych użytkowników, wyszukiwać aukcje, edytować je, lub usuwać. W celu lepszego wyszukiwania aukcji wdrożona została także kategoryzacja aukcji przy pomocy gemu Act as tree.
 
 Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzięki któremu dodając aukcję, użytkownik może swobodnie manipulować opisem swojej aukcji.
 
 Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem cloudinary.
 
 
-
 \subsection{Założenia niezrealizowane}
 
-Najważniejszą rzeczą, której nie udało się zrealizować jest system mający na celu 
+Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie systemu mającego na celu symulacje płatności internetowych, a także zaawansowana wyszukiwarka opierająca się na silniku Elasticsearch.
 
 \section{Ruby on Rails}
 Do stworzenia projektu wykorzystana została technologia Ruby on Rails bazująca na języku Ruby.

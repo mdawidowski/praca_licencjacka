@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :admins do
   get '/admins/sign_out' => 'devise/sessions#destroy'
   end
-  devise_for :users, :controllers => { registrations: 'registrations' }
+  devise_for :users, :controllers => { registrations: 'registrations', passwords: 'passwords' }
   root 'home#index'
   get 'home/panel_administratora'
   get 'home/panel_uzytkownika'

@@ -37,6 +37,8 @@ gem 'elasticsearch-model'
 gem 'cloudinary' #zarządzanie grafiką
 gem 'paperclip-cloudinary', '~> 1.0'
 gem 'whenever', require: false
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'bcrypt'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
