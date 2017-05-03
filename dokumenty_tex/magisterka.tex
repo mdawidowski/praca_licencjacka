@@ -34,18 +34,21 @@
 
 % streszczenie
 \begin{abstract}
-  W pracy przedstawiono wersję beta aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji.
+  W pracy przedstawiono rozwojową wersję aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji.
   
-  W aplikacji zaimplementowano kategoryzację aukcji, wyszukiwanie, a także tworzenie kategorii w hierarchii.
+  W aplikacji zaimplementowano ich kategoryzację, wyszukiwanie, a także tworzenie kategorii w hierarchii.
 
   Zaprojektwano widok strony głównej, który wyświetla losowe aukcje znajdujące się w portalu oraz panele administracyjny i użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia.
 
-  Do tworzenia aplikacji wykorzystano Ruby on Rails, a także Twitter Bootstrap do implementacji widoków. Użyto również gemu CKEditor pozwalający umieścić na stronie zaawansowany edytor tekstowy. Do stworzenia drzewa kategorii użyto gemu Acts as tree.
+  Do tworzenia aplikacji wykorzystano takie technologie jak Ruby on Rails, Twitter Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, jQuery Turbolinks, Chartkick, Acts as tree.
+
+\mbox{Projekt wdrożony został na platformie\, \\\texttt{heroku.com} i jest dostępny pod adresem:} \\\texttt{\url{https://ror-aukcja.herokuapp.com/}}.
+
 
 \end{abstract}
 
 % słowa kluczowe
-\keywords{Ruby on Rails, gem, heroku, auction, online shopping, bid}
+\keywords{ruby on rails, gem, heroku, auction, online shopping, bid}
 
 % tytuł i spis treści
 \maketitle
@@ -55,18 +58,16 @@
 
 Chęć stworzenia czegoś od podstaw oraz własne doświadczenie w korzystaniu z portali aukcyjnych sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby rozwinąć umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
 
+Mając więc gotowy pomysł na projekt pozostało mi jedynie wybrać odpowiednią technologię, która pomoże mi go zrealizować. W trakcie studiów poznałem kilka różnych języków programowania i frameworków, które sprawdziłyby się w tego typu projekcie. Po rozważeniu wszystkich za i przeciw, mój wybór padł na język Ruby, wspierany przez framework Rails, który udało mi się poznać już wcześniej. Największą zaletą wybranej przeze mnie technologi jest przede wszystkim fakt, iż Ruby on Rails posiada szeroką gamę dostępnych rozwiązań w postaci gemów, które w dużym stopniu ułatwiają pracę nad projektem. Kolejną kwestią jest fakt, że technologia  ta wykorzystuje architekturę MVC, co znacznie ułatwia pracę. Poza tym Ruby on Rails świetnie współpracuje z platformami takimi jak Heroku, czy DigitalOcean. 
 
-\chapter{Wstęp}
+Aplikacja Let's Bid It jest wersją rozwojową portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu.
 
-W dzisiejszych czasach bardzo wiele osób korzysta z portali aukcyjnych. 
-Dzieję się tak przede wszystkim dlatego, że pomagają one zdecydowanie
-zaoszczędzić czas, a także w dużej mierze pozwalają oszczędzić 
-pieniądze, dzięki konkurencyjnym cenom oraz szerokiemu wahlarzowi dostępnego
-towaru. Powstało już wiele stron, które pozwalają nam dokonywać zakupów w 
-domowym zaciszu, jednak każda z nich posiada pewne cechy, które odróżniają
-je od konkurencji. Tworząc tą aplikację miałem na celu wyłapać jak najwięcej 
-tych cech i umieścić je w moim projekcie, który będzie je łączył.
+Spośród rzeczy, które udało się zrealizować, mogę wyróżnić przede wszystkim obsługę aukcji. Ponadto zaimplementowano ich kategoryzację przy pomocy gemu Act as tree. Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzięki któremu dodając aukcję, użytkownik może swobodnie manipulować jej opisem. Dodatkowo zaimplementowałem zabezpieczenie reCaptcha przy logowaniu i rejestracji, a także statystyki strony, które dostępne są dla administratorów. Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem cloudinary.
 
+Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie systemu mającego na celu symulacje płatności internetowych, a także zaawansowana wyszukiwarka opierająca się na silniku Elasticsearch.
+
+
+\chapter{Let's Bid It w praktyce}
 
 \section{Porównanie z dostępnymi rozwiązaniami}
 
@@ -79,15 +80,17 @@ Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It.
 \subsection{OLX}  
 
 Serwis ten jest jednym z najpopularniejszych portali ogłoszeniowych na świecie. Użytkownicy
-mogą udostępniać lokalne ogłoszenia dotyczące sprzedaży oraz usług. Główną różnicą pomiędzy OLX, a Let's Bid It jest fakt,
-że wymieniony wyżej portal nie udostępnia funkcji licytacji towaru, dlatego też nie ma możliwości, by osoba wystawiająca ogłoszenie mogła sprzedać swój towar drożej niż w ogłoszeniu. Ponadto stworzony przeze mnie portal aukcyjny dzięki zaawansowanemu edytorowi tekstowemu pozwala stworzyć użytkownikom dużo bardziej oryginalne opisy, co nie jest możliwe przy korzystaniu z OLX.
+mogą udostępniać lokalne ogłoszenia dotyczące sprzedaży oraz usług.
+
+Główną różnicą pomiędzy OLX, a Let's Bid It jest fakt,
+że wymieniony wyżej portal nie udostępnia funkcji licytacji towaru, dlatego też nie ma możliwości, by osoba wystawiająca ogłoszenie mogła sprzedać swój towar drożej niż w ogłoszeniu. Ponadto stworzony przeze mnie portal aukcyjny, dzięki zaawansowanemu edytorowi tekstowemu pozwala stworzyć użytkownikom dużo bardziej oryginalne opisy, co nie jest możliwe przy korzystaniu z OLX.
 
 \section{Możliwości zastosowania praktycznego}
-Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjny i jest to główna możliwość zastosowania napisanej przeze mnie aplikacji w praktyce. Poza tym portal ten użyty może zostać również do innych celów.
+Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjny i jest to główna możliwość zastosowania napisanej przeze mnie aplikacji w praktyce. Poza tym portal ten użyty może zostać również do innych celów:
 
 \begin{itemize}
 
-\item Portal ogłoszeniowy - jest jedna z możliwości wykorzystania Let's Bid It w praktyce. Potrzeby takiej aplikacji zaspokajają praktycznie wszystkie wdrożone w mojej aplikacji funkcjonalności, takie jak kategoryzacja, a także prosta obsługa dodanych ogłoszeń. Ponadto użytkownik takiego  serwisu będzie miał do dyspozycji bardzo prosty interfejs ułatwiający poruszanie się po stronie, a także zaawansowany edytor, który pozwoli na to, by jego ogłoszenie wyglądało wyjątkowo.
+\item Portal ogłoszeniowy - jest jedną z możliwości wykorzystania Let's Bid It. Potrzeby takiej aplikacji zaspokajają praktycznie wszystkie wdrożone w mojej aplikacji funkcjonalności, takie jak kategoryzacja, a także prosta obsługa dodanych ogłoszeń. Ponadto użytkownik takiego  serwisu będzie miał do dyspozycji bardzo prosty interfejs ułatwiający poruszanie się po stronie, a także zaawansowany edytor, który pozwoli na to, by jego ogłoszenie wyglądało wyjątkowo.
 
 \item Sklep internetowy - jest to kolejna możliwa opcją zastosowania mojej aplikacji w praktyce, co można osiągnąć przy niedużym nakładzie pracy. Tak jak przy portalu ogłoszeniowym, dostępne są przede wszystkim kategoryzacja, a także obsługa dodawanych aukcji oraz zaawansowane narzędzia do zarządzania wyglądem aukcji.
 
@@ -104,9 +107,25 @@ Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjn
 \source{Opracowanie własne}
 \end{figure}
 
-\section{Aktorzy i przypadki użycia}
+\newpage
 
-\section{Diagram klas}
+\section{Aktorzy i przypadki użycia}
+\begin{figure}[!tbh]
+\centering
+\includegraphics[width=.9\linewidth]{fig/ucdiagram}
+\caption{Diagram Przypadków Użycia.}
+\source{Opracowanie własne za pomocą programu Astah \cite{astah}.}
+\end{figure}
+
+\newpage
+
+\section{Diagram przepływu danych}
+\begin{figure}[!tbh]
+\centering
+\includegraphics[width=.9\linewidth]{fig/DFD}
+\caption{Diagram Przepływu Danych.}
+\source{Opracowanie własne za pomocą programu Astah \cite{astah}.}
+\end{figure}
 
 \chapter{Implementacja}
 W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione przed nią
@@ -116,22 +135,6 @@ jest kluczowy do skutecznej implementacji aplikacji. Poniżej omówię wybrane p
 
 \section{Realizacja projektu}
 
-Aplikacja Let's Bid It jest wersją beta portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu. Poniżej przedstawię funkcjonalności, które udało się wdrożyć, a także te, których nie udało się zaimplementować.
-
-\subsection{Założenia zrealizowane}
-
-Na dzień dzisiejszy udało się zrealizować przede wszystkim obsługę aukcji, to znaczy, każdy zalogowany użytkownik może stworzyć
-własną aukcję, licytować aukcje innych użytkowników, wyszukiwać aukcje, edytować je, lub usuwać. W celu lepszego wyszukiwania aukcji wdrożona została także kategoryzacja aukcji przy pomocy gemu Act as tree.
-
-Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzięki któremu dodając aukcję, użytkownik może swobodnie manipulować opisem swojej aukcji.
-
-Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem cloudinary.
-
-Udało się również zaimplementować zabezpieczenie reCaptcha, pozwalające na dopuszczenie do przesyłu danych wypełnionych tylko i wyłącznie przez prawdziwego użytkownika.
-
-\subsection{Założenia niezrealizowane}
-
-Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie systemu mającego na celu symulacje płatności internetowych, a także zaawansowana wyszukiwarka opierająca się na silniku Elasticsearch.
 
 \section{Ruby on Rails}
 Do stworzenia projektu wykorzystana została technologia Ruby on Rails bazująca na języku Ruby.

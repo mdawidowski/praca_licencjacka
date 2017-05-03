@@ -1,5 +1,5 @@
 \BOOKMARK [0][-]{chapter*.4}{Wprowadzenie}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Wstęp}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Let's\040Bid\040It\040w\040praktyce}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Porównanie z dostępnymi rozwiązaniami}{chapter.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.1}{Allegro}{section.1.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.2}{OLX}{section.1.1}% 5
@@ -7,18 +7,16 @@
 \BOOKMARK [0][-]{chapter.2}{Projekt\040i\040analiza}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Diagram\040ERD}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Aktorzy i przypadki użycia}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Diagram\040klas}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Diagram przepływu danych}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{Implementacja}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Realizacja\040projektu}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Założenia zrealizowane}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{Założenia niezrealizowane}{section.3.1}% 14
-\BOOKMARK [1][-]{section.3.2}{Ruby\040on\040Rails}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Twitter\040Bootstrap}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{Pozostałe rozwiązania użyte przy realizacji projektu}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter*.5}{Zakończenie}{}% 18
-\BOOKMARK [0][-]{appendix.A}{Tytuł załącznika jeden}{}% 19
-\BOOKMARK [0][-]{appendix.B}{Tytuł załącznika dwa}{}% 20
-\BOOKMARK [0][-]{appendix*.6}{Bibliografia}{}% 21
-\BOOKMARK [0][-]{appendix*.7}{Spis\040tabel}{}% 22
-\BOOKMARK [0][-]{appendix*.8}{Spis rysunków}{}% 23
-\BOOKMARK [0][-]{appendix*.9}{Oświadczenie}{}% 24
+\BOOKMARK [1][-]{section.3.2}{Ruby\040on\040Rails}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Twitter\040Bootstrap}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Pozostałe rozwiązania użyte przy realizacji projektu}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter*.5}{Zakończenie}{}% 16
+\BOOKMARK [0][-]{appendix.A}{Tytuł załącznika jeden}{}% 17
+\BOOKMARK [0][-]{appendix.B}{Tytuł załącznika dwa}{}% 18
+\BOOKMARK [0][-]{appendix*.6}{Bibliografia}{}% 19
+\BOOKMARK [0][-]{appendix*.7}{Spis\040tabel}{}% 20
+\BOOKMARK [0][-]{appendix*.8}{Spis rysunków}{}% 21
+\BOOKMARK [0][-]{appendix*.9}{Oświadczenie}{}% 22

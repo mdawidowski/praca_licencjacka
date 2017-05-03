@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  21 APR 2017 23:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  3 MAY 2017 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,6 +790,18 @@ LaTeX Font Warning: Font shape `EU1/MinionPro(0)/bx/n' undefined
 (Font)              using `EU1/MinionPro(0)/m/n' instead on input line 36.
 
 
+Overfull \hbox (16.96321pt too wide) in paragraph at lines 37--38
+\EU1/MinionPro(0)/m/n/12 W pracy przedstawiono rozwojową wersję aplikacji webow
+ej „Let’s Bid It” do tworzenia
+ []
+
+
+Overfull \hbox (18.08803pt too wide) in paragraph at lines 39--40
+[]\EU1/MinionPro(0)/m/n/12 W aplikacji zaimplementowano ich kategoryzację, wysz
+ukiwanie, a także tworzenie
+ []
+
+
 Overfull \hbox (1.92493pt too wide) in paragraph at lines 41--42
 []\EU1/MinionPro(0)/m/n/12 Zaprojektwano widok strony głównej, który wyświetla 
 losowe aukcje znajdujące
@@ -801,10 +813,38 @@ Overfull \hbox (6.66016pt too wide) in paragraph at lines 41--42
  wyświetlana jest w kolejności
  []
 
+
+Overfull \hbox (7.02092pt too wide) in paragraph at lines 43--44
+[]\EU1/MinionPro(0)/m/n/12 Do tworzenia aplikacji wykorzystano takie technologi
+e jak Ruby on Rails, Twitter
+ []
+
+
+Overfull \hbox (13.43208pt too wide) in paragraph at lines 43--44
+\EU1/MinionPro(0)/m/n/12 Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, 
+jQuery Turbolinks, Chartkick,
+ []
+
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 45.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 51.
+(Font)              <12> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+
+Overfull \hbox (12.8209pt too wide) in paragraph at lines 45--46
+[][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 54.
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -813,64 +853,88 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 ] [2
 
-] [3] (./magisterka.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
- [4
-
-
-])
+] [3] (./magisterka.toc)
 \tf@toc=\write4
 \openout4 = `magisterka.toc'.
 
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 54.
+ [4
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5] [6
 
 ]
+Overfull \hbox (4.24895pt too wide) in paragraph at lines 61--62
+[]\EU1/MinionPro(0)/bx/n/12 Mając więc gotowy pomysł na projekt pozostało mi je
+dynie wybrać odpowiednią
+ []
+
+
+Overfull \hbox (12.60811pt too wide) in paragraph at lines 65--66
+\EU1/MinionPro(0)/bx/n/12 CKEditor, dzięki któremu dodając aukcję, użytkownik m
+oże swobodnie manipulować
+ []
+
+
+Overfull \hbox (18.83208pt too wide) in paragraph at lines 65--66
+\EU1/MinionPro(0)/bx/n/12 jej opisem. Dodatkowo zaimplementowałem zabezpieczeni
+e reCaptcha przy logowaniu
+ []
+
+
+Overfull \hbox (7.01616pt too wide) in paragraph at lines 65--66
+\EU1/MinionPro(0)/bx/n/12 i rejestracji, a także statystyki strony, które dostę
+pne są dla administratorów. Ważnym
+ []
+
+
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+ [5
+
+]
+Overfull \hbox (34.95612pt too wide) in paragraph at lines 67--68
+\EU1/MinionPro(0)/bx/n/12 mającego na celu symulacje płatności internetowych, a
+ także zaawansowana wyszukiwarka
+ []
+
+
+LaTeX Font Warning: Font shape `EU1/MinionPro(0)/m/it' undefined
+(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 70.
+
+[6]
 Rozdział 1.
 
-Overfull \hbox (2.18008pt too wide) in paragraph at lines 81--84
+Overfull \hbox (2.18008pt too wide) in paragraph at lines 82--84
 \EU1/MinionPro(0)/bx/n/12 Użytkownicy mogą udostępniać lokalne ogłoszenia dotyc
-zące sprzedaży oraz usług.
+zące sprzedaży oraz usług. 
  []
 
 
-Overfull \hbox (5.25214pt too wide) in paragraph at lines 81--84
-\EU1/MinionPro(0)/bx/n/12 Ponadto stworzony przeze mnie portal aukcyjny dzięki 
-zaawansowanemu edytorowi
+Overfull \hbox (7.11214pt too wide) in paragraph at lines 85--87
+\EU1/MinionPro(0)/bx/n/12 Ponadto stworzony przeze mnie portal aukcyjny, dzięki
+ zaawansowanemu edytorowi
  []
 
-[7
+
+Underfull \vbox (badness 6220) has occurred while \output is active []
+
+ [7
 
 ]
-Overfull \hbox (7.86276pt too wide) in paragraph at lines 90--91
-\EU1/MinionPro(0)/bx/n/12 praktyce. Potrzeby takiej aplikacji zaspokajają prakt
-ycznie wszystkie wdrożone
+Overfull \hbox (4.65878pt too wide) in paragraph at lines 93--94
+\EU1/MinionPro(0)/bx/n/12 także zaawansowany edytor, który pozwoli na to, by je
+go ogłoszenie wyglądało
  []
 
 
-Overfull \hbox (3.45883pt too wide) in paragraph at lines 92--93
+Overfull \hbox (3.45883pt too wide) in paragraph at lines 95--96
 []\EU1/MinionPro(0)/bx/n/12 Sklep internetowy - jest to kolejna możliwa opcją z
 astosowania mojej aplikacji
  []
 
 
-Overfull \hbox (12.01878pt too wide) in paragraph at lines 92--93
+Overfull \hbox (12.01878pt too wide) in paragraph at lines 95--96
 \EU1/MinionPro(0)/bx/n/12 także obsługa dodawanych aukcji oraz zaawansowane nar
 zędzia do zarządzania
  []
-
-
-LaTeX Font Warning: Font shape `EU1/MinionPro(0)/m/it' undefined
-(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 96.
 
 [8]
 Rozdział 2.
@@ -878,78 +942,64 @@ File: erd.png Graphic file (type QTm)
 <use  "erd.png" > [9
 
 ]
+File: fig/ucdiagram.jpg Graphic file (type QTm)
+ <use  "fig/ucdiagram.jpg" >
+
+LaTeX Warning: Citation `astah' on page 10 undefined on input line 117.
+
+[10]
+File: fig/DFD.jpg Graphic file (type QTm)
+ <use  "fig/DFD.jpg" >
+
+LaTeX Warning: Citation `astah' on page 11 undefined on input line 127.
+
+[11]
 Rozdział 3.
 
-Overfull \hbox (2.8681pt too wide) in paragraph at lines 112--116
-\EU1/MinionPro(0)/bx/n/12 przed nią założenia, potrzebne są odpowiednio dobrane
+Overfull \hbox (2.8681pt too wide) in paragraph at lines 131--135
+\EU1/MinionPro(0)/m/it/12 przed nią założenia, potrzebne są odpowiednio dobrane
  technologie oraz narzędzia,
  []
 
 
-Overfull \hbox (8.90811pt too wide) in paragraph at lines 112--116
-\EU1/MinionPro(0)/bx/n/12 dzięki którym uda się spełnić postawione przed nią wy
+Overfull \hbox (8.90811pt too wide) in paragraph at lines 131--135
+\EU1/MinionPro(0)/m/it/12 dzięki którym uda się spełnić postawione przed nią wy
 magania. Dobór odpowiedniej
  []
 
 
-Overfull \hbox (15.73212pt too wide) in paragraph at lines 112--116
-\EU1/MinionPro(0)/bx/n/12 technologii, a także frameworków jest kluczowy do sku
+Overfull \hbox (15.73212pt too wide) in paragraph at lines 131--135
+\EU1/MinionPro(0)/m/it/12 technologii, a także frameworków jest kluczowy do sku
 tecznej implementacji aplikacji.
  []
 
 
-Overfull \hbox (8.3721pt too wide) in paragraph at lines 119--120
-\EU1/MinionPro(0)/bx/n/12 jeszcze wszystkich funkcjonalności, które pozwoliłyby
- w pełni wykorzystać potencjał
- []
-
-
-Overfull \hbox (16.03125pt too wide) in paragraph at lines 128--129
-\EU1/MinionPro(0)/bx/n/12 W związku z tym, że aplikacja znajduje się na platfor
-mie Heroku, głównym problemem
- []
-
-
-Overfull \hbox (17.4721pt too wide) in paragraph at lines 128--129
-\EU1/MinionPro(0)/bx/n/12 było przetrzymywanie plików graficznych, które na Her
-oku usuwane są automatycznie.
- []
-
-[10
-
-]
-Overfull \hbox (9.5641pt too wide) in paragraph at lines 130--131
-\EU1/MinionPro(0)/bx/n/12 dopuszczenie do przesyłu danych wypełnionych tylko i 
-wyłącznie przez prawdziwego
- []
-
-
-Overfull \hbox (17.28413pt too wide) in paragraph at lines 134--135
-\EU1/MinionPro(0)/bx/n/12 Najważniejszą rzeczą, której nie udało się zrealizowa
-ć jest wdrożenie systemu mającego
- []
-
-
-Overfull \hbox (14.0041pt too wide) in paragraph at lines 142--146
-\EU1/MinionPro(0)/bx/n/12 Widoki utworzone zostały przy pomocy frameworka Twitt
+Overfull \hbox (14.0041pt too wide) in paragraph at lines 145--149
+\EU1/MinionPro(0)/m/it/12 Widoki utworzone zostały przy pomocy frameworka Twitt
 er Bootstrap, który pozwala
  []
 
 
-Overfull \hbox (39.03215pt too wide) in paragraph at lines 149--152
-\EU1/MinionPro(0)/bx/n/12 CKEditor - jest to wizualny edytor tekstowy języka HT
+Overfull \hbox (39.03215pt too wide) in paragraph at lines 152--155
+\EU1/MinionPro(0)/m/it/12 CKEditor - jest to wizualny edytor tekstowy języka HT
 ML, który umożliwia użytkownikowi
  []
 
-[11] [12] [13
+
+Underfull \vbox (badness 2856) has occurred while \output is active []
+
+ [12
+
+]
+[13] [14
 
 ]
 Dodatek A.
-[14
+[15
 
 ]
 Dodatek B.
-(./magisterka.bbl [15
+(./magisterka.bbl [16
 
 ]
 Underfull \hbox (badness 3240) in paragraph at lines 15--18
@@ -957,53 +1007,56 @@ Underfull \hbox (badness 3240) in paragraph at lines 15--18
 , and Jack Fu.
  []
 
-) [16
+) [17
 
 ] (./magisterka.lot)
 \tf@lot=\write5
 \openout5 = `magisterka.lot'.
 
- [17
+ [18
 
 ] (./magisterka.lof)
 \tf@lof=\write6
 \openout6 = `magisterka.lof'.
 
- [18
+ [19
 
 ]
-Overfull \hbox (17.82008pt too wide) in paragraph at lines 182--182
+Overfull \hbox (17.82008pt too wide) in paragraph at lines 185--185
 \EU1/MinionPro(0)/m/it/12 Ja, niżej podpisany(a) oświadczam, iż przedłożona pra
 ca dyplomowa została wykonana
  []
 
 
-Overfull \hbox (37.94812pt too wide) in paragraph at lines 182--182
+Overfull \hbox (37.94812pt too wide) in paragraph at lines 185--185
 \EU1/MinionPro(0)/m/it/12 przeze mnie samodzielnie, nie narusza praw autorskich
 , interesów prawnych i materialnych
  []
 
-[19
+[20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (./magisterka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 184.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 187.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 21445 strings out of 495579
- 385446 string characters out of 6187323
- 397682 words of memory out of 5000000
- 24542 multiletter control sequences out of 15000+600000
+ 21453 strings out of 495579
+ 385518 string characters out of 6187323
+ 397545 words of memory out of 5000000
+ 24545 multiletter control sequences out of 15000+600000
  7817 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,12n,61p,10389b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,61p,10389b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on magisterka.pdf (19 pages).
+Output written on magisterka.pdf (20 pages).
