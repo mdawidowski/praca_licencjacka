@@ -11,6 +11,7 @@ class AukcjesController < ApplicationController
   def new
     @aukcje = Aukcje.new
     @kategorie = Kategorie.all
+    @mojeaukcje = Mojeaukcje.all
   end
 
   def show

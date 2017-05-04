@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'mojeaukcje/index'
+
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :admins do
   get '/admins/sign_out' => 'devise/sessions#destroy'
@@ -11,7 +13,6 @@ Rails.application.routes.draw do
   get 'home/panel_uzytkownika'
   get 'home/uzytkownicy'
   get 'home/administratorzy'
-  get "aukcjes/licytacje" => "aukcjes#licytacje"
   get 'search', to: 'search#search'
 
   resources :searches
