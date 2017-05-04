@@ -6,6 +6,7 @@
       <h2><%= @aukcje.nazwa %></h2>
       <ol class="breadcrumb col-xs-12">
         <p class=" col-xs-7"><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b></p>
+        <% if !@aukcje.isogloszenie %>
         <strong>Cena aktualna:</strong><p> <%= @aukcje.cena_aktualna %></p>
         <strong>Najwyższa oferta:</strong><p>
         <% if @aukcje.winner_id != nil %>
@@ -28,12 +29,17 @@
             <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
           <% end %>
         <% end %>
+        <% end %>
     </ol>
   </div>
 </div>
 </div>
 <br>
-<h5>Opis aukcji</h5>
+<% if !@aukcje.isogloszenie %>
+  <h5>Opis aukcji</h5>
+<% else %>
+  <h5>Opis ogłoszenia</h5>
+<% end %>
 <hr>
 <div class="container">
   <%= raw(@aukcje.opis) %>

@@ -2,63 +2,66 @@
 
 <%= link_to "Nowa aukcja", new_aukcje_path, class:'btn btn-primary' %>
 <br><br>
-<p>Łączna ilość aukcji: <%= @aukcjes.size %></p>
-
+<p>Łączna ilość aukcji:
+    <%= @aukcjes.size %></p>
 
 <%= form_tag aukcjes_path, :method => 'get' do %>
-  <p>
+<p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
-  </p>
+</p>
 <% end %>
 <table class="table table-hover">
-  <tr>
-    <th>Pozycja</th>
-    <th>Kategoria</th>
-    <th>Nazwa</th>
-    <th>Cena aktualna</th>
-    <th>Akcje</th>
-    <th>User ID</th>
-    <th>ID lidera</th>
-    <th>Zakończone?</th>
-  </tr>
-  <% @aukcjes.each do |aukcja| %>
-  <% if !current_admin %>
-  <% if current_user.id == aukcja.user_id %>
+    <tr>
+        <th>Pozycja</th>
+        <th>Kategoria</th>
+        <th>Nazwa</th>
+        <th>Cena aktualna</th>
+        <th>Akcje</th>
+        <th>User ID</th>
+        <th>ID lidera</th>
+        <th>Ogłoszenie?</th>
+        <th>Zakończone?</th>
+    </tr>
+    <% @aukcjes.each do |aukcja| %>
+    <% if !current_admin %>
+    <% if current_user.id == aukcja.user_id %>
 
-  <tr>
-    <td><%= aukcja.id %></td>
-    <td><%= aukcja.kategorie_id %></td>
-    <td><%= aukcja.nazwa %></td>
-    <td><%= aukcja.cena_aktualna %></td>
-    <td>
-      <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
-      <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
-      <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
-    </td>
-    <td><%= aukcja.user_id %></td>
-    <td><%= aukcja.winner_id %></td>
-    <td><%= aukcja.zakonczone %></td>
-  </tr>
-  <% end %>
-  <% end %>
-  <% end %>
-  <% if current_admin %>
-  <% @aukcjes.each do |aukcja| %>
-  <tr>
-    <td><%= aukcja.kategorie_id %></td>
-    <td><%= aukcja.id %></td>
-    <td><%= aukcja.nazwa %></td>
-    <td><%= aukcja.cena_aktualna %></td>
-    <td>
-      <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
-      <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
-      <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
-    </td>
-    <td><%= aukcja.user_id %></td>
-    <td><%= aukcja.winner_id %></td>
-    <td><%= aukcja.zakonczone %></td>
-  </tr>
-  <% end %>
-  <% end %>
+    <tr>
+        <td><%= aukcja.id %></td>
+        <td><%= aukcja.kategorie_id %></td>
+        <td><%= aukcja.nazwa %></td>
+        <td><%= aukcja.cena_aktualna %></td>
+        <td>
+            <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
+            <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+            <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
+        </td>
+        <td><%= aukcja.user_id %></td>
+        <td><%= aukcja.winner_id %></td>
+        <td><%= aukcja.isogloszenie %></td>
+        <td><%= aukcja.zakonczone %></td>
+    </tr>
+    <% end %>
+    <% end %>
+    <% end %>
+    <% if current_admin %>
+    <% @aukcjes.each do |aukcja| %>
+    <tr>
+        <td><%= aukcja.kategorie_id %></td>
+        <td><%= aukcja.id %></td>
+        <td><%= aukcja.nazwa %></td>
+        <td><%= aukcja.cena_aktualna %></td>
+        <td>
+            <%= link_to "Pokaż", aukcje_path(aukcja), class:'btn btn-success' %>
+            <%= link_to "Edytuj", edit_aukcje_path(aukcja), class:'btn btn-primary' %>
+            <%= link_to "Usuń", aukcja, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:'btn btn-danger' %>
+        </td>
+        <td><%= aukcja.user_id %></td>
+        <td><%= aukcja.winner_id %></td>
+        <td><%= aukcja.isogloszenie %></td>
+        <td><%= aukcja.zakonczone %></td>
+    </tr>
+    <% end %>
+    <% end %>
 </table>

@@ -1,77 +1,102 @@
 <%= form_for @aukcje, :html => {:multipart => true} do |f| %>
-  <% if @aukcje.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(aukcje.errors.count, "error") %> prohibited this aukcje from being saved:</h2>
+<% if @aukcje.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(aukcje.errors.count, "error") %>
+        prohibited this aukcje from being saved:</h2>
 
-      <ul>
-      <% aukcje.errors.full_messages.each do |message| %>
+    <ul>
+        <% aukcje.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %><br />
+        <% end %>
+    </ul>
+</div>
+<% end %><br/>
 <div class="jumbotron">
-          <% if current_user %>
-            <label class="control-label"><h5>ID użytkownika</h5></label>
-            <%= f.text_field :user_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
-          <% else %>
-           <label class="control-label"><h5>ID użytkownika (administrator)</h5></label>
-           <%= f.text_field :user_id, :value => current_admin.id ,:readonly => true, class:"form-control" %><br>
-          <% end %>
-          <div class="control-group">
-          <label class="control-label"><h5>Kategoria</h5></label>
-            <div class="controls">
-              <%= f.collection_select :kategorie_id, Kategorie.all, :id, :nazwa_kategorii, {prompt: "Wybierz", id:"kategorie_select"}, {class:"form-control"} %>
-            </div><br>
-          </div>
+    <% if current_user %>
+    <label class="control-label">
+        <h5>ID użytkownika</h5>
+    </label>
+    <%= f.text_field :user_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
+<% else %>
+    <label class="control-label">
+        <h5>ID użytkownika (administrator)</h5>
+    </label>
+    <%= f.text_field :user_id, :value => current_admin.id ,:readonly => true, class:"form-control" %><br>
+    <% end %>
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Kategoria</h5>
+        </label>
+        <div class="controls">
+            <%= f.collection_select :kategorie_id, Kategorie.all, :id, :nazwa_kategorii, {prompt: "Wybierz", id:"kategorie_select"}, {class:"form-control"} %>
+        </div><br>
+    </div>
 
-          <div class="control-group">
-          <label class="control-label"><h5>Nazwa</h5></label>
-            <div class="controls">
-              <%= f.text_area :nazwa, class: "form-control"%>
-            </div><br>
-          </div>
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Nazwa</h5>
+        </label>
+        <div class="controls">
+            <%= f.text_area :nazwa, class: "form-control"%>
+        </div><br>
+    </div>
 
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Opis</h5>
+        </label>
+        <div class="controls">
+            <%= f.text_area :opis, class: "ckeditor" %>
+        </div><br>
+    </div>
 
-          <div class="control-group">
-              <label class="control-label"><h5>Opis</h5></label>
-                <div class="controls">
-                  <%= f.text_area :opis, class: "ckeditor" %>
-              </div><br>
-          </div>
-
-          <div class="control-group">
-            <label class="control-label"><h5>Cena startowa</h5></label>
-            <div class="controls">
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Cena startowa</h5>
+        </label>
+        <div class="controls">
             <%= f.text_area :cena_aktualna, class: "form-control"%>
-            </div>
-          </div><br>
+        </div>
+    </div><br>
 
-          <div class="control-group">
-            <label class="control-label"><h5>Cena minimalna</h5></label>
-            <div class="controls">
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Cena minimalna</h5>
+        </label>
+        <div class="controls">
             <%= f.text_area :cena_minimalna, class: "form-control", id: "value" %>
-            </div>
-          </div><br>
+        </div>
+    </div><br>
 
-          <div class="control-group">
-            <label class="control-label"><h5>Koszt przesyłki</h5></label>
-            <div class="controls">
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Koszt przesyłki</h5>
+        </label>
+        <div class="controls">
             <%= f.text_area :koszt_przesylki, class: "form-control"%>
-            </div>
-          </div><br>
+        </div>
+    </div><br>
 
-          <div class="form-group">
-            <%= f.label :image, "Obraz" %>
-            <%= f.file_field :image, class: "form-control" %>
-          </div>
+    <div class="control-group">
+        <label class="control-label">
+            <h5>Publikować jako ogłoszenie?</h5>
+        </label>
+        <div class="controls">
+            <%= f.select :isogloszenie, [['Nie', false], ['Tak', true]],  {}, class: "form-control" %>
+        </div>
+    </div><br>
+
+    <div class="form-group">
+        <%= f.label :image, "Obraz" %>
+        <%= f.file_field :image, class: "form-control" %>
+    </div>
 
 </div>
 
-  <div class="jumbotron">
-            <div class="controls">
-            <%= f.submit "Dodaj", class:'btn btn-primary' %>
-            </div>
-          </div>
+<div class="jumbotron">
+    <div class="controls">
+        <%= f.submit "Dodaj", class:'btn btn-primary' %>
+    </div>
+</div>
 
 <% end %>

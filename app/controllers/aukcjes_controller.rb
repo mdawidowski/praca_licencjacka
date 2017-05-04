@@ -66,7 +66,7 @@ class AukcjesController < ApplicationController
   end
 
     def aukcje_params
-        params.require(:aukcje).permit(:nazwa, :opis, :cena_startowa, :cena_minimalna, :cena_aktualna, :koszt_przesylki, :kategorie_id, :user_id, :image, :winner_id)
+        params.require(:aukcje).permit(:nazwa, :opis, :cena_startowa, :cena_minimalna, :cena_aktualna, :koszt_przesylki, :kategorie_id, :user_id, :image, :winner_id, :isogloszenie)
       end
 
       def set_aukcja
