@@ -18,6 +18,7 @@ class AukcjesController < ApplicationController
     @kategorie = Kategorie.all
     @users = User.all
     @obserwowane = Obserwowane.new
+    @obserwowanes = Obserwowane.all
     @aukcje = Aukcje.find(params[:id])
     respond_to do |format|
       format.html

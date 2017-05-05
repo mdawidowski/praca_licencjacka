@@ -1,17 +1,18 @@
 <h2>Aktualnie obserwujesz:</h2>
 <table class="table table-hover">
-  <tr>
-    <th>Numer aukcji</th>
-    <th>Nazwa aukcji</th>
-    <th>Cena aktualna</th>
-    <th>Akcje</th>
-  </tr>
-  <% @obserwowane.each do |obserwowane| %>
-  <tr>
-    <td><%= obserwowane.aukcje_id %></td>
-    <td></td>
-    <td></td>
-    <td><%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %></td>
-  </tr>
-  <% end %>
+    <tr>
+        <th>Numer aukcji</th>
+        <th>Nazwa aukcji</th>
+        <th>Cena aktualna</th>
+        <th>Akcje</th>
+    </tr>
+    <% @obserwowane.each do |obserwowane| %>
+    <tr>
+        <td><%= obserwowane.aukcje_id %></td>
+        <td></td>
+        <td></td>
+        <td><%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %></td>
+    </tr>
+    <% end %>
 </table>
+<%= link_to "Wróć", :back, class: "btn btn-success" %>

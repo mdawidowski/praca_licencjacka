@@ -8,10 +8,24 @@
                 <p class=" col-xs-7">
                     <b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
                 </p>
+                <% if @obserwowanes.first.nil? %>
                 <%= form_for Obserwowane.new do |o| %>
                 <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
                 <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
-                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br /><br />
+                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br/><br/>
+                <% end %>
+            <% else %>
+                <% @obserwowanes.each do |obserwowane| %>
+                <% if current_user.id == obserwowane.userid %>
+                <%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %><br/><br/>
+            <% else %>
+                <%= form_for Obserwowane.new do |o| %>
+                <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
+                <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
+                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br/><br/>
+                <% end %>
+                <% end %>
+                <% end %>
                 <% end %>
                 <% if !@aukcje.isogloszenie %>
                 <strong>Cena aktualna:</strong>
