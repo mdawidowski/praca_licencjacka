@@ -1,0 +1,22 @@
+I"‚(function() {
+  $(document).ready(function() {
+    var value;
+    value = $('#bid').val();
+    return $(document).on('click', '#bidbutton', function() {
+      if (value >= $('#bid').val()) {
+        alert("Za ma≈Ço!");
+        return false;
+      }
+    });
+  });
+
+  jQuery(function() {
+    return $(".button_submit").live("click", function(e) {
+      e.preventDefault();
+      $("#form1").trigger("submit");
+      return $("#form2").trigger("submit");
+    });
+  });
+
+}).call(this);
+:ET

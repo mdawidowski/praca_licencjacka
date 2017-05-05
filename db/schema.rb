@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504124332) do
+ActiveRecord::Schema.define(version: 20170505195534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,13 @@ ActiveRecord::Schema.define(version: 20170504124332) do
     t.index ["aukcje_id"], name: "index_mojeaukcjes_on_aukcje_id", using: :btree
   end
 
+  create_table "obserwowanes", force: :cascade do |t|
+    t.integer  "aukcje_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["aukcje_id"], name: "index_obserwowanes_on_aukcje_id", using: :btree
+  end
+
   create_table "searches", force: :cascade do |t|
     t.string   "klucz"
     t.string   "kategoria"
@@ -112,4 +119,5 @@ ActiveRecord::Schema.define(version: 20170504124332) do
   add_foreign_key "aukcjes", "kategories", column: "kategorie_id"
   add_foreign_key "aukcjes", "users"
   add_foreign_key "mojeaukcjes", "aukcjes"
+  add_foreign_key "obserwowanes", "aukcjes"
 end

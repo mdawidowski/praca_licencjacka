@@ -5,9 +5,11 @@
     <th>Nazwa aukcji</th>
     <th>Cena aktualna</th>
   </tr>
+  <% @mojeaukcje.each do |mojeaukcje| %>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><%= mojeaukcje.id %></td>
+    <td><%= mojeaukcje.aukcje_id %></td>
+    <td><%= mojeaukcje.ids %></td>
   </tr>
+  <% end %>
 </table>

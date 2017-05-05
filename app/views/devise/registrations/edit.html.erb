@@ -7,7 +7,7 @@
 
         <div class="field">
             <%= f.label :email %><br/>
-            <%= f.email_field :email, autofocus: true %><br /><br />
+            <%= f.email_field :email, autofocus: true %><br/><br/>
         </div>
 
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -17,7 +17,7 @@
 
         <div class="field">
             <%= f.label :login %><br/>
-            <%= f.text_field :login %><br /><br />
+            <%= f.text_field :login %><br/><br/>
         </div>
 
         <div class="field">
@@ -26,28 +26,28 @@
             <% if @minimum_password_length %>
             <em>minimum
                 <%= @minimum_password_length %>
-                znaków)</em><br />
-                <%= f.password_field :password, autocomplete: "off" %><br /><br />
+                znaków)</em><br/>
+            <%= f.password_field :password, autocomplete: "off" %><br/><br/>
             <% end %>
         </div>
 
         <div class="field">
             <%= f.label :potwierdź_hasło %><br/>
-            <%= f.password_field :password_confirmation, autocomplete: "off" %><br /><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off" %><br/><br/>
         </div>
 
         <div class="field">
             <%= f.label :aktualne_hasło %>
             <i>(aby dokonać zmian, potrzebne jest Twoje aktualne hasło)</i><br/>
-            <%= f.password_field :current_password, autocomplete: "off" %><br /><br />
+            <%= f.password_field :current_password, autocomplete: "off" %><br/><br/>
         </div>
 
-        <div class="actions"><br />
+        <div class="actions"><br/>
             <%= f.submit "Dokonaj zmian", class:"btn btn-success" %>
         </div>
         <% end %>
 
-      <br />
+        <br/>
 
         <p>Niezadowolony?
             <%= button_to "Usuń moje konto", registration_path(resource_name), data: { confirm: "Czy jesteś pewien?" }, method: :delete, class:"btn btn-danger" %></p>

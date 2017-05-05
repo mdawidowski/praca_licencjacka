@@ -1,50 +1,60 @@
 <% content_for :title, @aukcje.nazwa %>
 
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 main">
-      <h2><%= @aukcje.nazwa %></h2>
-      <ol class="breadcrumb col-xs-12">
-        <p class=" col-xs-7"><b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b></p>
-        <% if !@aukcje.isogloszenie %>
-        <strong>Cena aktualna:</strong><p> <%= @aukcje.cena_aktualna %></p>
-        <strong>Najwyższa oferta:</strong><p>
-        <% if @aukcje.winner_id != nil %>
-          <% @users.each do |user| %>
-            <% if @aukcje.winner_id == user.id %>
-              <%= user.login %></p>
-            <% end %>
-          <% end %>
-        <% else %>
-          Brak ofert</p>
-        <% end %>
-        <%= form_for @aukcje, :html => {:multipart => true} do |f| %>
-          <% if current_user %>
-            <% if current_user.id != @aukcje.user_id %>
-              <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
-              <%= f.text_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
-              <%= f.submit "Licytuj", class:'btn btn-primary', id: "bidbutton" %>
-            <% end %>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 main">
+            <h2><%= @aukcje.nazwa %></h2>
+            <ol class="breadcrumb col-xs-12">
+                <p class=" col-xs-7">
+                    <b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
+                </p>
+                <% if !@aukcje.isogloszenie %>
+                <strong>Cena aktualna:</strong>
+                <p>
+                    <%= @aukcje.cena_aktualna %></p>
+                <strong>Najwyższa oferta:</strong>
+                <p>
+                    <% if @aukcje.winner_id != nil %>
+                    <% @users.each do |user| %>
+                    <% if @aukcje.winner_id == user.id %>
+                    <%= user.login %></p>
+                <% end %>
+                <% end %>
             <% else %>
-            <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
-          <% end %>
+                Brak ofert</p>
+            <% end %>
+            <%= form_for @aukcje, :html => {:multipart => true}, id:"form1" do |f| %>
+            <% if current_user %>
+            <% if current_user.id != @aukcje.user_id %>
+            <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
+            <%= f.hidden_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %>
 
-        <% end %>
-        <% end %>
-    </ol>
-  </div>
+            <%= f.fields_for :mojeaukcje do |builder| %>
+            <%= builder.text_field :aukcje_id, :value => @aukcje.id ,:readonly => true, class:"form-control"  %><br/>
+            <% end %>
+            <%= f.submit "Licytuj", class:'btn btn-primary' %>
+            <% end %>
+
+        <% else %>
+            <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
+            <% end %>
+
+            <% end %>
+            <% end %>
+        </ol>
+    </div>
 </div>
 </div>
 <br>
 <% if !@aukcje.isogloszenie %>
-  <h5>Opis aukcji</h5>
+<h5>Opis aukcji</h5>
 <% else %>
-  <h5>Opis ogłoszenia</h5>
+<h5>Opis ogłoszenia</h5>
 <% end %>
 <hr>
 <div class="container">
-  <%= raw(@aukcje.opis) %>
-  </div>
+<%= raw(@aukcje.opis) %>
+</div>
 <hr>
 Do końca pozostało:
 <%= distance_of_time_in_words(Time.now, @aukcje.created_at + 14.days) %>

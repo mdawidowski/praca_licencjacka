@@ -4,8 +4,11 @@ class Aukcje < ApplicationRecord
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 
+  attr_accessor :aukcje_id, :mojeaukcjes_attributes
+  has_many :mojeaukcjes
   has_attached_file :image,  :storage => :cloudinary, :path => ':id/:style/:filename', :crop => :fill, :styles => { :medium => "300x250!", :thumb => "100x100!"}
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+  accepts_nested_attributes_for :mojeaukcjes
 
   def self.search(query)
   __elasticsearch__.search(
@@ -44,4 +47,8 @@ body: { settings: Aukcje.settings.to_hash, mappings: Aukcje.mappings.to_hash }
 
 # Index all article records from the DB to Elasticsearch
 Aukcje.import
+end
+
+class Resource < ActiveRecord::Base
+  attr_accessor :custom_field
 end

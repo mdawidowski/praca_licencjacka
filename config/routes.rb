@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'obserwowane/index'
+
   get 'mojeaukcje/index'
 
   mount Ckeditor::Engine => '/ckeditor'
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
   get 'home/administratorzy'
   get 'search', to: 'search#search'
 
+  resources :mojeaukcjes
   resources :searches
   resources :aukcjes
   resources :kategories
