@@ -8,6 +8,11 @@
                 <p class=" col-xs-7">
                     <b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
                 </p>
+                <%= form_for Obserwowane.new do |o| %>
+                <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
+                <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
+                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br /><br />
+                <% end %>
                 <% if !@aukcje.isogloszenie %>
                 <strong>Cena aktualna:</strong>
                 <p>
@@ -30,7 +35,7 @@
             <%= f.hidden_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %>
 
             <%= f.fields_for :mojeaukcje do |builder| %>
-            <%= builder.text_field :aukcje_id, :value => @aukcje.id ,:readonly => true, class:"form-control"  %><br/>
+            <%= builder.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control"  %>
             <% end %>
             <%= f.submit "Licytuj", class:'btn btn-primary' %>
             <% end %>

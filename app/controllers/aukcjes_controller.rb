@@ -1,5 +1,5 @@
 class AukcjesController < ApplicationController
-   before_action :set_aukcja, only: [:show, :edit, :update, :destroy, :print]
+   before_action :set_aukcja, only: [:show, :edit, :update, :destroy]
 
   def index
     @kategorie = Kategorie.all
@@ -17,6 +17,7 @@ class AukcjesController < ApplicationController
   def show
     @kategorie = Kategorie.all
     @users = User.all
+    @obserwowane = Obserwowane.new
     @aukcje = Aukcje.find(params[:id])
     respond_to do |format|
       format.html

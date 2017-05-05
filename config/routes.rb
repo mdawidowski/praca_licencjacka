@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'obserwowane/index'
+  get 'obserwowanes/index'
 
   get 'mojeaukcje/index'
 
@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'home/administratorzy'
   get 'search', to: 'search#search'
 
+  resources :obserwowanes
   resources :mojeaukcjes
   resources :searches
   resources :aukcjes
