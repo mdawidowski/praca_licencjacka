@@ -7,12 +7,18 @@
         <th>Akcje</th>
     </tr>
     <% @obserwowane.each do |obserwowane| %>
+    <% @aukcje.each do |aukcja| %>
     <tr>
         <td><%= obserwowane.aukcje_id %></td>
-        <td></td>
-        <td></td>
+        <td>
+          <% if obserwowane.aukcje_id == aukcja.id %>
+            <a href="<%= aukcje_path(aukcja) %>"><%= image_tag aukcja.image.url(:thumb) %>  <%= aukcja.nazwa %></a>
+        </td>
+        <td><%= aukcja.cena_aktualna %></td>
+        <% end %>
         <td><%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %></td>
     </tr>
+    <% end %>
     <% end %>
 </table>
 <%= link_to "Wróć", :back, class: "btn btn-success" %>

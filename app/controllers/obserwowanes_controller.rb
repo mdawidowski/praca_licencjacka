@@ -3,6 +3,7 @@ class ObserwowanesController < ApplicationController
 
   def index
     @obserwowane = Obserwowane.all
+    @aukcje = Aukcje.all
   end
 
   def new
