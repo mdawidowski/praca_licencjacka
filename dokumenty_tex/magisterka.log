@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  6 MAY 2017 06:47
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  6 MAY 2017 08:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,15 +818,9 @@ Overfull \hbox (6.66016pt too wide) in paragraph at lines 41--42
  []
 
 
-Overfull \hbox (7.02092pt too wide) in paragraph at lines 43--44
-[]\EU1/MinionPro(0)/m/n/12 Do tworzenia aplikacji wykorzystano takie technologi
-e jak Ruby on Rails, Twitter
- []
-
-
-Overfull \hbox (13.43208pt too wide) in paragraph at lines 43--44
-\EU1/MinionPro(0)/m/n/12 Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, 
-jQuery Turbolinks, Chartkick,
+Overfull \hbox (27.28491pt too wide) in paragraph at lines 43--44
+[]\EU1/MinionPro(0)/m/n/12 Do tworzenia aplikacji wykorzystano Ruby on Rails, T
+witter Bootstrap, Plataformatec
  []
 
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 45.
@@ -1040,7 +1034,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
 Here is how much of TeX's memory you used:
  21447 strings out of 495579
  385416 string characters out of 6187323
- 396435 words of memory out of 5000000
+ 397435 words of memory out of 5000000
  24548 multiletter control sequences out of 15000+600000
  7817 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
