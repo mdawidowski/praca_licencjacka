@@ -10,15 +10,19 @@ Ruby on Rails, gem, heroku, auction, online shopping, bid
 
   W pracy przedstawiono rozwojową wersję aplikacji webowej „Let’s Bid It” do tworzenia
 i publikowania aukcji oraz ogłoszeń.
+
   W aplikacji zaimplementowano ich kategoryzację, wyszukiwanie, a także tworzenie
 kategorii w hierarchii.
+
   Zaprojektwano widok strony głównej, który wyświetla losowe aukcje znajdujące
 się w portalu oraz panele administracyjny i użytkownika, które są widoczne po
 zalogowaniu się na konkretny typ konta. Każda z aukcji wyświetlana jest w kolejności
 rosnącej według czasu zakończenia.
-  Do tworzenia aplikacji wykorzystano takie technologie jak Ruby on Rails, Twitter
+
+  Do tworzenia aplikacji wykorzystano Ruby on Rails, Twitter
 Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, jQuery Turbolinks, Chartkick,
 ActsAsTree.
+
   Projekt wdrożony został na platformie heroku.com i jest dostępny pod adresem:
 [https://ror-aukcja.herokuapp.com/](https://ror-aukcja.herokuapp.com)
 
@@ -85,6 +89,7 @@ opierająca się na silniku Elasticsearch.
 
 ## 1. Let's Bid It w praktyce
 1.1. Porównanie z dostępnymi rozwiązaniami
+
 1.1.1. Allegro
 
   Jest to największa, a także najpopularniejsza platforma transakcyjna on-line w
