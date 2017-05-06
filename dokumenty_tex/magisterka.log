@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  6 MAY 2017 08:22
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  6 MAY 2017 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,12 +906,6 @@ zące sprzedaży oraz usług.
  []
 
 
-Overfull \hbox (10.08812pt too wide) in paragraph at lines 85--87
-\EU1/MinionPro(0)/bx/n/12 bardziej oryginalne opisy, co nie jest możliwe przy k
-orzystaniu z wyżej wymienionego
- []
-
-
 Underfull \vbox (badness 2334) has occurred while \output is active []
 
  [7
@@ -923,8 +917,8 @@ go ogłoszenie wyglądało
  []
 
 
-Overfull \hbox (3.45883pt too wide) in paragraph at lines 95--96
-[]\EU1/MinionPro(0)/bx/n/12 Sklep internetowy - jest to kolejna możliwa opcją z
+Overfull \hbox (5.42683pt too wide) in paragraph at lines 95--96
+[]\EU1/MinionPro(0)/bx/n/12 Sklep internetowy – jest to kolejna możliwa opcją z
 astosowania mojej aplikacji
  []
 
@@ -978,8 +972,8 @@ er Bootstrap, który pozwala
  []
 
 
-Overfull \hbox (39.03215pt too wide) in paragraph at lines 152--155
-\EU1/MinionPro(0)/m/it/12 CKEditor - jest to wizualny edytor tekstowy języka HT
+Overfull \hbox (41.00015pt too wide) in paragraph at lines 152--155
+\EU1/MinionPro(0)/m/it/12 CKEditor – jest to wizualny edytor tekstowy języka HT
 ML, który umożliwia użytkownikowi
  []
 
@@ -1034,7 +1028,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
 Here is how much of TeX's memory you used:
  21447 strings out of 495579
  385416 string characters out of 6187323
- 397435 words of memory out of 5000000
+ 396435 words of memory out of 5000000
  24548 multiletter control sequences out of 15000+600000
  7817 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
