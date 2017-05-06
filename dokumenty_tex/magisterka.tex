@@ -34,13 +34,13 @@
 
 % streszczenie
 \begin{abstract}
-  W pracy przedstawiono rozwojową wersję aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji.
+  W pracy przedstawiono rozwojową wersję aplikacji webowej „Let's Bid It” do tworzenia i publikowania aukcji oraz ogłoszeń.
   
   W aplikacji zaimplementowano ich kategoryzację, wyszukiwanie, a także tworzenie kategorii w hierarchii.
 
   Zaprojektwano widok strony głównej, który wyświetla losowe aukcje znajdujące się w portalu oraz panele administracyjny i użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta. Każda z aukcji wyświetlana jest w kolejności rosnącej według czasu zakończenia.
 
-  Do tworzenia aplikacji wykorzystano takie technologie jak Ruby on Rails, Twitter Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, jQuery Turbolinks, Chartkick, Acts as tree.
+  Do tworzenia aplikacji wykorzystano takie technologie jak Ruby on Rails, Twitter Bootstrap, Plataformatec Devise, reCaptcha, CKEditor, jQuery Turbolinks, Chartkick, ActsAsTree.
 
 \mbox{Projekt wdrożony został na platformie\, \\\texttt{heroku.com} i jest dostępny pod adresem:} \\\texttt{\url{https://ror-aukcja.herokuapp.com/}}.
 
@@ -75,7 +75,7 @@ Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie sy
 
 Jest to największa, a także najpopularniejsza platforma transakcyjna on-line w Polsce, oferująca setki produktów w niezwykle konkurencyjnych cenach. Serwis udostępnia możliwość zakupu natychmiastowego, licytacji, a także wystawiania ogłoszeń. Typ danej aukcji, zależy tylko i wyłącznie od jej właściciela.
 
-Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It. Tak jak w mojej aplikacji użytkownik może skorzystać z zaawansowanego edytora tekstowego, dodaje zdjęcia i przyporządkowuje ją do konkretnej kategorii. Główną różnicą jest fakt, że Allegro pozwala na wystawienie przedmiotu z opcją "Kup Teraz", lub też jako ogłoszenie.
+Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It. Tak jak w mojej aplikacji użytkownik może skorzystać z zaawansowanego edytora tekstowego, dodaje zdjęcia i przyporządkowuje ją do konkretnej kategorii. Główną różnicą jest fakt, że Allegro pozwala na wystawienie przedmiotu z opcją "Kup Teraz", czego Let's Bid It nie ma.
 
 \subsection{OLX}  
 
@@ -83,7 +83,7 @@ Serwis ten jest jednym z najpopularniejszych portali ogłoszeniowych na świecie
 mogą udostępniać lokalne ogłoszenia dotyczące sprzedaży oraz usług.
 
 Główną różnicą pomiędzy OLX, a Let's Bid It jest fakt,
-że wymieniony wyżej portal nie udostępnia funkcji licytacji towaru, dlatego też nie ma możliwości, by osoba wystawiająca ogłoszenie mogła sprzedać swój towar drożej niż w ogłoszeniu. Ponadto stworzony przeze mnie portal aukcyjny, dzięki zaawansowanemu edytorowi tekstowemu pozwala stworzyć użytkownikom dużo bardziej oryginalne opisy, co nie jest możliwe przy korzystaniu z OLX.
+że wymieniony wyżej portal nie udostępnia funkcji licytacji towaru, natomiast moja aplikacja posiada ją, a także tak jak OLX daje użytkownikowi prawo wystawienia towaru, czy też usługi jako zwykłe ogłoszenie. Ponadto stworzony przeze mnie portal aukcyjny, dzięki zaawansowanemu edytorowi tekstowemu pozwala stworzyć użytkownikom dużo bardziej oryginalne opisy, co nie jest możliwe przy korzystaniu z wyżej wymienionego portalu.
 
 \section{Możliwości zastosowania praktycznego}
 Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjny i jest to główna możliwość zastosowania napisanej przeze mnie aplikacji w praktyce. Poza tym portal ten użyty może zostać również do innych celów:
@@ -104,7 +104,7 @@ Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjn
 \centering
 \includegraphics[width=.8\linewidth]{erd}
 \caption{Diagram związków encji\label{RYS.1}}
-\source{Opracowanie własne}
+\source{Opracowanie własne za pomocą MySQL Workbench }
 \end{figure}
 
 \newpage
@@ -131,7 +131,7 @@ Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjn
 W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione przed nią
 założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzięki którym uda się 
 spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków 
-jest kluczowy do skutecznej implementacji aplikacji. Poniżej omówię wybrane przeze mnie narzędzia oraz to co udało się, a także nie udało się zrealizować.
+jest kluczowy do skutecznej implementacji aplikacji.
 
 \section{Realizacja projektu}
 
@@ -153,7 +153,7 @@ CKEditor - jest to wizualny edytor tekstowy języka HTML, który umożliwia uży
 czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
 a także możliwe jest wstawienie listy, tabeli, odnośników, a także obrazów.
 
-Act as tree - gem ten wykorzystany został w celu stworzenia drzewa kategorii, które ułatwia w sposób zdecydowany nawigację
+ActsAsTree - gem ten wykorzystany został w celu stworzenia drzewa kategorii, które ułatwia w sposób zdecydowany nawigację
 po stronie, a także sprawia, że dane na stronie są uporządkowane. Sama implementacja przebiega w środowisku
 technologii Ruby on Rails, więc nie wymaga bezpośredniej instalacji.
 
@@ -161,26 +161,46 @@ reCaptcha - zabezpieczenie dzięki któremu możliwość wysyłania danych będ�
 
 % zakończenie
 \summary
+W trakcie pracy nad projektem udało mi się zrealizować praktycznie wszystkie jego założenia. Praca ta pozwoliła mi nabyć nowe doświadczenia, a także poszerzyć posiadane umiejętności. Podczas realizacji aplikacji udało mi się wykorzystać niemal wszystkie umiejętności, które nabyłem w trakcie odbywania studiów.
 
 % załączniki (opcjonalnie):
 \appendix
-\chapter{Tytuł załącznika jeden}
+\chapter{Płyta CD zawierająca kod projektu}
 
-Treść załącznika jeden.
+\begin{thebibliography}{9}
 
-\chapter{Tytuł załącznika dwa}
+\bibitem{ror} 
+David A. Black.
+\textit{Ruby. Przewodnik programisty wyd. II.}
+HELION S.A. 2015.
 
-Treść załącznika dwa.
+\bibitem{ror} 
+John Elder.
+\textit{Ruby on Rails - Tworzenie aplikacji WWW}
+Codemy.com 2016.
 
-% literatura (obowiązkowo):
-\bibliographystyle{unsrt}
-\bibliography{xml}
+\bibitem{devise} 
+Oficjalna dokumentacja - Gem Devise
+\\\texttt{\url{https://github.com/plataformatec/devise/}} (dostęp 5.03.2017)
 
-% spis tabel (jeżeli jest potrzebny):
-\listoftables
+\bibitem{actsastree} 
+Oficjalna dokumentacja - Gem ActsAsTree
+\\\texttt{\url{https://github.com/amerine/acts_as_tree}} (dostęp 8.04.2017)
 
-% spis rysunków (jeżeli jest potrzebny):
-\listoffigures
+\bibitem{recaptcha} 
+Oficjalna dokumentacja - Gem reCAPTCHA
+\\\texttt{\url{https://github.com/ambethia/recaptcha/}} (dostęp 10.04.2017)
+
+\bibitem{ckeditor} 
+Oficjalna dokumentacja - Gem CKEditor for Rails
+\\\texttt{\url{https://github.com/galetahub/ckeditor/}} (dostęp 10.04.2017)
+
+\bibitem{chartkick} 
+Oficjalna dokumentacja - Gem Chartkick
+\\\texttt{\url{https://github.com/ankane/chartkick/}} (dostęp 28.04.2017)
+
+\end{thebibliography} 
+
 
 \oswiadczenie
 

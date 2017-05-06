@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  3 MAY 2017 13:04
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  6 MAY 2017 06:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,7 +672,11 @@ ing=tex-text;+smcp;"
 ing=tex-text;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
- (./magisterka.aux)
+ (./magisterka.aux
+
+LaTeX Warning: Label `ror' multiply defined.
+
+)
 \openout1 = `magisterka.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -908,13 +912,13 @@ zące sprzedaży oraz usług.
  []
 
 
-Overfull \hbox (7.11214pt too wide) in paragraph at lines 85--87
-\EU1/MinionPro(0)/bx/n/12 Ponadto stworzony przeze mnie portal aukcyjny, dzięki
- zaawansowanemu edytorowi
+Overfull \hbox (10.08812pt too wide) in paragraph at lines 85--87
+\EU1/MinionPro(0)/bx/n/12 bardziej oryginalne opisy, co nie jest możliwe przy k
+orzystaniu z wyżej wymienionego
  []
 
 
-Underfull \vbox (badness 6220) has occurred while \output is active []
+Underfull \vbox (badness 2334) has occurred while \output is active []
 
  [7
 
@@ -970,7 +974,7 @@ magania. Dobór odpowiedniej
 
 Overfull \hbox (15.73212pt too wide) in paragraph at lines 131--135
 \EU1/MinionPro(0)/m/it/12 technologii, a także frameworków jest kluczowy do sku
-tecznej implementacji aplikacji.
+tecznej implementacji aplikacji. 
  []
 
 
@@ -985,62 +989,42 @@ Overfull \hbox (39.03215pt too wide) in paragraph at lines 152--155
 ML, który umożliwia użytkownikowi
  []
 
+[12
 
-Underfull \vbox (badness 2856) has occurred while \output is active []
+] [13]
+Overfull \hbox (6.5881pt too wide) in paragraph at lines 164--165
+\EU1/MinionPro(0)/m/it/12 posiadane umiejętności. Podczas realizacji aplikacji 
+udało mi się wykorzystać niemal
+ []
 
- [12
-
-]
-[13] [14
+[14
 
 ]
 Dodatek A.
 [15
 
-]
-Dodatek B.
-(./magisterka.bbl [16
+] [16
 
 ]
-Underfull \hbox (badness 3240) in paragraph at lines 15--18
-[]\EU1/MinionPro(0)/m/it/12 Ramez Elmasri, Yu-Chi Wu, Babak Hojabri, Charley Li
-, and Jack Fu.
- []
-
-) [17
-
-] (./magisterka.lot)
-\tf@lot=\write5
-\openout5 = `magisterka.lot'.
-
- [18
-
-] (./magisterka.lof)
-\tf@lof=\write6
-\openout6 = `magisterka.lof'.
-
- [19
-
-]
-Overfull \hbox (17.82008pt too wide) in paragraph at lines 185--185
+Overfull \hbox (17.82008pt too wide) in paragraph at lines 205--205
 \EU1/MinionPro(0)/m/it/12 Ja, niżej podpisany(a) oświadczam, iż przedłożona pra
 ca dyplomowa została wykonana
  []
 
 
-Overfull \hbox (37.94812pt too wide) in paragraph at lines 185--185
+Overfull \hbox (37.94812pt too wide) in paragraph at lines 205--205
 \EU1/MinionPro(0)/m/it/12 przeze mnie samodzielnie, nie narusza praw autorskich
 , interesów prawnych i materialnych
  []
 
-[20
+[17
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./magisterka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 207.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1048,15 +1032,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 21453 strings out of 495579
- 385518 string characters out of 6187323
- 397545 words of memory out of 5000000
- 24545 multiletter control sequences out of 15000+600000
+ 21447 strings out of 495579
+ 385416 string characters out of 6187323
+ 396435 words of memory out of 5000000
+ 24548 multiletter control sequences out of 15000+600000
  7817 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,11n,61p,10389b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on magisterka.pdf (20 pages).
+Output written on magisterka.pdf (17 pages).

@@ -13,11 +13,8 @@
 \contentsline {section}{\numberline {3.1}Realizacja projektu}{12}{section.3.1}
 \contentsline {section}{\numberline {3.2}Ruby on Rails}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Twitter Bootstrap}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Pozostałe rozwiązania użyte przy realizacji projektu}{13}{section.3.4}
+\contentsline {section}{\numberline {3.4}Pozostałe rozwiązania użyte przy realizacji projektu}{12}{section.3.4}
 \contentsline {chapter}{Zakończenie}{14}{chapter*.5}
-\contentsline {chapter}{\numberline {A}Tytuł załącznika jeden}{15}{appendix.A}
-\contentsline {chapter}{\numberline {B}Tytuł załącznika dwa}{16}{appendix.B}
-\contentsline {chapter}{Bibliografia}{17}{appendix*.6}
-\contentsline {chapter}{Spis tabel}{18}{appendix*.7}
-\contentsline {chapter}{Spis rysunków}{19}{appendix*.8}
-\contentsline {chapter}{Oświadczenie}{20}{appendix*.9}
+\contentsline {chapter}{\numberline {A}Płyta CD zawierająca kod projektu}{15}{appendix.A}
+\contentsline {chapter}{Bibliografia}{16}{appendix*.6}
+\contentsline {chapter}{Oświadczenie}{17}{appendix*.7}

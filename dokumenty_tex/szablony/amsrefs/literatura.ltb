@@ -9,7 +9,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage[polish]{polyglossia} 
+\usepackage[polish]{polyglossia}
 
 \setmainfont[Mapping=tex-text]{Minion Pro:+onum}
 \setsansfont[Mapping=tex-text]{Myriad Pro}
@@ -22,7 +22,7 @@
 \begin{biblist}
 
 \bib{Goldfarb2002}{book}{
-    author={Charles F. Goldfarb},
+    author={David A. Black},
     author={Paul Prescod},
      title={Charles F. Goldfarb's XML handbook},
    edition={Fourth},
