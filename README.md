@@ -83,7 +83,7 @@ Rails, w czym pomocny okazał się gem cloudinary.
 mającego na celu symulacje płatności internetowych, a także zaawansowana wyszukiwarka
 opierająca się na silniku Elasticsearch.
 
-1. Let's Bid It w praktyce
+## 1. Let's Bid It w praktyce
 1.1. Porównanie z dostępnymi rozwiązaniami
 1.1.1. Allegro
 
@@ -127,7 +127,7 @@ przy portalu ogłoszeniowym, dostępne są przede wszystkim kategoryzacja, a
 także obsługa dodawanych aukcji oraz zaawansowane narzędzia do zarządzania
 wyglądem aukcji.
 
-3. Implementacja
+## 3. Implementacja
 W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione
 przed nią założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia,
 dzięki którym uda się spełnić postawione przed nią wymagania. Dobór odpowiedniej
@@ -159,7 +159,7 @@ technologii Ruby on Rails, więc nie wymaga bezpośredniej instalacji.
 reCaptcha - zabezpieczenie dzięki któremu możliwość wysyłania danych będą
 mieli jedynie sprawdzeni użytkonicy.
 
-4. Zakończenie
+## 4. Zakończenie
 W trakcie pracy nad projektem udało mi się zrealizować praktycznie wszystkie
 jego założenia. Praca ta pozwoliła mi nabyć nowe doświadczenia, a także poszerzyć
 posiadane umiejętności. Podczas realizacji aplikacji udało mi się wykorzystać niemal
