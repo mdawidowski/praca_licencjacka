@@ -133,21 +133,28 @@ założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzi�
 spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków 
 jest kluczowy do skutecznej implementacji aplikacji.
 
-\section{Realizacja projektu}
+\section{Technologie wykorzystane do stworzenia aplikacji}
 
-
-\section{Ruby on Rails}
+\subsection{Ruby on Rails}
 Do stworzenia projektu wykorzystana została technologia Ruby on Rails bazująca na języku Ruby.
 W aplikacji wykorzystano Ruby w wersji 2.3, a także framework Rails w wersji 5.0.1. Całość stworzona
 została przy pomocy architektury MVC (ang. Model-View-Controller).
 
-\section{Twitter Bootstrap}
+\subsection{Twitter Bootstrap}
 Widoki utworzone zostały przy pomocy frameworka Twitter Bootstrap, który pozwala na proste tworzenie
 graficznego interfejsu stron internetowych z wykorzystaniem gotowych rozwiązań bazujących na językach
-HTML i CSS. Główną zaletą tego frameworka jest responsywność, czyli zapewnienie dobrego wyświetlania
-stron WWW na różnego typu urządzeniach. 
+HTML i CSS. Główną zaletą tego frameworka jest responsywność, czyli zapewnienie poprawnego wyświetlania
+stron WWW na różnych urządzeniach. 
 
-\section{Pozostałe rozwiązania użyte przy realizacji projektu}
+\subsection{Devise}
+
+Budując portal aukcyjny koniecznym wymogiem jest przede wszystkim obsługa użytkowników i administratorów aplikacji. W tym celu wdrożony został gem Devise, który w znacznym stopniu ułatwia autentykację na stronie. Dzięki zastosowaniu powyższego gemu otrzymujemy niemalże gotowe widoki, kontroler oraz model, co pozwala na bezproblemowe zarządzanie użytkownikami.
+
+\subsection{Pozostałe rozwiązania użyte przy realizacji projektu}
+
+Heroku - to platforma do tworzenia i hostowania aplikacji w chmurze, dzięki której w łatwy sposób możliwe jest wdrożenie jej na serwer zewnętrzny.
+
+Cloudinary - jest to serwis pozwalający na przechowywanie danych w chmurze. Dzięki połączeniu go z aplikacją możliwe było bezproblemowe przechowywanie grafik dołączanych przez użytkowników do aukcji i rozwiązanie problematycznego przechowywania tych plików na serwerze Heroku.
 
 CKEditor – jest to wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej 
 czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
@@ -159,13 +166,68 @@ technologii Ruby on Rails, więc nie wymaga bezpośredniej instalacji.
 
 reCaptcha – zabezpieczenie dzięki któremu możliwość wysyłania danych będą mieli jedynie sprawdzeni użytkownicy.
 
+Chartkick - gem pozwalający na tworzenie i wyświetlanie różnego rodzaju wykresów na podstawie danych zawartych w aplikacji.
+
+\newpage
+
+\section{Struktura aplikacji}
+
+\subsection{Strona główna}
+
+Strona główna aplikacji zaprojektowana została tak, aby w prosty sposób udostępniać wszystkie funkcjonalności aplikacji. Głównymi elementami strony głównej jest panel z wszystkimi nazwami kategorii nadrzędnych, a także miniatury wraz z tytułami losowo wybranych aukcji z całego ich zbioru. Ponadto po zalogowaniu na konto użytkownika, na stronie głównej informacje o aukcjach, które dany użytkownik dodał do obserwowanych.
+
+\subsection{Aukcje}
+
+Głównym elementem Let's Bid It są aukcje. Każda z nich posiada atrybuty takie jak:
+\begin{itemize}
+
+\item identyfikator autora aukcji
+\item kategorię, do której należy
+\item nazwę
+\item szczegółowy opis
+\item cenę początkową
+\item cenę minimalną
+\item koszt przesyłki
+\item informację o tym, czy aukcja publikowana jest jako ogłoszenie
+\item zdjęcie, które będzie publikowane jako główne.
+
+\end{itemize}
+
+Widok aukcji składa się z czterech stron, które różnią się ze względu na dostęp i wyświetlane na niej dane.
+
+Pierwszym elementem jest strona index dostępna tylko dla zalogowanych użytkowników. Wyświetlane na niej są wszystkie aukcje, które utworzył akutalnie zalogowany użytkownik. Aukcje wyświetlane są w tabeli według identyfikatorów, zaś każdej aukcji przypisane są akcje pokaż, edytuj oraz usuń. W górze strony wyświetlany jest również odnośnik do utworzenia nowych aukcji przez aktualnie zalogowanego użytkownika.
+
+Następnymi elementami aukcji są strony, które umożliwiają użytkownikom dodawanie oraz edytowanie aukcji. Są to dwa oddzielnie funkcjonujące elementy, jednak łączy je wspólny formularz wypełniany przy tworzeniu/edycji aukcji. Formularz ten zawiera wszystkie atrybuty aukcji, które zostały wymienione powyżej.
+
+Najważniejszym elementem aukcji jest strona, na której każda z nich, jest wyświetlana wraz z wszystkimi informacjami, które zostały zawarte przy jej tworzeniu. Strona oraz wszystkie informacje na temat aukcji jest widoczna dla każdego, jednak niektóre jej funkcjonalności widoczne są jedynie dla zalogowanych użytkowników. Elementami, które widoczne są po zalogowaniu, to przycisk dodający aukcję do obserwowanych, a także panel, za pomocą którego możliwe jest licytowanie aukcji. Sam panel zabezpieczony został w taki sposób, aby niemożliwe było dodanie oferty niższej niż cena aktualna.
+
+\subsection{Kategorie}
+
+Uporządkowanie aukcji niemożliwe byłoby bez ich kategoryzacji, dlatego też koniecznym wydawało się wdrożenie kategorii, przy czym niezwykle pomocny był gem ActsAsTree. 
+
+Tak jak aukcje, kategorie składają się ze stron, które służą do ich dodawania, wyświetlania oraz edycji. Cechą różniącą kategorie i aukcje jest fakt, że strony oznaczone jako index, new oraz edit widoczne są tylko dla osób zalogowanych na konto administratora.
+
+Ogólnodostępnym elementem kategorii jest widok udostępniający dane o konretnej kategorii. Na stronie tej widoczne są wszystkie podkategorie danej kategorii, a także aukcję, które do niej należą. 
+
+\subsection{Obserwowane}
+
+Dodanie aukcji do obserwowanych, jest jedną z funkcjonalności, która umożliwia łatwiejsze ich odnalezienie. 
+
+Widok opiera się na prostej tabeli, która wyświetla podstawowe dane na temat aukcji, które zostały dodane do obserwowanych. Rekordy tabeli wyposażone zostały również w przycisk, dzięki któremu możliwe jest usunięcie elementu z obserowanych.
+
+\subsection{Nawigacja}
+
+Nawigacja na stronie umożliwiona została dzięki paskowi nawigacyjnemu, który umieszczony został na górze strony. Pasek ten w zależności od typu użytkownika wyświetla różne wartości.
+
+Osoba odwiedzająca portal jako gość ujrzy na samej górze odnośnik do strony głównej, a także linki do rejestracji i logowania, które pozwolą na korzystanie z większej ilości funkcjonalności, które zostały wdrożone w Let's Bid It.
+
+Zwykły użytkownik po zalogowaniu, poza odnośnikiem do strony głównej będzie miał również możliwość skorzystania z panelu użytkownika, edycji profilu, czy też po prostu z opcji wylogowania się z aktualnego konta.
+
+Administrator strony, w odróżnieniu do użytkownika będzie mógł skorzystać z panelu administracyjnego, nie mając jednakowoż dostępu do panelu użytkownika. Pozostałe funkcje paska nawigacyjnego pozostaną takie same jak dostępne dla zalogowanego użytkownika.
+
 % zakończenie
 \summary
 W trakcie pracy nad projektem udało mi się zrealizować praktycznie wszystkie jego założenia. Praca ta pozwoliła mi nabyć nowe doświadczenia, a także poszerzyć posiadane umiejętności. Podczas realizacji aplikacji udało mi się wykorzystać niemal wszystkie umiejętności, które nabyłem w trakcie odbywania studiów.
-
-% załączniki (opcjonalnie):
-\appendix
-\chapter{Płyta CD zawierająca kod projektu}
 
 \begin{thebibliography}{9}
 
@@ -200,6 +262,13 @@ Oficjalna dokumentacja - Gem Chartkick
 \\\texttt{\url{https://github.com/ankane/chartkick/}} (dostęp 28.04.2017)
 
 \end{thebibliography} 
+
+% załączniki (opcjonalnie):
+\appendix
+\chapter{Płyta CD zawierająca kod projektu}
+
+
+\listoffigures
 
 
 \oswiadczenie
