@@ -1,3 +1,23 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.caption {
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  text-align: center;
+  margin-top: auto;
+  padding: 30px;
+}
+
+.caption p {
+  font-size: 1.3em;
+}
+
+.caption p strong {
+    font-size: 2.5em;
+}
+
+.carousel{
+  width: auto;
+}

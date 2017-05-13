@@ -4,6 +4,8 @@ class HomeController < ApplicationController
     @kategorie = Kategorie.all
     @user = User.all
     @admin = Admin.all
+    @obserwowanes = Obserwowane.all
+    @auk = Aukcje.all
     @aukcje = Aukcje.offset(rand(Aukcje.count)).first
     @aukcjes = Aukcje.offset(rand(Aukcje.count)).first
     @aukcj = Aukcje.offset(rand(Aukcje.count)).first

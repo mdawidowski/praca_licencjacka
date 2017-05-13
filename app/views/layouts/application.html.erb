@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <script src="//cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
     <script type="text/javascript">
-    var CKEDITOR_BASEPATH = '/assets/ckeditor/';
+      var CKEDITOR_BASEPATH = '/assets/ckeditor/';
     </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -15,12 +15,10 @@
   <body>
     <%= render 'layouts/header' %>
     <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: "alert alert-info") %>
+    <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>
-    <div class="container">
-      <div class="jumbotron">
-        <%= yield %>
-      </div>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 caption">
+      <%= yield %>
     </div>
   </body>
 </html>
