@@ -6,9 +6,7 @@ class HomeController < ApplicationController
     @admin = Admin.all
     @obserwowanes = Obserwowane.all
     @auk = Aukcje.all
-    @aukcje = Aukcje.offset(rand(Aukcje.count)).first
-    @aukcjes = Aukcje.offset(rand(Aukcje.count)).first
-    @aukcj = Aukcje.offset(rand(Aukcje.count)).first
+    @aukcje = Aukcje.all
 
   end
 

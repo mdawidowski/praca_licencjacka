@@ -3,7 +3,7 @@ require 'elasticsearch/model'
 class Aukcje < ApplicationRecord
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
-
+  belongs_to :kategorie
   attr_accessor :aukcje_id, :mojeaukcjes_attributes
   has_many :mojeaukcjes
   has_many :obserwowanes
