@@ -3,6 +3,7 @@
     <tr>
         <th>Numer aukcji</th>
         <th>Miniatura</th>
+        <th>ID usr</th>
         <th>Nazwa aukcji</th>
         <th>Cena aktualna</th>
         <th>Akcje</th>
@@ -11,13 +12,16 @@
     <% @aukcje.each do |aukcja| %>
     <tr>
           <% if obserwowane.aukcje_id == aukcja.id %>
+          <% if current_user.id == obserwowane.userid %>
           <td><%= obserwowane.aukcje_id %></td>
+          <th><%= obserwowane.userid %></th>
           <td><%= image_tag aukcja.image.url(:thumb) %></td>
           <td>
             <a href="<%= aukcje_path(aukcja) %>"><%= aukcja.nazwa %></a>
         </td>
         <td><%= aukcja.cena_aktualna %></td>
         <td><%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %></td>
+        <% end %>
         <% end %>
     </tr>
     <% end %>

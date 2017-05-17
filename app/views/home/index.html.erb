@@ -2,30 +2,57 @@
 <%= render 'kategories_table' %>
 <h4 class="text-left">Może Cię zainteresować:</h4>
 <div class="row">
-  <div class="col-xs-5">
-      <table>
+  <div class="col-xs-12">
+    <table>
 
-    <% @kategorie.each do |kat| %>
+      <% @kategorie.each do |kat| %>
       <% a=kat.aukcje.pluck(:id).last %>
       <% @aukcje.each do |aukcja| %>
-        <% if aukcja.id == a %>
-          <th>
-          <ul class="breadcrumb">
+      <% if aukcja.id == a %>
+      <th>
+        <ul class="breadcrumb">
           <p>
-          <a href="<%= aukcje_path(aukcja) %>">
-          <%= image_tag aukcja.image.url(:medium), class:"img-responsive" %>
-          <%= aukcja.nazwa %>  </p>
-        </a>
+            <a href="<%= aukcje_path(aukcja) %>">
+              <%= image_tag aukcja.image.url(:medium), class:"img-responsive" %>
+              <%= aukcja.nazwa %>
+            </p>
+          </a>
         </ul>
-        </th>
-        <% end %>
+      </th>
       <% end %>
-    <% end %>
-  </table>
-
+      <% end %>
+      <% end %>
+    </table>
   </div>
-  <div class="col-xs-5"></div>
+  <% if current_user %>
+  <% if @obserwowane.any? %>
+  <div class="col-xs-12">
+    <h4 class="text-left">Aktualnie obserwujesz:</h4>
+    <table>
+      <% status = 0 %>
+      <% @obserwowane.each do |obserwowane| %>
+      <% @aukcje.each do |aukcja| %>
 
-</div>
-<div class="col-xs-2"></div>
-</div>
+      <% if obserwowane.aukcje_id == aukcja.id %>
+      <% if current_user.id == obserwowane.userid %>
+      <% status += 1 %>
+      <th>
+        <ul class="breadcrumb">
+          <p>
+            <a href="<%= aukcje_path(aukcja) %>">
+              <%= image_tag aukcja.image.url(:medium), class:"img-responsive" %><%= aukcja.nazwa %>
+            </a>
+          </p>
+        </ul>
+      </th>
+      <% end %>
+      <% end %>
+      <% end %>
+      <% end %>
+    </table>
+    <% if status == 0 %>
+    <h5 class="text-left">Nie obserwujesz żadnej aukcji</h6>
+    <% end %>
+    <% end %>
+    <% end %>
+  </div>

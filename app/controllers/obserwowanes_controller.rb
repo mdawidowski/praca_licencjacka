@@ -15,7 +15,7 @@ class ObserwowanesController < ApplicationController
 
       respond_to do |format|
         if @obserwowane.save
-          format.html { redirect_to obserwowanes_url, notice: 'Dodano do obserwowanych' }
+          format.html { redirect_to obserwowanes_path, notice: 'Dodano do obserwowanych' }
           format.json { render :index, status: :created, location: @obserwowane }
         else
           format.html { render :new }

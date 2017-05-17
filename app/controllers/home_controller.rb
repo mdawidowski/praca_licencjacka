@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @kategorie = Kategorie.all
     @user = User.all
     @admin = Admin.all
-    @obserwowanes = Obserwowane.all
+    @obserwowane = Obserwowane.all
     @auk = Aukcje.all
     @aukcje = Aukcje.all
 

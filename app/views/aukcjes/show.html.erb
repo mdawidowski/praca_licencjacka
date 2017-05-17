@@ -1,69 +1,78 @@
 <% content_for :title, @aukcje.nazwa %>
-
+<% obs = 0 %>
+<% status=0 %>
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 main">
-            <h2><%= @aukcje.nazwa %></h2>
-            <ol class="breadcrumb col-xs-12">
-                <p class=" col-xs-7">
-                    <b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
-                </p>
-                <% if current_user %>
-                <% if @obserwowanes.first.nil? %>
-                <%= form_for Obserwowane.new do |o| %>
-                <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
-                <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
-                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br/><br/>
-                <% end %>
-            <% else %>
-                <% @obserwowanes.each do |obserwowane| %>
-                <% if current_user.id == obserwowane.userid %>
-                <%= link_to "Przestań obserwować", obserwowane, method: :delete, class:'btn btn-primary' %><br/><br/>
-            <% else %>
-                <%= form_for Obserwowane.new do |o| %>
-                <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
-                <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
-                <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br/><br/>
-                <% end %>
-                <% end %>
-                <% end %>
-                <% end %>
-                <% end %>
-                <% if !@aukcje.isogloszenie %>
-                <strong>Cena aktualna:</strong>
-                <p>
-                    <%= @aukcje.cena_aktualna %></p>
-                <strong>Najwyższa oferta:</strong>
-                <p>
-                    <% if @aukcje.winner_id != nil %>
-                    <% @users.each do |user| %>
-                    <% if @aukcje.winner_id == user.id %>
-                    <%= user.login %></p>
-                <% end %>
-                <% end %>
-            <% else %>
-                Brak ofert</p>
-            <% end %>
-            <%= form_for @aukcje, :html => {:multipart => true}, id:"form1" do |f| %>
-            <% if current_user %>
-            <% if current_user.id != @aukcje.user_id %>
-            <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
-            <%= f.hidden_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 main">
+      <h2><%= @aukcje.nazwa %></h2>
+      <ol class="breadcrumb col-xs-12">
+        <p class=" col-xs-7">
+          <b class="img-thumbnail"><%= image_tag @aukcje.image.url(:medium) %></b>
+        </p>
 
-            <%= f.fields_for :mojeaukcje do |builder| %>
-            <%= builder.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control"  %>
-            <% end %>
-            <%= f.submit "Licytuj", class:'btn btn-primary' %>
-            <% end %>
+        <% if current_user %>
+        <% if @obserwowanes.first.nil? %>
+        <%= form_for Obserwowane.new do |o| %>
+        <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
+        <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
+        <%= o.submit "Dodaj do obserwowanych", class:'btn btn-primary' %><br/><br/>
+        <% end %>
+      <% else %>
+        <% @obserwowanes.each do |obserwowane| %>
+        <% if current_user.id == obserwowane.userid && @aukcje.id == obserwowane.aukcje_id %>
+        <% status += 1 %>
+        <% obs = obserwowane %>
+        <% end %>
+        <% end %>
+        <% if status == 0 %>
+        <%= form_for Obserwowane.new do |o| %>
+        <%= o.hidden_field :userid, :value => current_user.id, class:"form-control" %>
+        <%= o.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control" %>
+        <%= o.submit "Dodaj do obserwowanych", class:'btn btn-success' %><br/><br/>
+        <% end %>
+        <% end %>
+        <% if status >= 1 %>
+        <%= link_to "Przestań obserwować", obs, method: :delete, class:'btn btn-primary' %><br/><br/>
+        <%= status == -1 %>
 
-        <% else %>
-            <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
-            <% end %>
+        <% end %>
+        <% end %>
+        <% end %>
+        <% if !@aukcje.isogloszenie %>
+        <strong>Cena aktualna:</strong>
+        <p>
+          <%= @aukcje.cena_aktualna %></p>
+        <strong>Najwyższa oferta:</strong>
+        <p>
+          <% if @aukcje.winner_id != nil %>
+          <% @users.each do |user| %>
+          <% if @aukcje.winner_id == user.id %>
+          <%= user.login %></p>
+        <% end %>
+        <% end %>
+      <% else %>
+        Brak ofert</p>
+      <% end %>
+      <%= form_for @aukcje, :html => {:multipart => true}, id:"form1" do |f| %>
+      <% if current_user %>
+      <% if current_user.id != @aukcje.user_id %>
+      <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
+      <%= f.hidden_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %>
 
-            <% end %>
-            <% end %>
-        </ol>
-    </div>
+      <%= f.fields_for :mojeaukcje do |builder| %>
+      <%= builder.hidden_field :aukcje_id, :value => @aukcje.id, class:"form-control"  %>
+      <% end %>
+      <%= f.submit "Licytuj", class:'btn btn-primary' %>
+      <% end %>
+
+    <% else %>
+      <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
+      <% end %>
+
+      <% end %>
+      <% end %>
+    </ol>
+  </div>
 </div>
 </div>
 <br>

@@ -1,3 +1,3 @@
 class Obserwowane < ApplicationRecord
-  belongs_to :aukcje
+  has_many :aukcje
 end
