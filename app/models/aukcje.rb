@@ -6,7 +6,7 @@ class Aukcje < ApplicationRecord
   belongs_to :kategorie
   attr_accessor :aukcje_id, :mojeaukcjes_attributes
   has_many :mojeaukcjes
-  belongs_to :obserwowanes
+  
   has_attached_file :image,  :storage => :cloudinary, :path => ':id/:style/:filename', :crop => :fill, :styles => { :medium => "300x250!", :thumb => "100x100!"}
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   accepts_nested_attributes_for :mojeaukcjes

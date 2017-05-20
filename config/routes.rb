@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  
   get 'obserwowanes/index'
 
   get 'mojeaukcje/index'
