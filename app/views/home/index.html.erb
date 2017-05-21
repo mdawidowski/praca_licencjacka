@@ -14,7 +14,7 @@
           <p>
             <a href="<%= aukcje_path(aukcja) %>">
               <%= image_tag aukcja.image.url(:medium), class:"img-responsive" %>
-              <%= aukcja.nazwa %>
+              <%= aukcja.nazwa.first(18) %>
             </p>
           </a>
         </ul>

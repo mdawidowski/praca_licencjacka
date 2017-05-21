@@ -41,6 +41,7 @@ gem 'recaptcha', require: 'recaptcha/rails'
 gem 'bcrypt'
 gem 'chartkick'
 gem 'highcharts-rails'
+gem 'cookies_eu', '~> 1.6', '>= 1.6.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

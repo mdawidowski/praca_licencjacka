@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require cookies_eu
  */
  body {background-image:url(http://res.cloudinary.com/dta94lqkr/image/upload/v1492266851/bg_vel4tw.jpg);
        background-size:cover;}

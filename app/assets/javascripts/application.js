@@ -12,6 +12,7 @@
 //
 //= require highcharts
 //= require chartkick
+//= require cookies_eu
 //= require code
 //= require jquery
 //= require jquery_ujs
