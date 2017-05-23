@@ -11,8 +11,6 @@
 \setsansfont[Numbers=OldStyle,Mapping=tex-text]{Myriad Pro}
 %\setmonofont[Scale=0.75]{Monaco}
 % Opcjonalnie identyfikator dokumentu
-% drukowany tylko z włączoną opcją 'brudnopis':
-\wersja   {wersja wstępna [\ymdtoday]}
 
 \author   {Marcin Dawidowski}
 \nralbumu {231010}
@@ -34,8 +32,8 @@
 % streszczenie
 \begin{abstract}
   W pracy przedstawiono rozwojową wersję aplikacji webowej „Let's Bid It” służącą do tworzenia i publikowania aukcji oraz ogłoszeń.
-  
-  W aplikacji zaimplementowano tworzenie kont użytkowników i administratorów, a także zarządzanie nimi. Ponadto dodany został mechanizm reCAPTCHA, który sprawdza rejestrującego się aktualnie użytkownika.  Wdrożona również została kategoryzacja aukcji, ich wyszukiwanie, a także dodawanie i usuwanie z obserwowanych . Możliwa jest również licytacja aukcji po zalogowaniu się na konto użytkownika. Dodatkowo zaimplementowane zostały kategorie, które można tworzyć w hierarchii. 
+
+  W aplikacji zaimplementowano tworzenie kont użytkowników i administratorów, a także zarządzanie nimi. Ponadto dodany został mechanizm reCAPTCHA, który sprawdza rejestrującego się aktualnie użytkownika.  Wdrożona również została kategoryzacja aukcji, ich wyszukiwanie, a także dodawanie i usuwanie z obserwowanych . Możliwa jest również licytacja aukcji po zalogowaniu się na konto użytkownika. Dodatkowo zaimplementowane zostały kategorie, które można tworzyć w hierarchii.
 
   Zaprojektowano widok strony głównej, na której wyświetlane są główne kategorie, a także najnowsze aukcje znajdujące się w portalu. Ponadto po zalogowaniu na konto użytkownika, na stronie głównej widoczne są aktualnie obserwowane przez niego aukcje. Utworzone również zostały widoki aukcji, kategorii, obserwowanych, a także statystyki. Ponadto zaimplementowano panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta. Ponadto wykonane zostały górny oraz dolny pasek nawigacyjny, które wyświetlają różne odnośniki zależnie od typu użytkownika.
 
@@ -59,7 +57,7 @@ Kod źródłowy aplikacji dostępny jest natomiast na platformie Github pod adre
 
 Chęć stworzenia czegoś od podstaw oraz własne doświadczenie w korzystaniu z portali aukcyjnych sprawiło, że dla mnie jako programisty stworzenie takiej aplikacji, byłoby niezwykle satysfakcjonujące i pozwoliłoby rozwinąć umiejętności. Ponadto stworzenie takiego portalu może ułatwić mi w przyszłości implementacje różnego rodzaju sklepów internetowych i innych serwisów związanych z handlem przez Internet.
 
-Mając więc gotowy pomysł na projekt pozostało mi jedynie wybrać odpowiednią technologię, która pomoże mi go zrealizować. W trakcie studiów poznałem kilka różnych języków programowania i frameworków, które sprawdziłyby się w tego typu projekcie. Po rozważeniu wszystkich za i przeciw, mój wybór padł na język Ruby, wspierany przez framework Rails, który udało mi się poznać już wcześniej. Największą zaletą wybranej przeze mnie technologi jest przede wszystkim fakt, iż Ruby on Rails posiada szeroką gamę dostępnych rozwiązań w postaci gemów, które w dużym stopniu ułatwiają pracę nad projektem. Kolejną kwestią jest fakt, że technologia  ta wykorzystuje architekturę MVC, co znacznie ułatwia pracę. Poza tym Ruby on Rails świetnie współpracuje z platformami takimi jak Heroku, czy DigitalOcean. 
+Mając więc gotowy pomysł na projekt pozostało mi jedynie wybrać odpowiednią technologię, która pomoże mi go zrealizować. W trakcie studiów poznałem kilka różnych języków programowania i frameworków, które sprawdziłyby się w tego typu projekcie. Po rozważeniu wszystkich za i przeciw, mój wybór padł na język Ruby, wspierany przez framework Rails, który udało mi się poznać już wcześniej. Największą zaletą wybranej przeze mnie technologi jest przede wszystkim fakt, iż Ruby on Rails posiada szeroką gamę dostępnych rozwiązań w postaci gemów, które w dużym stopniu ułatwiają pracę nad projektem. Kolejną kwestią jest fakt, że technologia  ta wykorzystuje architekturę MVC, co znacznie ułatwia pracę. Poza tym Ruby on Rails świetnie współpracuje z platformami takimi jak Heroku, czy DigitalOcean.
 
 Aplikacja Let's Bid It jest wersją rozwojową portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu.
 
@@ -72,13 +70,13 @@ Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie sy
 
 \section{Porównanie z dostępnymi rozwiązaniami}
 
-\subsection{Allegro} 
+\subsection{Allegro}
 
 Jest to największa, a także najpopularniejsza platforma transakcyjna on-line w Polsce, oferująca setki produktów w niezwykle konkurencyjnych cenach. Serwis udostępnia możliwość zakupu natychmiastowego, licytacji, a także wystawiania ogłoszeń. Typ danej aukcji, zależy tylko i wyłącznie od jej właściciela.
 
 Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It. Tak jak w mojej aplikacji użytkownik może skorzystać z zaawansowanego edytora tekstowego, dodaje zdjęcia i przyporządkowuje ją do konkretnej kategorii. Główną różnicą jest fakt, że Allegro pozwala na wystawienie przedmiotu z użyciem opcji „Kup Teraz”, czego Let's Bid It nie ma.
 
-\subsection{OLX}  
+\subsection{OLX}
 
 Serwis ten jest jednym z najpopularniejszych portali ogłoszeniowych na świecie. Użytkownicy
 mogą udostępniać lokalne ogłoszenia dotyczące sprzedaży oraz usług.
@@ -130,8 +128,8 @@ Głównym założeniem serwisu Let's Bid It jest przede wszystkim portal aukcyjn
 
 \chapter{Implementacja}
 W celu stworzenia aplikacji, która ma w odpowiedni sposób realizować postawione przed nią
-założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzięki którym uda się 
-spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków 
+założenia, potrzebne są odpowiednio dobrane technologie oraz narzędzia, dzięki którym uda się
+spełnić postawione przed nią wymagania. Dobór odpowiedniej technologii, a także frameworków
 jest kluczowy do skutecznej implementacji aplikacji.
 
 \section{Ruby on Rails}
@@ -143,7 +141,7 @@ została przy pomocy architektury MVC (ang. Model-View-Controller).
 Widoki utworzone zostały przy pomocy frameworka Twitter Bootstrap, który pozwala na proste tworzenie
 graficznego interfejsu stron internetowych z wykorzystaniem gotowych rozwiązań bazujących na językach
 HTML i CSS. Główną zaletą tego frameworka jest responsywność, czyli zapewnienie poprawnego wyświetlania
-stron WWW na różnych urządzeniach. 
+stron WWW na różnych urządzeniach.
 
 Aby wdrożyć Twitter Bootstrap do aplikacji wymagane jest jedynie dopisanie poniższej linijki do pliku Gemfile
 re
@@ -153,15 +151,15 @@ Budując portal aukcyjny koniecznym wymogiem jest przede wszystkim obsługa uży
 
 \section{Pozostałe rozwiązania użyte przy realizacji projektu}
 
-\subsection{Heroku} 
+\subsection{Heroku}
 
 Platforma do tworzenia i hostowania aplikacji w chmurze, dzięki której w łatwy sposób możliwe jest wdrożenie jej na serwer zewnętrzny.
 
-\subsection{Cloudinary} 
+\subsection{Cloudinary}
 
 Serwis pozwalający na przechowywanie danych w chmurze. Dzięki połączeniu go z aplikacją możliwe było bezproblemowe przechowywanie grafik dołączanych przez użytkowników do aukcji i rozwiązanie problematycznego przechowywania tych plików na serwerze Heroku.
 
-\subsection{ActsAsTree} 
+\subsection{ActsAsTree}
 
 Gem ułatwiający tworzenie kategorii w postaci drzewa. Poprawia w sposób zdecydowany nawigację
 po stronie, a także sprawia, że dane są uporządkowane. Sama implementacja przebiega w środowisku
@@ -179,7 +177,7 @@ Zabezpieczenie dzięki któremu możliwość wysyłania danych będą mieli jedy
 \end{figure}
 
 
-\subsection{Chartkick} 
+\subsection{Chartkick}
 
 Gem pozwalający na tworzenie i wyświetlanie różnego rodzaju wykresów na podstawie danych zawartych w aplikacji.
 
@@ -190,9 +188,9 @@ Gem pozwalający na tworzenie i wyświetlanie różnego rodzaju wykresów na pod
 \source{Opracowanie własne.}
 \end{figure}
 
-\subsection{CKEditor} 
+\subsection{CKEditor}
 
-Wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej 
+Wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej
 czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
 a także możliwe jest wstawienie listy, tabeli, odnośników, a także obrazów.
 
@@ -249,15 +247,15 @@ Najważniejszym elementem aukcji jest strona, na której każda z nich, jest wy�
 
 \subsection{Kategorie}
 
-Uporządkowanie aukcji niemożliwe byłoby bez ich kategoryzacji, dlatego też koniecznym wydawało się wdrożenie kategorii, przy czym niezwykle pomocny był gem ActsAsTree. 
+Uporządkowanie aukcji niemożliwe byłoby bez ich kategoryzacji, dlatego też koniecznym wydawało się wdrożenie kategorii, przy czym niezwykle pomocny był gem ActsAsTree.
 
 Tak jak aukcje, kategorie składają się ze stron, które służą do ich dodawania, wyświetlania oraz edycji. Cechą różniącą kategorie i aukcje jest fakt, że strony oznaczone jako index, new oraz edit widoczne są tylko dla osób zalogowanych na konto administratora.
 
-Ogólnodostępnym elementem kategorii jest widok udostępniający dane o konkretnej kategorii. Na stronie tej widoczne są wszystkie podkategorie danej kategorii, a także aukcję, które do niej należą. 
+Ogólnodostępnym elementem kategorii jest widok udostępniający dane o konkretnej kategorii. Na stronie tej widoczne są wszystkie podkategorie danej kategorii, a także aukcję, które do niej należą.
 
 \subsection{Obserwowane}
 
-Dodanie aukcji do obserwowanych, jest jedną z funkcjonalności, która umożliwia łatwiejsze ich odnalezienie. 
+Dodanie aukcji do obserwowanych, jest jedną z funkcjonalności, która umożliwia łatwiejsze ich odnalezienie.
 
 Widok opiera się na prostej tabeli, która wyświetla podstawowe dane na temat aukcji, które zostały dodane do obserwowanych. Rekordy tabeli wyposażone zostały również w przycisk, dzięki któremu możliwe jest usunięcie elementu z obserwowanych. W celu dodania aukcji do obserwowanych użytkownik musi odwiedzić stronę aukcji i kliknąć przycisk "Dodaj do obserwowanych". Jeśli jednak aukcja jest już obserwowana przez użytkownika, to na stronie wyświetlony zostanie przycisk "Przestań obserwować".
 
@@ -293,66 +291,66 @@ W trakcie pracy nad projektem udało mi się zrealizować praktycznie wszystkie 
 
 \begin{thebibliography}{9}
 
-\bibitem{ror} 
+\bibitem{ror}
 David A. Black.
 \textit{Ruby. Przewodnik programisty wyd. II.}
 HELION S.A. 2015.
 
-\bibitem{ror} 
+\bibitem{ror}
 John Elder.
 \textit{Ruby on Rails - Tworzenie aplikacji WWW}
 Codemy.com 2016.
 
-\bibitem{bootstrap} 
+\bibitem{bootstrap}
 Michał Kortas.
 \textit{Bootstrap. Praktyczne Projekty}
 Helion 2016.
 
-\bibitem{ror} 
+\bibitem{ror}
 Oficjalna dokumentacja - Ruby on Rails (dostęp 1.03.2017)
-\\\texttt{\url{https://github.com/rails/rails}} 
+\\\texttt{\url{https://github.com/rails/rails}}
 
 
-\bibitem{devise} 
+\bibitem{devise}
 Oficjalna dokumentacja - Gem Devise (dostęp 5.03.2017)
-\\\texttt{\url{https://github.com/plataformatec/devise}} 
+\\\texttt{\url{https://github.com/plataformatec/devise}}
 
 
-\bibitem{actsastree} 
+\bibitem{actsastree}
 Oficjalna dokumentacja - Gem ActsAsTree (dostęp 8.04.2017)
-\\\texttt{\url{https://github.com/amerine/acts_as_tree}} 
+\\\texttt{\url{https://github.com/amerine/acts_as_tree}}
 
 
-\bibitem{recaptcha} 
+\bibitem{recaptcha}
 Oficjalna dokumentacja - Gem reCAPTCHA  (dostęp 10.04.2017)
 \\\texttt{\url{https://github.com/ambethia/recaptcha}}
 
 
-\bibitem{ckeditor} 
+\bibitem{ckeditor}
 Oficjalna dokumentacja - Gem CKEditor for Rails (dostęp 10.04.2017)
-\\\texttt{\url{https://github.com/galetahub/ckeditor}} 
+\\\texttt{\url{https://github.com/galetahub/ckeditor}}
 
 
-\bibitem{chartkick} 
+\bibitem{chartkick}
 Oficjalna dokumentacja - Gem Chartkick (dostęp 28.04.2017)
-\\\texttt{\url{https://github.com/ankane/chartkick}} 
+\\\texttt{\url{https://github.com/ankane/chartkick}}
 
 
-\bibitem{font-awesome} 
+\bibitem{font-awesome}
 Oficjalna dokumentacja - Gem Font-Awesome (dostęp 18.05.2017)
-\\\texttt{\url{https://github.com/bokmann/font-awesome-rails}} 
+\\\texttt{\url{https://github.com/bokmann/font-awesome-rails}}
 
 
-\bibitem{astah} 
+\bibitem{astah}
 Oficjalna dokumentacja - Astah Professional (dostęp 10.04.2017)
-\\\texttt{\url{http://astah.net/tutorials}} 
+\\\texttt{\url{http://astah.net/tutorials}}
 
 
-\bibitem{mysql} 
+\bibitem{mysql}
 Oficjalna dokumentacja - MySQL Workbench (dostęp 10.04.2017)
 \\\texttt{\url{https://dev.mysql.com/doc/workbench/en/}}
 
-\end{thebibliography} 
+\end{thebibliography}
 
 % załączniki (opcjonalnie):
 \appendix

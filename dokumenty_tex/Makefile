@@ -1,4 +1,4 @@
-BOOK=magisterka
+BOOK=licencjat
 
 TEX=xelatex
 BIBTEX=bibtex
@@ -8,7 +8,7 @@ BIBTEX=bibtex
 %.pdf : %.tex
 	$(TEX) $*
 
-mgr :
+lic :
 	$(TEX) $(BOOK)
 	$(BIBTEX) $(BOOK)
 	$(TEX) $(BOOK)

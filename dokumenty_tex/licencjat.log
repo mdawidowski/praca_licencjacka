@@ -1,12 +1,19 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  23 MAY 2017 13:50
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  23 MAY 2017 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**magisterka.tex
-(./magisterka.tex
+**licencjat
+(./licencjat.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
-(./xmgr.cls
+
+! LaTeX Error: File `xmgr.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: xlic.cls
+(./xlic.cls
 Document Class: xmgr 2009/12/12 v2.0.0 (W. Bzyl)
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -672,7 +679,7 @@ ing=tex-text;+smcp;"
 ing=tex-text;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
- (./magisterka.aux
+ (./licencjat.aux
 
 LaTeX Warning: Label `ror' multiply defined.
 
@@ -680,32 +687,32 @@ LaTeX Warning: Label `ror' multiply defined.
 LaTeX Warning: Label `ror' multiply defined.
 
 )
-\openout1 = `magisterka.aux'.
+\openout1 = `licencjat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 32.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 30.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -713,67 +720,67 @@ LaTeX Font Info:    ... okay on input line 32.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 32.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 32.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 32.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 32.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 32.
-LaTeX Font Info:    Redeclaring math accent \check on input line 32.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 32.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 30.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 30.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 30.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 30.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 30.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 30.
+LaTeX Font Info:    Redeclaring math accent \check on input line 30.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 30.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 30.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 30.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 32.
+(Font)              `operators' in the math version `normal' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/MinionPro(0)/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> EU1/MinionPro(0)/m/n on input line 30.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 32.
+(Font)              `operators' in the math version `bold' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(0)/m/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(0)/m/n on input line 30.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  EU1/MinionPro(0)/m/n --> EU1/MinionPro(0)/m/n on input 
-line 32.
+line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/MinionPro(0)/m/it on input line 32
+(Font)                  OT1/cmr/m/it --> EU1/MinionPro(0)/m/it on input line 30
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(0)/bx/n on input line 32
+(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(0)/bx/n on input line 30
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/MyriadPro(0)/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> EU1/MyriadPro(0)/m/n on input line 30.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  EU1/MinionPro(0)/m/n --> EU1/MinionPro(0)/bx/n on input
- line 32.
+ line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/MinionPro(0)/bx/it on input line 
-32.
+30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/MyriadPro(0)/bx/n on input line 3
-2.
+0.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 30.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -783,60 +790,60 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
-(./magisterka.out) (./magisterka.out)
+(./licencjat.out) (./licencjat.out)
 \@outlinefile=\write3
-\openout3 = `magisterka.out'.
+\openout3 = `licencjat.out'.
 
 
 
 LaTeX Font Warning: Font shape `EU1/MinionPro(0)/bx/n' undefined
-(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 35.
+(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 33.
 
 
-Overfull \hbox (10.94402pt too wide) in paragraph at lines 38--39
+Overfull \hbox (10.94402pt too wide) in paragraph at lines 36--37
 []\EU1/MinionPro(0)/m/n/12 W aplikacji zaimplementowano tworzenie kont użytkown
 ików i administratorów,
  []
 
 
-Overfull \hbox (44.2881pt too wide) in paragraph at lines 38--39
+Overfull \hbox (44.2881pt too wide) in paragraph at lines 36--37
 \EU1/MinionPro(0)/m/n/12 sprawdza rejestrującego się aktualnie użytkownika. Wdr
 ożona również została kategoryzacja
  []
 
 
-Overfull \hbox (2.94814pt too wide) in paragraph at lines 38--39
+Overfull \hbox (2.94814pt too wide) in paragraph at lines 36--37
 \EU1/MinionPro(0)/m/n/12 aukcji, ich wyszukiwanie, a także dodawanie i usuwanie
  z obserwowanych . Możliwa
  []
 
 
-Overfull \hbox (11.91295pt too wide) in paragraph at lines 40--41
+Overfull \hbox (11.91295pt too wide) in paragraph at lines 38--39
 []\EU1/MinionPro(0)/m/n/12 Zaprojektowano widok strony głównej, na której wyświ
 etlane są główne kategorie,
  []
 
 
-Overfull \hbox (36.48012pt too wide) in paragraph at lines 40--41
+Overfull \hbox (36.48012pt too wide) in paragraph at lines 38--39
 \EU1/MinionPro(0)/m/n/12 a także statystyki. Ponadto zaimplementowano panel adm
 inistracyjny i panel użytkownika,
  []
 
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 44.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 44.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 44.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 44.
+(Font)              <6> on input line 42.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -868,26 +875,26 @@ ing=tex-text;+sups;"
 ing=tex-text;+sups;+smcp;"
 .................................................
 
-Underfull \hbox (badness 1478) in paragraph at lines 44--44
+Underfull \hbox (badness 1478) in paragraph at lines 42--42
 [][][]\EU1/MinionPro(0)/m/n/10 W celu zalogowania się na konto użytkownika nale
 ży kliknąć przycisk ”Logowanie” w
  []
 
 
-Overfull \hbox (12.8209pt too wide) in paragraph at lines 44--45
+Overfull \hbox (12.8209pt too wide) in paragraph at lines 42--43
 [][] 
  []
 
 
-Overfull \hbox (16.36894pt too wide) in paragraph at lines 46--47
+Overfull \hbox (16.36894pt too wide) in paragraph at lines 44--45
 []\EU1/MinionPro(0)/m/n/12 Kod źródłowy aplikacji dostępny jest natomiast na pl
 atformie Github pod adresem: 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 55.
+(Font)              <14.4> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 55.
+(Font)              <7> on input line 53.
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -902,41 +909,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3]
 
 LaTeX Font Warning: Font shape `EU1/MinionPro(0)/m/it' undefined
-(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 55.
+(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 53.
 
-[4] (./magisterka.toc [5
+[4] (./licencjat.toc [5
 
 
 ])
 \tf@toc=\write4
-\openout4 = `magisterka.toc'.
+\openout4 = `licencjat.toc'.
 
  [6]
-Overfull \hbox (4.24895pt too wide) in paragraph at lines 62--63
+Overfull \hbox (4.24895pt too wide) in paragraph at lines 60--61
 []\EU1/MinionPro(0)/m/it/12 Mając więc gotowy pomysł na projekt pozostało mi je
 dynie wybrać odpowiednią
  []
 
 
-Overfull \hbox (12.60811pt too wide) in paragraph at lines 66--67
+Overfull \hbox (12.60811pt too wide) in paragraph at lines 64--65
 \EU1/MinionPro(0)/m/it/12 CKEditor, dzięki któremu dodając aukcję, użytkownik m
 oże swobodnie manipulować
  []
 
 
-Overfull \hbox (14.57616pt too wide) in paragraph at lines 66--67
+Overfull \hbox (14.57616pt too wide) in paragraph at lines 64--65
 \EU1/MinionPro(0)/m/it/12 logowaniu i rejestracji, a także statystyki strony, k
 tóre dostępne są dla administratorów.
  []
 
 
-Overfull \hbox (2.56413pt too wide) in paragraph at lines 66--67
+Overfull \hbox (2.56413pt too wide) in paragraph at lines 64--65
 \EU1/MinionPro(0)/m/it/12 związku z tym, że aplikacja znajduje się na platformi
 e Heroku, głównym problemem
  []
 
 
-Overfull \hbox (17.4721pt too wide) in paragraph at lines 66--67
+Overfull \hbox (17.4721pt too wide) in paragraph at lines 64--65
 \EU1/MinionPro(0)/m/it/12 było przetrzymywanie plików graficznych, które na Her
 oku usuwane są automatycznie.
  []
@@ -947,7 +954,7 @@ Underfull \vbox (badness 2435) has occurred while \output is active []
  [7
 
 ]
-Overfull \hbox (34.95612pt too wide) in paragraph at lines 68--69
+Overfull \hbox (34.95612pt too wide) in paragraph at lines 66--67
 \EU1/MinionPro(0)/m/it/12 mającego na celu symulacje płatności internetowych, a
  także zaawansowana wyszukiwarka
  []
@@ -955,13 +962,13 @@ Overfull \hbox (34.95612pt too wide) in paragraph at lines 68--69
 [8]
 Rozdział 1.
 
-Overfull \hbox (2.18008pt too wide) in paragraph at lines 83--85
+Overfull \hbox (2.18008pt too wide) in paragraph at lines 81--83
 \EU1/MinionPro(0)/m/it/12 Użytkownicy mogą udostępniać lokalne ogłoszenia dotyc
 zące sprzedaży oraz usług. 
  []
 
 
-Overfull \hbox (10.08812pt too wide) in paragraph at lines 86--88
+Overfull \hbox (10.08812pt too wide) in paragraph at lines 84--86
 \EU1/MinionPro(0)/m/it/12 bardziej oryginalne opisy, co nie jest możliwe przy k
 orzystaniu z wyżej wymienionego
  []
@@ -972,19 +979,19 @@ Underfull \vbox (badness 2334) has occurred while \output is active []
  [9
 
 ]
-Overfull \hbox (4.65878pt too wide) in paragraph at lines 94--95
+Overfull \hbox (4.65878pt too wide) in paragraph at lines 92--93
 \EU1/MinionPro(0)/m/it/12 także zaawansowany edytor, który pozwoli na to, by je
 go ogłoszenie wyglądało
  []
 
 
-Overfull \hbox (5.42683pt too wide) in paragraph at lines 96--97
+Overfull \hbox (5.42683pt too wide) in paragraph at lines 94--95
 []\EU1/MinionPro(0)/m/it/12 Sklep internetowy – jest to kolejna możliwa opcją z
 astosowania mojej aplikacji
  []
 
 
-Overfull \hbox (12.01878pt too wide) in paragraph at lines 96--97
+Overfull \hbox (12.01878pt too wide) in paragraph at lines 94--95
 \EU1/MinionPro(0)/m/it/12 także obsługa dodawanych aukcji oraz zaawansowane nar
 zędzia do zarządzania
  []
@@ -995,38 +1002,45 @@ File: fig/erd.png Graphic file (type QTm)
 <use  "fig/erd.png" > [11
 
 ]
-File: fig/ucdiagram.jpg Graphic file (type QTm)
- <use  "fig/ucdiagram.jpg" > [12]
+File: fig/ucdiagram.png Graphic file (type QTm)
+ <use  "fig/ucdiagram.png" > [12]
 File: fig/DFD.jpg Graphic file (type QTm)
 
-<use  "fig/DFD.jpg" > [13]
+<use  "fig/DFD.jpg" >
+! Undefined control sequence.
+<recently read> \ThisDocVersion 
+                                
+l.129 \chapter
+              {Implementacja}
+? 
+[13]
 Rozdział 3.
 
-Overfull \hbox (2.8681pt too wide) in paragraph at lines 132--136
+Overfull \hbox (2.8681pt too wide) in paragraph at lines 130--134
 \EU1/MinionPro(0)/m/it/12 przed nią założenia, potrzebne są odpowiednio dobrane
  technologie oraz narzędzia,
  []
 
 
-Overfull \hbox (8.90811pt too wide) in paragraph at lines 132--136
+Overfull \hbox (8.90811pt too wide) in paragraph at lines 130--134
 \EU1/MinionPro(0)/m/it/12 dzięki którym uda się spełnić postawione przed nią wy
 magania. Dobór odpowiedniej
  []
 
 
-Overfull \hbox (15.73212pt too wide) in paragraph at lines 132--136
+Overfull \hbox (15.73212pt too wide) in paragraph at lines 130--134
 \EU1/MinionPro(0)/m/it/12 technologii, a także frameworków jest kluczowy do sku
 tecznej implementacji aplikacji. 
  []
 
 
-Overfull \hbox (14.0041pt too wide) in paragraph at lines 143--147
+Overfull \hbox (14.0041pt too wide) in paragraph at lines 141--145
 \EU1/MinionPro(0)/m/it/12 Widoki utworzone zostały przy pomocy frameworka Twitt
 er Bootstrap, który pozwala
  []
 
 
-Overfull \hbox (5.81123pt too wide) in paragraph at lines 152--153
+Overfull \hbox (5.81123pt too wide) in paragraph at lines 150--151
 \EU1/MinionPro(0)/m/it/12 użytkowników i administratorów aplikacji. W tym celu 
 wdrożony został gem Devise,
  []
@@ -1034,28 +1048,34 @@ wdrożony został gem Devise,
 [14
 
 ]
-Overfull \hbox (26.04413pt too wide) in paragraph at lines 166--169
+Overfull \hbox (26.04413pt too wide) in paragraph at lines 164--167
 \EU1/MinionPro(0)/m/it/12 Gem ułatwiający tworzenie kategorii w postaci drzewa.
  Poprawia w sposób zdecydowany
  []
 
 
-Overfull \hbox (14.64815pt too wide) in paragraph at lines 166--169
+Overfull \hbox (14.64815pt too wide) in paragraph at lines 164--167
 \EU1/MinionPro(0)/m/it/12 nawigację po stronie, a także sprawia, że dane są upo
 rządkowane. Sama implementacja
  []
 
+! Undefined control sequence.
+<recently read> \ThisDocVersion 
+                                
+l.167 \newpage
+              
+? 
 [15]
 File: fig/captcha.png Graphic file (type QTm)
  <use  "fig/captcha.png" >
-Overfull \hbox (17.35614pt too wide) in paragraph at lines 184--185
+Overfull \hbox (17.35614pt too wide) in paragraph at lines 182--183
 \EU1/MinionPro(0)/m/it/12 Gem pozwalający na tworzenie i wyświetlanie różnego r
 odzaju wykresów na podstawie
  []
 
 File: fig/chart.png Graphic file (type QTm)
 <use  "fig/chart.png" >
-Overfull \hbox (18.02412pt too wide) in paragraph at lines 195--198
+Overfull \hbox (18.02412pt too wide) in paragraph at lines 193--196
 \EU1/MinionPro(0)/m/it/12 Wizualny edytor tekstowy języka HTML, który umożliwia
  użytkownikowi na wybranie
  []
@@ -1063,108 +1083,128 @@ Overfull \hbox (18.02412pt too wide) in paragraph at lines 195--198
 [16]
 File: fig/ckeditor.png Graphic file (type QTm)
  <use  "fig/ckeditor.png" >
-Overfull \hbox (3.6001pt too wide) in paragraph at lines 208--209
+Overfull \hbox (3.6001pt too wide) in paragraph at lines 206--207
 \EU1/MinionPro(0)/m/it/12 Rozszerzenie dzięki któremu możliwe jest na umieszcze
 nie w aplikacji skalowalnych
  []
 
 File: fig/icon.png Graphic file (type QTm)
-<use  "fig/icon.png" > [17]
-Overfull \hbox (7.12013pt too wide) in paragraph at lines 223--224
+<use  "fig/icon.png" >
+! Undefined control sequence.
+<recently read> \ThisDocVersion 
+                                
+l.215 \newpage
+              
+? 
+[17]
+Overfull \hbox (7.12013pt too wide) in paragraph at lines 221--222
 \EU1/MinionPro(0)/m/it/12 Strona główna aplikacji zaprojektowana została tak, a
 by w prosty sposób udostępniać
  []
 
 
-Overfull \hbox (11.1281pt too wide) in paragraph at lines 223--224
+Overfull \hbox (11.1281pt too wide) in paragraph at lines 221--222
 \EU1/MinionPro(0)/m/it/12 konto użytkownika, na stronie głównej informacje o au
 kcjach, które dany użytkownik
  []
 
 
-Overfull \hbox (45.22495pt too wide) in paragraph at lines 244--245
+Overfull \hbox (45.22495pt too wide) in paragraph at lines 242--243
 []\EU1/MinionPro(0)/m/it/12 Pierwszym elementem jest strona index dostępna tylk
 o dla zalogowanych użytkowników.
  []
 
 [18]
-Overfull \hbox (17.71208pt too wide) in paragraph at lines 246--247
+Overfull \hbox (17.71208pt too wide) in paragraph at lines 244--245
 \EU1/MinionPro(0)/m/it/12 jednak łączy je wspólny formularz wypełniany przy two
 rzeniu/edycji aukcji. Formularz
  []
 
 
-Overfull \hbox (27.73694pt too wide) in paragraph at lines 248--249
+Overfull \hbox (27.73694pt too wide) in paragraph at lines 246--247
 []\EU1/MinionPro(0)/m/it/12 Najważniejszym elementem aukcji jest strona, na któ
 rej każda z nich, jest wyświetlana
  []
 
 
-Overfull \hbox (6.86014pt too wide) in paragraph at lines 248--249
+Overfull \hbox (6.86014pt too wide) in paragraph at lines 246--247
 \EU1/MinionPro(0)/m/it/12 oraz wszystkie informacje na temat aukcji jest widocz
 na dla każdego, jednak niektóre
  []
 
 
-Overfull \hbox (18.77611pt too wide) in paragraph at lines 248--249
+Overfull \hbox (18.77611pt too wide) in paragraph at lines 246--247
 \EU1/MinionPro(0)/m/it/12 jej funkcjonalności widoczne są jedynie dla zalogowan
 ych użytkowników. Elementami,
  []
 
 
-Overfull \hbox (34.99211pt too wide) in paragraph at lines 248--249
+Overfull \hbox (34.99211pt too wide) in paragraph at lines 246--247
 \EU1/MinionPro(0)/m/it/12 a także panel, za pomocą którego możliwe jest licytow
 anie aukcji. Sam panel zabezpieczony
  []
 
 
-Overfull \hbox (28.42812pt too wide) in paragraph at lines 252--253
+Overfull \hbox (28.42812pt too wide) in paragraph at lines 250--251
 \EU1/MinionPro(0)/m/it/12 Uporządkowanie aukcji niemożliwe byłoby bez ich kateg
 oryzacji, dlatego też koniecznym
  []
 
 
-Overfull \hbox (16.06012pt too wide) in paragraph at lines 252--253
+Overfull \hbox (16.06012pt too wide) in paragraph at lines 250--251
 \EU1/MinionPro(0)/m/it/12 wydawało się wdrożenie kategorii, przy czym niezwykle
  pomocny był gem ActsAsTree. 
  []
 
 
-Overfull \hbox (26.3329pt too wide) in paragraph at lines 256--257
+Overfull \hbox (26.3329pt too wide) in paragraph at lines 254--255
 []\EU1/MinionPro(0)/m/it/12 Ogólnodostępnym elementem kategorii jest widok udos
 tępniający dane o konkretnej
  []
 
 
-Overfull \hbox (2.70007pt too wide) in paragraph at lines 262--263
+Overfull \hbox (2.70007pt too wide) in paragraph at lines 260--261
 \EU1/MinionPro(0)/m/it/12 aukcji, które zostały dodane do obserwowanych. Rekord
 y tabeli wyposażone zostały
  []
 
 
-Overfull \hbox (17.82413pt too wide) in paragraph at lines 262--263
+Overfull \hbox (17.82413pt too wide) in paragraph at lines 260--261
 \EU1/MinionPro(0)/m/it/12 również w przycisk, dzięki któremu możliwe jest usuni
 ęcie elementu z obserwowanych.
  []
 
 
-Overfull \hbox (21.36009pt too wide) in paragraph at lines 262--263
+Overfull \hbox (21.36009pt too wide) in paragraph at lines 260--261
 \EU1/MinionPro(0)/m/it/12 obserwowana przez użytkownika, to na stronie wyświetl
 ony zostanie przycisk ”Przestań
  []
 
+! Undefined control sequence.
+<recently read> \ThisDocVersion 
+                                
+l.261 
+      
+? 
 [19]
 File: fig/pasek.png Graphic file (type QTm)
  <use  "fig/pasek.png" >
 File: fig/stopka.png Graphic file (type QTm)
  <use  "fig/stopka.png" >
-Overfull \hbox (9.58812pt too wide) in paragraph at lines 281--288
+Overfull \hbox (9.58812pt too wide) in paragraph at lines 279--286
 \EU1/MinionPro(0)/m/it/12 logowania dla administratora, który widoczny jest jed
 ynie dla osób niezalogowanych.
  []
 
-[20] [21]
-Overfull \hbox (6.5881pt too wide) in paragraph at lines 292--293
+[20]
+! Undefined control sequence.
+<recently read> \ThisDocVersion 
+                                
+l.289 \summary
+              
+? 
+[21]
+Overfull \hbox (6.5881pt too wide) in paragraph at lines 290--291
 \EU1/MinionPro(0)/m/it/12 posiadane umiejętności. Podczas realizacji aplikacji 
 udało mi się wykorzystać niemal
  []
@@ -1177,20 +1217,20 @@ udało mi się wykorzystać niemal
 Dodatek A.
 [24
 
-] (./magisterka.lof)
+] (./licencjat.lof)
 \tf@lof=\write5
-\openout5 = `magisterka.lof'.
+\openout5 = `licencjat.lof'.
 
  [25
 
 ]
-Overfull \hbox (17.82008pt too wide) in paragraph at lines 365--365
+Overfull \hbox (17.82008pt too wide) in paragraph at lines 363--363
 \EU1/MinionPro(0)/m/it/12 Ja, niżej podpisany(a) oświadczam, iż przedłożona pra
 ca dyplomowa została wykonana
  []
 
 
-Overfull \hbox (37.94812pt too wide) in paragraph at lines 365--365
+Overfull \hbox (37.94812pt too wide) in paragraph at lines 363--363
 \EU1/MinionPro(0)/m/it/12 przeze mnie samodzielnie, nie narusza praw autorskich
 , interesów prawnych i materialnych
  []
@@ -1198,11 +1238,11 @@ Overfull \hbox (37.94812pt too wide) in paragraph at lines 365--365
 [26
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
- (./magisterka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 367.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 367.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
+ (./licencjat.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 365.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1210,15 +1250,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 365.
  ) 
 Here is how much of TeX's memory you used:
- 21487 strings out of 495579
- 386608 string characters out of 6187323
- 400566 words of memory out of 5000000
+ 21488 strings out of 495579
+ 386595 string characters out of 6187323
+ 400545 words of memory out of 5000000
  24569 multiletter control sequences out of 15000+600000
  7873 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,12n,62p,10389b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,62p,10384b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on magisterka.pdf (26 pages).
+Output written on licencjat.pdf (26 pages).
