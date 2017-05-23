@@ -17,18 +17,18 @@
 \contentsline {subsection}{\numberline {3.4.1}Heroku}{15}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Cloudinary}{15}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}ActsAsTree}{15}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}reCAPTCHA}{15}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Chartkick}{15}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}CKEditor}{16}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Font-Awesome}{16}{subsection.3.4.7}
-\contentsline {section}{\numberline {3.5}Struktura aplikacji}{17}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Strona główna}{17}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Aukcje}{17}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Kategorie}{18}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Obserwowane}{18}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Nawigacja}{19}{subsection.3.5.5}
-\contentsline {chapter}{Zakończenie}{21}{chapter*.5}
-\contentsline {chapter}{Bibliografia}{22}{chapter*.6}
-\contentsline {chapter}{\numberline {A}Płyta CD zawierająca kod projektu}{23}{appendix.A}
-\contentsline {chapter}{Spis rysunków}{24}{appendix*.7}
-\contentsline {chapter}{Oświadczenie}{25}{appendix*.8}
+\contentsline {subsection}{\numberline {3.4.4}reCAPTCHA}{16}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Chartkick}{16}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}CKEditor}{17}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Font-Awesome}{17}{subsection.3.4.7}
+\contentsline {section}{\numberline {3.5}Struktura aplikacji}{18}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Strona główna}{18}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Aukcje}{18}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Kategorie}{19}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Obserwowane}{19}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Nawigacja}{20}{subsection.3.5.5}
+\contentsline {chapter}{Zakończenie}{22}{chapter*.5}
+\contentsline {chapter}{Bibliografia}{23}{chapter*.6}
+\contentsline {chapter}{\numberline {A}Płyta CD zawierająca kod projektu}{24}{appendix.A}
+\contentsline {chapter}{Spis rysunków}{25}{appendix*.7}
+\contentsline {chapter}{Oświadczenie}{26}{appendix*.8}
