@@ -1,2 +1,6 @@
 <h3>Liczba aukcji ze względu na kategorie</h3>
 <%= bar_chart @aukcjes.group(:kategorie_id).count %>
+
+<h3>Rejestracja użytkowników według dnia: </h3>
+<%= line_chart User.group_by_day(:created_at).count %>
+</div>

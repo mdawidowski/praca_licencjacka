@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  12 MAY 2017 22:43
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.4.2)  23 MAY 2017 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,6 +676,9 @@ ing=tex-text;"
 
 LaTeX Warning: Label `ror' multiply defined.
 
+
+LaTeX Warning: Label `ror' multiply defined.
+
 )
 \openout1 = `magisterka.aux'.
 
@@ -794,33 +797,33 @@ LaTeX Font Warning: Font shape `EU1/MinionPro(0)/bx/n' undefined
 (Font)              using `EU1/MinionPro(0)/m/n' instead on input line 35.
 
 
-Overfull \hbox (16.96321pt too wide) in paragraph at lines 36--37
-\EU1/MinionPro(0)/m/n/12 W pracy przedstawiono rozwojową wersję aplikacji webow
-ej „Let’s Bid It” do tworzenia
+Overfull \hbox (10.94402pt too wide) in paragraph at lines 38--39
+[]\EU1/MinionPro(0)/m/n/12 W aplikacji zaimplementowano tworzenie kont użytkown
+ików i administratorów,
  []
 
 
-Overfull \hbox (18.08803pt too wide) in paragraph at lines 38--39
-[]\EU1/MinionPro(0)/m/n/12 W aplikacji zaimplementowano ich kategoryzację, wysz
-ukiwanie, a także tworzenie
+Overfull \hbox (44.2881pt too wide) in paragraph at lines 38--39
+\EU1/MinionPro(0)/m/n/12 sprawdza rejestrującego się aktualnie użytkownika. Wdr
+ożona również została kategoryzacja
  []
 
 
-Overfull \hbox (1.92493pt too wide) in paragraph at lines 40--41
-[]\EU1/MinionPro(0)/m/n/12 Zaprojektwano widok strony głównej, który wyświetla 
-losowe aukcje znajdujące
+Overfull \hbox (2.94814pt too wide) in paragraph at lines 38--39
+\EU1/MinionPro(0)/m/n/12 aukcji, ich wyszukiwanie, a także dodawanie i usuwanie
+ z obserwowanych . Możliwa
  []
 
 
-Overfull \hbox (6.66016pt too wide) in paragraph at lines 40--41
-\EU1/MinionPro(0)/m/n/12 zalogowaniu się na konkretny typ konta. Każda z aukcji
- wyświetlana jest w kolejności
+Overfull \hbox (11.91295pt too wide) in paragraph at lines 40--41
+[]\EU1/MinionPro(0)/m/n/12 Zaprojektowano widok strony głównej, na której wyświ
+etlane są główne kategorie,
  []
 
 
-Overfull \hbox (27.28491pt too wide) in paragraph at lines 42--43
-[]\EU1/MinionPro(0)/m/n/12 Do tworzenia aplikacji wykorzystano Ruby on Rails, T
-witter Bootstrap, Plataformatec
+Overfull \hbox (36.48012pt too wide) in paragraph at lines 40--41
+\EU1/MinionPro(0)/m/n/12 a także statystyki. Ponadto zaimplementowano panel adm
+inistracyjny i panel użytkownika,
  []
 
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 44.
@@ -834,15 +837,57 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 44.
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Minion Pro/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Minion Pro/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Minion Pro/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'MinionPro(1)' created for font 'Minion Pro' with options
+. [Mapping=tex-text,Ligatures=TeX,Numbers=OldStyle,Mapping=tex-text,VerticalPos
+ition=Superior].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"Minion
+. Pro/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;mapp
+ing=tex-text;+sups;"
+. - 'small caps'  (m/sc) with NFSS spec.: <->"Minion
+. Pro/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;mapp
+ing=tex-text;+sups;+smcp;"
+.................................................
+
+Underfull \hbox (badness 1478) in paragraph at lines 44--44
+[][][]\EU1/MinionPro(0)/m/n/10 W celu zalogowania się na konto użytkownika nale
+ży kliknąć przycisk ”Logowanie” w
+ []
+
 
 Overfull \hbox (12.8209pt too wide) in paragraph at lines 44--45
 [][] 
  []
 
+
+Overfull \hbox (16.36894pt too wide) in paragraph at lines 46--47
+[]\EU1/MinionPro(0)/m/n/12 Kod źródłowy aplikacji dostępny jest natomiast na pl
+atformie Github pod adresem: 
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 53.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 55.
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -851,277 +896,325 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 ] [2
 
-] [3] (./magisterka.toc [4
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+
+LaTeX Font Warning: Font shape `EU1/MinionPro(0)/m/it' undefined
+(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 55.
+
+[4] (./magisterka.toc [5
 
 
 ])
 \tf@toc=\write4
 \openout4 = `magisterka.toc'.
 
- [5]
-Overfull \hbox (4.24895pt too wide) in paragraph at lines 60--61
-[]\EU1/MinionPro(0)/bx/n/12 Mając więc gotowy pomysł na projekt pozostało mi je
+ [6]
+Overfull \hbox (4.24895pt too wide) in paragraph at lines 62--63
+[]\EU1/MinionPro(0)/m/it/12 Mając więc gotowy pomysł na projekt pozostało mi je
 dynie wybrać odpowiednią
  []
 
 
-Overfull \hbox (12.60811pt too wide) in paragraph at lines 64--65
-\EU1/MinionPro(0)/bx/n/12 CKEditor, dzięki któremu dodając aukcję, użytkownik m
+Overfull \hbox (12.60811pt too wide) in paragraph at lines 66--67
+\EU1/MinionPro(0)/m/it/12 CKEditor, dzięki któremu dodając aukcję, użytkownik m
 oże swobodnie manipulować
  []
 
 
-Overfull \hbox (18.83208pt too wide) in paragraph at lines 64--65
-\EU1/MinionPro(0)/bx/n/12 jej opisem. Dodatkowo zaimplementowałem zabezpieczeni
-e reCaptcha przy logowaniu
+Overfull \hbox (14.57616pt too wide) in paragraph at lines 66--67
+\EU1/MinionPro(0)/m/it/12 logowaniu i rejestracji, a także statystyki strony, k
+tóre dostępne są dla administratorów.
  []
 
 
-Overfull \hbox (7.01616pt too wide) in paragraph at lines 64--65
-\EU1/MinionPro(0)/bx/n/12 i rejestracji, a także statystyki strony, które dostę
-pne są dla administratorów. Ważnym
+Overfull \hbox (2.56413pt too wide) in paragraph at lines 66--67
+\EU1/MinionPro(0)/m/it/12 związku z tym, że aplikacja znajduje się na platformi
+e Heroku, głównym problemem
+ []
+
+
+Overfull \hbox (17.4721pt too wide) in paragraph at lines 66--67
+\EU1/MinionPro(0)/m/it/12 było przetrzymywanie plików graficznych, które na Her
+oku usuwane są automatycznie.
  []
 
 
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
- [6
+ [7
 
 ]
-Overfull \hbox (34.95612pt too wide) in paragraph at lines 66--67
-\EU1/MinionPro(0)/bx/n/12 mającego na celu symulacje płatności internetowych, a
+Overfull \hbox (34.95612pt too wide) in paragraph at lines 68--69
+\EU1/MinionPro(0)/m/it/12 mającego na celu symulacje płatności internetowych, a
  także zaawansowana wyszukiwarka
  []
 
-[7]
+[8]
 Rozdział 1.
 
-Overfull \hbox (2.18008pt too wide) in paragraph at lines 81--83
-\EU1/MinionPro(0)/bx/n/12 Użytkownicy mogą udostępniać lokalne ogłoszenia dotyc
+Overfull \hbox (2.18008pt too wide) in paragraph at lines 83--85
+\EU1/MinionPro(0)/m/it/12 Użytkownicy mogą udostępniać lokalne ogłoszenia dotyc
 zące sprzedaży oraz usług. 
+ []
+
+
+Overfull \hbox (10.08812pt too wide) in paragraph at lines 86--88
+\EU1/MinionPro(0)/m/it/12 bardziej oryginalne opisy, co nie jest możliwe przy k
+orzystaniu z wyżej wymienionego
  []
 
 
 Underfull \vbox (badness 2334) has occurred while \output is active []
 
- [8
+ [9
 
 ]
-Overfull \hbox (4.65878pt too wide) in paragraph at lines 92--93
-\EU1/MinionPro(0)/bx/n/12 także zaawansowany edytor, który pozwoli na to, by je
+Overfull \hbox (4.65878pt too wide) in paragraph at lines 94--95
+\EU1/MinionPro(0)/m/it/12 także zaawansowany edytor, który pozwoli na to, by je
 go ogłoszenie wyglądało
  []
 
 
-Overfull \hbox (5.42683pt too wide) in paragraph at lines 94--95
-[]\EU1/MinionPro(0)/bx/n/12 Sklep internetowy – jest to kolejna możliwa opcją z
+Overfull \hbox (5.42683pt too wide) in paragraph at lines 96--97
+[]\EU1/MinionPro(0)/m/it/12 Sklep internetowy – jest to kolejna możliwa opcją z
 astosowania mojej aplikacji
  []
 
 
-Overfull \hbox (12.01878pt too wide) in paragraph at lines 94--95
-\EU1/MinionPro(0)/bx/n/12 także obsługa dodawanych aukcji oraz zaawansowane nar
+Overfull \hbox (12.01878pt too wide) in paragraph at lines 96--97
+\EU1/MinionPro(0)/m/it/12 także obsługa dodawanych aukcji oraz zaawansowane nar
 zędzia do zarządzania
  []
 
-[9]
+[10]
 Rozdział 2.
 File: erd.png Graphic file (type QTm)
-<use  "erd.png" > [10
+<use  "erd.png" > [11
 
 ]
 File: fig/ucdiagram.jpg Graphic file (type QTm)
- <use  "fig/ucdiagram.jpg" >
-
-LaTeX Warning: Citation `astah' on page 11 undefined on input line 116.
-
-[11]
+ <use  "fig/ucdiagram.jpg" > [12]
 File: fig/DFD.jpg Graphic file (type QTm)
  <use  "fig/DFD.jpg" >
-
-LaTeX Warning: Citation `astah' on page 12 undefined on input line 126.
-
-
-LaTeX Font Warning: Font shape `EU1/MinionPro(0)/m/it' undefined
-(Font)              using `EU1/MinionPro(0)/m/n' instead on input line 129.
-
-[12]
+[13]
 Rozdział 3.
 
-Overfull \hbox (2.8681pt too wide) in paragraph at lines 130--134
-\EU1/MinionPro(0)/bx/n/12 przed nią założenia, potrzebne są odpowiednio dobrane
+Overfull \hbox (2.8681pt too wide) in paragraph at lines 132--136
+\EU1/MinionPro(0)/m/it/12 przed nią założenia, potrzebne są odpowiednio dobrane
  technologie oraz narzędzia,
  []
 
 
-Overfull \hbox (8.90811pt too wide) in paragraph at lines 130--134
-\EU1/MinionPro(0)/bx/n/12 dzięki którym uda się spełnić postawione przed nią wy
+Overfull \hbox (8.90811pt too wide) in paragraph at lines 132--136
+\EU1/MinionPro(0)/m/it/12 dzięki którym uda się spełnić postawione przed nią wy
 magania. Dobór odpowiedniej
  []
 
 
-Overfull \hbox (15.73212pt too wide) in paragraph at lines 130--134
-\EU1/MinionPro(0)/bx/n/12 technologii, a także frameworków jest kluczowy do sku
+Overfull \hbox (15.73212pt too wide) in paragraph at lines 132--136
+\EU1/MinionPro(0)/m/it/12 technologii, a także frameworków jest kluczowy do sku
 tecznej implementacji aplikacji. 
  []
 
 
 Overfull \hbox (14.0041pt too wide) in paragraph at lines 143--147
-\EU1/MinionPro(0)/bx/n/12 Widoki utworzone zostały przy pomocy frameworka Twitt
+\EU1/MinionPro(0)/m/it/12 Widoki utworzone zostały przy pomocy frameworka Twitt
 er Bootstrap, który pozwala
  []
 
 
 Overfull \hbox (5.81123pt too wide) in paragraph at lines 152--153
-\EU1/MinionPro(0)/bx/n/12 użytkowników i administratorów aplikacji. W tym celu 
+\EU1/MinionPro(0)/m/it/12 użytkowników i administratorów aplikacji. W tym celu 
 wdrożony został gem Devise,
  []
 
-[13
+[14
 
 ]
-Overfull \hbox (12.12013pt too wide) in paragraph at lines 160--163
-\EU1/MinionPro(0)/bx/n/12 koloru liter, czy też ich stylu. Poza tym użytkownik 
-może również ustawić wyrównanie
+Overfull \hbox (26.04413pt too wide) in paragraph at lines 166--169
+\EU1/MinionPro(0)/m/it/12 Gem ułatwiający tworzenie kategorii w postaci drzewa.
+ Poprawia w sposób zdecydowany
  []
 
-[14]
-Overfull \hbox (7.12013pt too wide) in paragraph at lines 178--179
+
+Overfull \hbox (14.64815pt too wide) in paragraph at lines 166--169
+\EU1/MinionPro(0)/m/it/12 nawigację po stronie, a także sprawia, że dane są upo
+rządkowane. Sama implementacja
+ []
+
+
+Overfull \hbox (17.35614pt too wide) in paragraph at lines 176--177
+\EU1/MinionPro(0)/m/it/12 Gem pozwalający na tworzenie i wyświetlanie różnego r
+odzaju wykresów na podstawie
+ []
+
+
+Overfull \hbox (18.02412pt too wide) in paragraph at lines 180--183
+\EU1/MinionPro(0)/m/it/12 Wizualny edytor tekstowy języka HTML, który umożliwia
+ użytkownikowi na wybranie
+ []
+
+[15]
+File: fig/ckeditor.png Graphic file (type QTm)
+ <use  "fig/ckeditor.png" >
+Overfull \hbox (3.6001pt too wide) in paragraph at lines 193--194
+\EU1/MinionPro(0)/m/it/12 Rozszerzenie dzięki któremu możliwe jest na umieszcze
+nie w aplikacji skalowalnych
+ []
+
+[16]
+Overfull \hbox (7.12013pt too wide) in paragraph at lines 201--202
 \EU1/MinionPro(0)/m/it/12 Strona główna aplikacji zaprojektowana została tak, a
 by w prosty sposób udostępniać
  []
 
 
-Overfull \hbox (11.1281pt too wide) in paragraph at lines 178--179
+Overfull \hbox (11.1281pt too wide) in paragraph at lines 201--202
 \EU1/MinionPro(0)/m/it/12 konto użytkownika, na stronie głównej informacje o au
 kcjach, które dany użytkownik
  []
 
 
-Overfull \hbox (45.22495pt too wide) in paragraph at lines 199--200
+Overfull \hbox (45.22495pt too wide) in paragraph at lines 222--223
 []\EU1/MinionPro(0)/m/it/12 Pierwszym elementem jest strona index dostępna tylk
 o dla zalogowanych użytkowników.
  []
 
-[15]
-Overfull \hbox (17.71208pt too wide) in paragraph at lines 201--202
+[17]
+Overfull \hbox (17.71208pt too wide) in paragraph at lines 224--225
 \EU1/MinionPro(0)/m/it/12 jednak łączy je wspólny formularz wypełniany przy two
 rzeniu/edycji aukcji. Formularz
  []
 
 
-Overfull \hbox (27.73694pt too wide) in paragraph at lines 203--204
+Overfull \hbox (27.73694pt too wide) in paragraph at lines 226--227
 []\EU1/MinionPro(0)/m/it/12 Najważniejszym elementem aukcji jest strona, na któ
 rej każda z nich, jest wyświetlana
  []
 
 
-Overfull \hbox (6.86014pt too wide) in paragraph at lines 203--204
+Overfull \hbox (6.86014pt too wide) in paragraph at lines 226--227
 \EU1/MinionPro(0)/m/it/12 oraz wszystkie informacje na temat aukcji jest widocz
 na dla każdego, jednak niektóre
  []
 
 
-Overfull \hbox (18.77611pt too wide) in paragraph at lines 203--204
+Overfull \hbox (18.77611pt too wide) in paragraph at lines 226--227
 \EU1/MinionPro(0)/m/it/12 jej funkcjonalności widoczne są jedynie dla zalogowan
 ych użytkowników. Elementami,
  []
 
 
-Overfull \hbox (34.99211pt too wide) in paragraph at lines 203--204
+Overfull \hbox (34.99211pt too wide) in paragraph at lines 226--227
 \EU1/MinionPro(0)/m/it/12 a także panel, za pomocą którego możliwe jest licytow
 anie aukcji. Sam panel zabezpieczony
  []
 
 
-Overfull \hbox (28.42812pt too wide) in paragraph at lines 207--208
+Overfull \hbox (28.42812pt too wide) in paragraph at lines 230--231
 \EU1/MinionPro(0)/m/it/12 Uporządkowanie aukcji niemożliwe byłoby bez ich kateg
 oryzacji, dlatego też koniecznym
  []
 
 
-Overfull \hbox (16.06012pt too wide) in paragraph at lines 207--208
+Overfull \hbox (16.06012pt too wide) in paragraph at lines 230--231
 \EU1/MinionPro(0)/m/it/12 wydawało się wdrożenie kategorii, przy czym niezwykle
  pomocny był gem ActsAsTree. 
  []
 
 
-Overfull \hbox (20.2729pt too wide) in paragraph at lines 211--212
+Overfull \hbox (26.3329pt too wide) in paragraph at lines 234--235
 []\EU1/MinionPro(0)/m/it/12 Ogólnodostępnym elementem kategorii jest widok udos
-tępniający dane o konretnej
+tępniający dane o konkretnej
  []
 
 
-Overfull \hbox (2.70007pt too wide) in paragraph at lines 217--218
+Overfull \hbox (2.70007pt too wide) in paragraph at lines 240--241
 \EU1/MinionPro(0)/m/it/12 aukcji, które zostały dodane do obserwowanych. Rekord
 y tabeli wyposażone zostały
  []
 
 
-Overfull \hbox (9.19614pt too wide) in paragraph at lines 217--218
+Overfull \hbox (17.82413pt too wide) in paragraph at lines 240--241
 \EU1/MinionPro(0)/m/it/12 również w przycisk, dzięki któremu możliwe jest usuni
-ęcie elementu z obserowanych. 
+ęcie elementu z obserwowanych.
  []
 
-[16] [17]
-Overfull \hbox (6.5881pt too wide) in paragraph at lines 231--232
+
+Overfull \hbox (21.36009pt too wide) in paragraph at lines 240--241
+\EU1/MinionPro(0)/m/it/12 obserwowana przez użytkownika, to na stronie wyświetl
+ony zostanie przycisk ”Przestań
+ []
+
+[18]
+File: fig/pasek.png Graphic file (type QTm)
+ <use  "fig/pasek.png" >
+File: fig/stopka.png Graphic file (type QTm)
+ <use  "fig/stopka.png" >
+Overfull \hbox (9.58812pt too wide) in paragraph at lines 259--266
+\EU1/MinionPro(0)/m/it/12 logowania dla administratora, który widoczny jest jed
+ynie dla osób niezalogowanych.
+ []
+
+[19] [20]
+Overfull \hbox (6.5881pt too wide) in paragraph at lines 270--271
 \EU1/MinionPro(0)/m/it/12 posiadane umiejętności. Podczas realizacji aplikacji 
 udało mi się wykorzystać niemal
  []
 
-[18
+[21
 
-] [19
+] [22
 
 ]
 Dodatek A.
-[20
+[23
 
 ] (./magisterka.lof)
 \tf@lof=\write5
 \openout5 = `magisterka.lof'.
 
- [21
+ [24
 
 ]
-Overfull \hbox (17.82008pt too wide) in paragraph at lines 275--275
+Overfull \hbox (17.82008pt too wide) in paragraph at lines 343--343
 \EU1/MinionPro(0)/m/it/12 Ja, niżej podpisany(a) oświadczam, iż przedłożona pra
 ca dyplomowa została wykonana
  []
 
 
-Overfull \hbox (37.94812pt too wide) in paragraph at lines 275--275
+Overfull \hbox (37.94812pt too wide) in paragraph at lines 343--343
 \EU1/MinionPro(0)/m/it/12 przeze mnie samodzielnie, nie narusza praw autorskich
 , interesów prawnych i materialnych
  []
 
-[22
+[25
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./magisterka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 277.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 277.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 345.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 21452 strings out of 495579
- 385476 string characters out of 6187323
- 399077 words of memory out of 5000000
- 24550 multiletter control sequences out of 15000+600000
- 7817 words of font info for 48 fonts, out of 8000000 for 9000
+ 21481 strings out of 495579
+ 386536 string characters out of 6187323
+ 400566 words of memory out of 5000000
+ 24566 multiletter control sequences out of 15000+600000
+ 7873 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,12n,61p,10389b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,62p,10389b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on magisterka.pdf (22 pages).
+Output written on magisterka.pdf (25 pages).

@@ -9,19 +9,25 @@
 \BOOKMARK [1][-]{section.2.2}{Aktorzy i przypadki użycia}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Diagram przepływu danych}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{Implementacja}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Technologie\040wykorzystane\040do\040stworzenia\040aplikacji}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Ruby\040on\040Rails}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{Twitter\040Bootstrap}{section.3.1}% 14
-\BOOKMARK [2][-]{subsection.3.1.3}{Devise}{section.3.1}% 15
-\BOOKMARK [2][-]{subsection.3.1.4}{Pozostałe rozwiązania użyte przy realizacji projektu}{section.3.1}% 16
-\BOOKMARK [1][-]{section.3.2}{Struktura\040aplikacji}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.2.1}{Strona główna}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.2}{Aukcje}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.3}{Kategorie}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.4}{Obserwowane}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.5}{Nawigacja}{section.3.2}% 22
-\BOOKMARK [0][-]{chapter*.5}{Zakończenie}{}% 23
-\BOOKMARK [0][-]{chapter*.6}{Bibliografia}{}% 24
-\BOOKMARK [0][-]{appendix.A}{Płyta CD zawierająca kod projektu}{}% 25
-\BOOKMARK [0][-]{appendix*.7}{Spis rysunków}{}% 26
-\BOOKMARK [0][-]{appendix*.8}{Oświadczenie}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Ruby\040on\040Rails}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Twitter\040Bootstrap}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Devise}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Pozostałe rozwiązania użyte przy realizacji projektu}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.4.1}{Heroku}{section.3.4}% 16
+\BOOKMARK [2][-]{subsection.3.4.2}{Cloudinary}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.3}{ActsAsTree}{section.3.4}% 18
+\BOOKMARK [2][-]{subsection.3.4.4}{reCAPTCHA}{section.3.4}% 19
+\BOOKMARK [2][-]{subsection.3.4.5}{Chartkick}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.6}{CKEditor}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.7}{Font-Awesome}{section.3.4}% 22
+\BOOKMARK [1][-]{section.3.5}{Struktura\040aplikacji}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.5.1}{Strona główna}{section.3.5}% 24
+\BOOKMARK [2][-]{subsection.3.5.2}{Aukcje}{section.3.5}% 25
+\BOOKMARK [2][-]{subsection.3.5.3}{Kategorie}{section.3.5}% 26
+\BOOKMARK [2][-]{subsection.3.5.4}{Obserwowane}{section.3.5}% 27
+\BOOKMARK [2][-]{subsection.3.5.5}{Nawigacja}{section.3.5}% 28
+\BOOKMARK [0][-]{chapter*.5}{Zakończenie}{}% 29
+\BOOKMARK [0][-]{chapter*.6}{Bibliografia}{}% 30
+\BOOKMARK [0][-]{appendix.A}{Płyta CD zawierająca kod projektu}{}% 31
+\BOOKMARK [0][-]{appendix*.7}{Spis rysunków}{}% 32
+\BOOKMARK [0][-]{appendix*.8}{Oświadczenie}{}% 33
