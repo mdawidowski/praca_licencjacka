@@ -14,13 +14,12 @@
 \contentsline {section}{\numberline {3.2}Twitter Bootstrap}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Devise}{14}{section.3.3}
 \contentsline {section}{\numberline {3.4}Pozostałe rozwiązania użyte przy realizacji projektu}{15}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Heroku}{15}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Cloudinary}{15}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}ActsAsTree}{15}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}reCAPTCHA}{16}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Chartkick}{16}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}CKEditor}{17}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Font-Awesome}{17}{subsection.3.4.7}
+\contentsline {subsection}{\numberline {3.4.1}Cloudinary}{15}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}ActsAsTree}{15}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}reCAPTCHA}{15}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Chartkick}{16}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Font-Awesome}{16}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}CKEditor}{16}{subsection.3.4.6}
 \contentsline {section}{\numberline {3.5}Struktura aplikacji}{18}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Strona główna}{18}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Aukcje}{18}{subsection.3.5.2}
