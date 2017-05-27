@@ -57,7 +57,7 @@
       <% if current_user %>
       <% if current_user.id != @aukcje.user_id %>
       <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
-              <%= f.text_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
+              <%= f.hidden_field :winner_id, :value => current_user.id ,:readonly => true, class:"form-control" %><br>
               <%= f.submit "Licytuj", class:'btn btn-primary', id: "bidbutton" %>
       <% end %>
 
