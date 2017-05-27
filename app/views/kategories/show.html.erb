@@ -1,4 +1,5 @@
 <% content_for :title, " - Podgląd kategorii." %>
+  <% licznik = 0 %>
    <p> <h2><strong><%= @kategorie.nazwa_kategorii %></strong></h2>
       <div class="col-md-3">
 
@@ -23,11 +24,21 @@
         <% if aukcja.kategorie_id == @kategorie.id %>
         <tr>
           <th>
+            <% licznik += 1 %>
           <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %> <%= distance_of_time_in_words(Time.now, aukcja.created_at + 14.days) %> do końca</h4>
       </th>
     </tr>
-        <% end %>
-        <% end %>
+    <% end %>
+    <% end %>
+    <% if licznik <=0 %>
+    <tr>
+      <th>
+        <h3 class="text-center">
+          Brak aukcji do wyświetlenia!
+        </h3>
+      </th>
+    </tr>
+      <% end %>
     </table>
 </div>
       </div>
