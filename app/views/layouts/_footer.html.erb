@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li><a> Copyright &copy 2017 Let's Bid It</a>  </li>
-      <li><a href="#"><i class="fa fa-arrow-circle-left"></i> O projekcie</a></li>
+      <li><a href="<%= home_about_path %>"><i class="fa fa-info-circle"></i> O projekcie</a></li>
       <li><a href="https://github.com/mdawidowski/praca_licencjacka"><i class="fa fa-github"></i> Github</a></li>
       <% if !current_user && !current_admin %>
       <li><%= link_to " Administracja", new_admin_session_path, class:"fa fa-user" %> </li>

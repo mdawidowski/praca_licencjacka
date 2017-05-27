@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   get 'obserwowanes/index'
 
   get 'mojeaukcje/index'
@@ -15,8 +15,8 @@ Rails.application.routes.draw do
   get 'home/panel_uzytkownika'
   get 'home/uzytkownicy'
   get 'home/administratorzy'
+  get 'home/about'
   get 'search', to: 'search#search'
-
   resources :obserwowanes
   resources :mojeaukcjes
   resources :searches

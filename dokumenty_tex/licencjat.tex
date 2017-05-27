@@ -2,7 +2,13 @@
 % Jeśli nowe rozdziały mają się zaczynać na stronach
 % nieparzystych:
 %\documentclass[openright]{xmgr}
+\usepackage{afterpage}
 
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 %\defaultfontfeatures{Scale=MatchLowercase}
 %\setmainfont[Numbers=OldStyle,Ligatures=TeX]{Minion Pro}
 %\setsansfont[Numbers=OldStyle,Ligatures=TeX]{Myriad Pro}
@@ -33,18 +39,19 @@
 \begin{abstract}
   W pracy przedstawiono rozwojową wersję aplikacji webowej „Let's Bid It” służącą do tworzenia i publikowania aukcji oraz ogłoszeń.
 
-  W aplikacji zaimplementowano tworzenie kont użytkowników i administratorów, a także zarządzanie nimi. Ponadto dodany został mechanizm reCAPTCHA, który sprawdza rejestrującego się aktualnie użytkownika.  Wdrożona również została kategoryzacja aukcji, ich wyszukiwanie, a także dodawanie i usuwanie z obserwowanych . Możliwa jest również licytacja aukcji po zalogowaniu się na konto użytkownika. Dodatkowo zaimplementowane zostały kategorie, które można tworzyć w hierarchii.
+  W aplikacji zaimplementowano tworzenie kont użytkowników i administratorów, a także zarządzanie nimi. Ponadto dodany został mechanizm reCAPTCHA, który sprawdza rejestrującego się aktualnie użytkownika.  Wdrożona została również kategoryzacja aukcji, ich wyszukiwanie, a także dodawanie i usuwanie z obserwowanych . Możliwa jest również licytacja aukcji po zalogowaniu się na konto użytkownika. Dodatkowo zaimplementowane zostały kategorie, które można tworzyć w hierarchii.
 
   Zaprojektowano widok strony głównej, na której wyświetlane są główne kategorie, a także najnowsze aukcje znajdujące się w portalu. Ponadto po zalogowaniu na konto użytkownika, na stronie głównej widoczne są aktualnie obserwowane przez niego aukcje. Utworzone również zostały widoki aukcji, kategorii, obserwowanych, a także statystyki. Ponadto zaimplementowano panel administracyjny i panel użytkownika, które są widoczne po zalogowaniu się na konkretny typ konta. Ponadto wykonane zostały górny oraz dolny pasek nawigacyjny, które wyświetlają różne odnośniki zależnie od typu użytkownika.
 
   Do tworzenia aplikacji użyty został język Ruby z wykorzystaniem frameworka Rails, a także Twitter Bootstrap, Plataformatec Devise, reCAPTCHA, CKEditor, jQuery Turbolinks, Chartkick, ActsAsTree oraz Font-Awesome.
 
-\mbox{Projekt wdrożony został na platformie\, \\\texttt{heroku.com} i jest dostępny pod adresem:} \\\texttt{\url{https://ror-aukcja.herokuapp.com/}}\footnote{W celu zalogowania się na konto użytkownika należy kliknąć przycisk "Logowanie" w górnym pasku nawigacyjnym, natomiast aby zalogować się na konto administratora należy użyć linku "Administracja" w stopce strony. Do logowania należy użyć następujących danych: konto administratora: \texttt{admin@admin.pl}, konto użytkownika: \texttt{user@user.pl}, hasło do obu kont to \texttt{admin1}.}
+\mbox{Projekt wdrożony został na platformie\, \\\texttt{heroku.com} i jest dostępny pod adresem:} \\\texttt{\url{https://ror-aukcja.herokuapp.com/}}\footnote{W celu zalogowania się na konto użytkownika należy kliknąć przycisk "Logowanie" w górnym pasku nawigacyjnym, natomiast aby zalogować się na konto administratora należy użyć linku "Administracja" w stopce strony. Do logowania należy użyć następujących danych: konto administratora: \texttt{admin@admin.pl}, konta użytkowników: \texttt{user@user.pl, user1@user.pl, user2@user.pl, user3@user.pl, user4@user.pl, user5@user.pl }, hasło do wszystkich kont to \texttt{admin1}.}
 
 Kod źródłowy aplikacji dostępny jest natomiast na platformie Github pod adresem: \\\texttt{\url{https://github.com/mdawidowski/praca_licencjacka}}
 
 
 \end{abstract}
+
 
 % słowa kluczowe
 \keywords{ruby on rails, gem, heroku, auction, online shopping, bid, recaptcha}
@@ -61,7 +68,7 @@ Mając więc gotowy pomysł na projekt pozostało mi jedynie wybrać odpowiedni�
 
 Aplikacja Let's Bid It jest wersją rozwojową portalu aukcyjnego, dlatego też nie posiada jeszcze wszystkich funkcjonalności, które pozwoliłyby w pełni wykorzystać potencjał serwisu.
 
-Spośród rzeczy, które udało się zrealizować, mogę wyróżnić przede wszystkim obsługę aukcji. Ponadto zaimplementowano ich kategoryzację przy pomocy gemu Act as tree. Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzięki któremu dodając aukcję, użytkownik może swobodnie manipulować jej opisem. Dodatkowo zaimplementowałem zabezpieczenie reCAPTCHA przy logowaniu i rejestracji, a także statystyki strony, które dostępne są dla administratorów. Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem cloudinary.
+Spośród rzeczy, które udało się zrealizować, mogę wyróżnić przede wszystkim obsługę aukcji. Ponadto zaimplementowano ich kategoryzację przy pomocy gemu ActsAsTree. Kolejną rzeczą jest wdrożenie zaawansowanego edytora tekstowego CKEditor, dzięki któremu dodając aukcję, użytkownik może swobodnie manipulować jej opisem. Dodatkowo zaimplementowałem zabezpieczenie reCAPTCHA przy logowaniu i rejestracji, a także statystyki strony, które dostępne są dla administratorów. Ważnym elementem Let's Bid It jest również grafika dołączana do każdej aukcji. W związku z tym, że aplikacja znajduje się na platformie Heroku, głównym problemem było przetrzymywanie plików graficznych, które na Heroku usuwane są automatycznie. Rozwiązaniem tego problemu okazało się skorzystanie z serwisu Cloudinary, który pozwala bezpłatnie przechowywać pliki w chmurze, a co najważniejsze, możliwe jest skonfigurowanie go tak, by współpracował z aplikacją napisaną w Ruby on Rails, w czym pomocny okazał się gem Cloudinary.
 
 Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie systemu mającego na celu symulacje płatności internetowych, a także zaawansowana wyszukiwarka opierająca się na silniku Elasticsearch.
 
@@ -74,7 +81,7 @@ Najważniejszą rzeczą, której nie udało się zrealizować jest wdrożenie sy
 
 Jest to największa, a także najpopularniejsza platforma transakcyjna on-line w Polsce, oferująca setki produktów w niezwykle konkurencyjnych cenach. Serwis udostępnia możliwość zakupu natychmiastowego, licytacji, a także wystawiania ogłoszeń. Typ danej aukcji, zależy tylko i wyłącznie od jej właściciela.
 
-Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It. Tak jak w mojej aplikacji użytkownik może skorzystać z zaawansowanego edytora tekstowego, dodaje zdjęcia i przyporządkowuje ją do konkretnej kategorii. Główną różnicą jest fakt, że Allegro pozwala na wystawienie przedmiotu z użyciem opcji „Kup Teraz”, czego Let's Bid It nie ma.
+Jeśli chodzi o wystawianie aukcji, to proces wygląda podobnie do Let's Bid It. Tak jak w mojej aplikacji użytkownik może skorzystać z zaawansowanego edytora tekstowego, dodaje zdjęcia i przyporządkowuje je do konkretnej kategorii. Główną różnicą jest fakt, że Allegro pozwala na wystawienie przedmiotu z użyciem opcji „Kup Teraz”, czego Let's Bid It nie ma.
 
 \subsection{OLX}
 
@@ -144,7 +151,7 @@ HTML i CSS. Główną zaletą tego frameworka jest responsywność, czyli zapewn
 stron WWW na różnych urządzeniach.
 
 Aby wdrożyć Twitter Bootstrap do aplikacji wymagane jest jedynie dopisanie poniższej linijki do pliku Gemfile
-re
+
 \section{Devise}
 
 Budując portal aukcyjny koniecznym wymogiem jest przede wszystkim obsługa użytkowników i administratorów aplikacji. W tym celu wdrożony został gem Devise, który w znacznym stopniu ułatwia autentykację na stronie. Dzięki zastosowaniu powyższego gemu otrzymujemy niemalże gotowe widoki, kontroler oraz model, co pozwala na bezproblemowe zarządzanie użytkownikami.
@@ -153,7 +160,7 @@ Budując portal aukcyjny koniecznym wymogiem jest przede wszystkim obsługa uży
 
 \subsection{Cloudinary}
 
-Serwis pozwalający na przechowywanie danych w chmurze. Dzięki połączeniu go z aplikacją możliwe było bezproblemowe przechowywanie grafik dołączanych przez użytkowników do aukcji i rozwiązanie problematycznego przechowywania tych plików na serwerze Heroku.
+Serwis pozwalający na przechowywanie danych w chmurze. Dzięki połączeniu go z aplikacją, możliwe było bezproblemowe przechowywanie grafik dołączanych przez użytkowników do aukcji i rozwiązanie problematycznego przechowywania tych plików na serwerze Heroku.
 
 \subsection{ActsAsTree}
 
@@ -187,7 +194,7 @@ Gem pozwalający na tworzenie i wyświetlanie różnego rodzaju wykresów na pod
 
 \subsection{Font-Awesome}
 
-Rozszerzenie dzięki któremu możliwe jest na umieszczenie w aplikacji skalowalnych ikon, co znacznym stopniu poprawia czytelność o raz wygląd strony.
+Rozszerzenie, dzięki któremu możliwe jest na umieszczenie w aplikacji skalowalnych ikon, co znacznym stopniu poprawia czytelność oraz wygląd strony.
 
 \begin{figure}[!tbh]
 \centering
@@ -201,7 +208,7 @@ Rozszerzenie dzięki któremu możliwe jest na umieszczenie w aplikacji skalowal
 
 Wizualny edytor tekstowy języka HTML, który umożliwia użytkownikowi na wybranie między innymi konkretnej
 czcionki, jej rozmiaru, koloru liter, czy też ich stylu. Poza tym użytkownik może również ustawić wyrównanie tekstu,
-a także możliwe jest wstawienie listy, tabeli, odnośników, a także obrazów.
+a także możliwe jest wstawienie listy, tabeli, odnośników oraz obrazów.
 
 \begin{figure}[!tbh]
 \centering
@@ -237,7 +244,7 @@ Głównym elementem Let's Bid It są aukcje. Każda z nich posiada atrybuty taki
 
 Widok aukcji składa się z czterech stron, które różnią się ze względu na dostęp i wyświetlane na niej dane.
 
-Pierwszym elementem jest strona index dostępna tylko dla zalogowanych użytkowników. Wyświetlane na niej są wszystkie aukcje, które utworzył aktualnie zalogowany użytkownik. Aukcje wyświetlane są w tabeli według identyfikatorów, zaś każdej aukcji przypisane są akcje pokaż, edytuj oraz usuń. W górze strony wyświetlany jest również odnośnik do utworzenia nowych aukcji przez aktualnie zalogowanego użytkownika.
+Pierwszym elementem jest strona index, dostępna tylko dla zalogowanych użytkowników. Wyświetlane na niej są wszystkie aukcje, które utworzył aktualnie zalogowany użytkownik. Aukcje wyświetlane są w tabeli według identyfikatorów, zaś każdej aukcji przypisane są akcje pokaż, edytuj oraz usuń. W górze strony wyświetlany jest również odnośnik do utworzenia nowych aukcji przez aktualnie zalogowanego użytkownika.
 
 Następnymi elementami aukcji są strony, które umożliwiają użytkownikom dodawanie oraz edytowanie aukcji. Są to dwa oddzielnie funkcjonujące elementy, jednak łączy je wspólny formularz wypełniany przy tworzeniu/edycji aukcji. Formularz ten zawiera wszystkie atrybuty aukcji, które zostały wymienione powyżej.
 
@@ -255,7 +262,7 @@ Ogólnodostępnym elementem kategorii jest widok udostępniający dane o konkret
 
 Dodanie aukcji do obserwowanych, jest jedną z funkcjonalności, która umożliwia łatwiejsze ich odnalezienie.
 
-Widok opiera się na prostej tabeli, która wyświetla podstawowe dane na temat aukcji, które zostały dodane do obserwowanych. Rekordy tabeli wyposażone zostały również w przycisk, dzięki któremu możliwe jest usunięcie elementu z obserwowanych. W celu dodania aukcji do obserwowanych użytkownik musi odwiedzić stronę aukcji i kliknąć przycisk "Dodaj do obserwowanych". Jeśli jednak aukcja jest już obserwowana przez użytkownika, to na stronie wyświetlony zostanie przycisk "Przestań obserwować".
+Widok opiera się na prostej tabeli, która wyświetla podstawowe dane na temat aukcji, które zostały dodane do obserwowanych. Rekordy tabeli wyposażone zostały również w przycisk, dzięki któremu możliwe jest usunięcie elementu z obserwowanych. W celu dodania aukcji do obserwowanych, użytkownik musi odwiedzić stronę aukcji i kliknąć przycisk "Dodaj do obserwowanych". Jeśli jednak aukcja jest już obserwowana przez użytkownika, to na stronie wyświetlony zostanie przycisk "Przestań obserwować".
 
 \subsection{Nawigacja}
 
@@ -353,6 +360,8 @@ Oficjalna dokumentacja - MySQL Workbench (dostęp 10.04.2017)
 % załączniki (opcjonalnie):
 \appendix
 \chapter{Płyta CD zawierająca kod projektu}
+
+\chapter{Płyta CD zawierająca pliki pracy licencjackiej}
 
 
 \listoffigures

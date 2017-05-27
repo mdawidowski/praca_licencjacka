@@ -29,5 +29,6 @@
 \contentsline {chapter}{Zakończenie}{22}{chapter*.5}
 \contentsline {chapter}{Bibliografia}{23}{chapter*.6}
 \contentsline {chapter}{\numberline {A}Płyta CD zawierająca kod projektu}{24}{appendix.A}
-\contentsline {chapter}{Spis rysunków}{25}{appendix*.7}
-\contentsline {chapter}{Oświadczenie}{26}{appendix*.8}
+\contentsline {chapter}{\numberline {B}Płyta CD zawierająca pliki pracy licencjackiej}{25}{appendix.B}
+\contentsline {chapter}{Spis rysunków}{26}{appendix*.7}
+\contentsline {chapter}{Oświadczenie}{27}{appendix*.8}
