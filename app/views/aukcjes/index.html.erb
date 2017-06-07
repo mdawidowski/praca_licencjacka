@@ -39,8 +39,16 @@
         </td>
         <td><%= aukcja.user_id %></td>
         <td><%= aukcja.winner_id %></td>
-        <td><%= aukcja.isogloszenie %></td>
-        <td><%= aukcja.ended %></td>
+        <td><% if aukcja.isogloszenie == true %>
+          Tak
+        <% else %>
+        Nie
+        <% end %></td>
+        <td><% if aukcja.ended == true %>
+          Tak
+        <% else %>
+        Nie
+        <% end %></td>
     </tr>
     <% end %>
     <% end %>
@@ -59,8 +67,16 @@
         </td>
         <td><%= aukcja.user_id %></td>
         <td><%= aukcja.winner_id %></td>
-        <td><%= aukcja.isogloszenie %></td>
-        <td><%= aukcja.ended %></td>
+        <td><% if aukcja.isogloszenie == true %>
+          Tak
+        <% else %>
+        Nie
+        <% end %></td>
+        <td><% if aukcja.ended == true %>
+          Tak
+        <% else %>
+        Nie
+        <% end %></td>
     </tr>
     <% end %>
     <% end %>

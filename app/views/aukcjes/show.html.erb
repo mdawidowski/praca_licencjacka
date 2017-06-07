@@ -54,6 +54,7 @@
         Brak ofert</p>
       <% end %>
       <%= form_for @aukcje, :html => {:multipart => true}, id:"form1" do |f| %>
+      <% if @aukcje.ended == false %>
       <% if current_user %>
       <% if current_user.id != @aukcje.user_id %>
       <%= f.text_field :cena_aktualna, class: "form-control", id: "bid" %><br>
@@ -64,8 +65,12 @@
     <% else %>
       <%= link_to "Zaloguj się by licytować", new_user_session_path, class: 'btn btn-primary' %>
       <% end %>
-
       <% end %>
+      <% end %>
+      <% else %>
+      <p>
+        Ta aukcja została zakończona
+      </p>
       <% end %>
     </ol>
   </div>
