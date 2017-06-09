@@ -93,5 +93,7 @@
 <%= raw(@aukcje.opis) %>
 </div>
 <hr>
+<% if @aukcje.ended == false %>
 Do końca pozostało:
 <%= distance_of_time_in_words(Time.now, @aukcje.created_at + 14.days) %>
+<% end %>
