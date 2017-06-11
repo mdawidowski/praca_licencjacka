@@ -6,7 +6,7 @@
     <table>
 
       <% @kategorie.each do |kat| %>
-      <% a=kat.aukcje.pluck(:id).last %>
+      <% a=kat.aukcje.pluck(:id).first %>
       <% @aukcje.each do |aukcja| %>
       <% if aukcja.id == a %>
       <th>
