@@ -10,7 +10,7 @@ class KategoriesController < ApplicationController
  end
 
  def show
-   @aukcje = Aukcje.all
+   @aukcje = Aukcje.all.order('created_at DESC')
    @kategorie = Kategorie.find(params[:id])
    respond_to do |format|
      format.html
