@@ -2,7 +2,6 @@ class AukcjesController < ApplicationController
    before_action :set_aukcja, only: [:show, :edit, :update, :destroy]
 
   def index
-    @posts = Post.all.order('created_at DESC')
     @kategorie = Kategorie.all
     @aukcje = Aukcje.search((params[:q].present? ? params[:q] : '*')).records
     @aukcjes = Aukcje.all.order('created_at DESC')
