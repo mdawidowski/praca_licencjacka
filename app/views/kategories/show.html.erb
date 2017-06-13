@@ -25,7 +25,12 @@
         <tr>
           <th>
             <% licznik += 1 %>
-          <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %> <%= distance_of_time_in_words(Time.now, aukcja.created_at + 14.days) %> do końca</h4>
+          <%= image_tag aukcja.image.url(:thumb) %> <%= link_to aukcja.nazwa, aukcje_path(aukcja) %>
+          <% if aukcja.ended = false %>
+          -> <%= distance_of_time_in_words(Time.now, aukcja.created_at + 14.days) %> do końca</h4>
+          <% else %>
+          -> Aukcja zakończona
+          <% end %>
       </th>
     </tr>
     <% end %>
